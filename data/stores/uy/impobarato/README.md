@@ -10,7 +10,7 @@ Appliance retailer in Uruguay with an online store on the Fenicio platform and a
 |---|---|
 | Website | <https://www.impobarato.uy/> |
 | Country | UY |
-| Categories | large-appliances, appliances, climate, tv-audio |
+| Categories | large-appliances, appliances, climate, tv-audio, small-appliances |
 | Delivers to | UY (confirmed): Free shipping to the whole country for customers with an account. Standard cost and times for other cases not stated. |
 | Pickup | yes: Lists a Montevideo branch (Ellauri 623); collection at the branch is not explicitly described on the homepage. |
 | Languages | es |
@@ -30,6 +30,7 @@ Appliance retailer in Uruguay with an online store on the Fenicio platform and a
 Origin: editorial; added on 2026-10-31.
 
 - <https://www.impobarato.uy/> — nationwide free shipping with account, categories and Montevideo branch (accessed 2026-10-31)
+- <https://www.impobarato.uy/> — coffee makers and air fryers among small appliances (accessed 2026-10-31)
 
 ## Verification
 

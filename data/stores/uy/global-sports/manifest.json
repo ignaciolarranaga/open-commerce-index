@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "uy-global-sports",
+  "name": "Global Sports",
+  "website": "https://www.globalsports.com.uy/",
+  "description": "Sports retailer in Uruguay with an online store on the Fenicio platform. Sells running, training, football, tennis, hockey and swimming gear, plus men's, women's and children's clothing. States nationwide delivery in up to 72 hours through DAC and Mirtrans, with free shipping above a stated threshold.",
+  "description_es": "Comercio deportivo en Uruguay con tienda online sobre la plataforma Fenicio. Vende equipamiento de running, entrenamiento, fútbol, tenis, hockey y natación, además de ropa para hombre, mujer y niños. Indica entrega a todo el país en hasta 72 horas por DAC y Mirtrans, con envío gratis por encima de un monto indicado.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "sports",
+    "fashion"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Nike",
+    "adidas",
+    "ASICS",
+    "New Balance"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide delivery in up to 72 hours via DAC and Mirtrans; free above a stated threshold."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Links to a stores page; pickup not described on the homepage."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.globalsports.com.uy/catalogo?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.globalsports.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.globalsports.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.globalsports.com.uy/",
+        "supports": "nationwide delivery via DAC and Mirtrans, free threshold, categories and brands",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
