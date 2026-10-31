@@ -50,6 +50,7 @@ export function validateAll({ storesDir = STORES_DIR, validators = createValidat
     const regions = regionCodes.get(country.country);
     const seen = new Set();
     for (const city of country.cities || []) {
+      if (city.id === 'nationwide') report(countriesFile, `${country.country} city id nationwide is reserved for the nationwide shard`);
       if (seen.has(city.id)) report(countriesFile, `${country.country} city ${city.id} is listed twice`);
       seen.add(city.id);
       if (!regions.has(city.region)) report(countriesFile, `${country.country} city ${city.id}: region ${city.region} is not in ${country.country}.regions`);
