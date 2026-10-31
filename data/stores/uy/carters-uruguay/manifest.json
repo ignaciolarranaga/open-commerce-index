@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-carters-uruguay",
+  "name": "Carter's Uruguay",
+  "website": "https://carters.com.uy/",
+  "description": "Official Uruguayan online store for the Carter's children's clothing brand, built on the Fenicio platform. Sells clothing and footwear for newborns, babies and children, plus Skip Hop baby accessories. States shipping to the whole country for purchases above UYU 3,000 and free in-store pickup.",
+  "description_es": "Tienda online oficial de la marca de ropa infantil Carter's en Uruguay, sobre la plataforma Fenicio. Vende ropa y calzado para recién nacidos, bebés y niños, además de accesorios para bebé de Skip Hop. Indica envíos a todo el país para compras superiores a UYU 3.000 y retiro en tienda gratis.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "fashion",
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Carter's",
+    "Skip Hop"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Banner states free shipping to the whole country for purchases over UYU 3,000. Costs below that not stated."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free in-store pickup per banner; store list at the tiendas page."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://carters.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://carters.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://carters.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.carters.com.uy/",
+        "supports": "nationwide free shipping above UYU 3,000, in-store pickup, categories and brands",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

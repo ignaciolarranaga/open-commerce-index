@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "uy-mosca-hnos",
+  "name": "Mosca Hnos",
+  "website": "https://www.mosca.com.uy/",
+  "description": "Stationery, bookstore and toy retailer in Uruguay with physical stores and an online store. Sells school supplies, office products, art supplies, books, technology and toys. States shipping to the whole country, free above a stated cart threshold, and same-day delivery for orders placed before 14:00.",
+  "description_es": "Papelería, librería y juguetería de Uruguay con tiendas físicas y tienda online. Vende útiles escolares, artículos de oficina, arte, libros, tecnología y juguetes. Indica envíos a todo el país, gratis por encima de un monto indicado, y entrega en el día para pedidos hasta las 14 horas.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "office",
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Banner states shipping to the whole country. Free above a stated threshold; same-day delivery for orders before 14"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Lists physical stores; pickup at stores is described in a delivery-methods page not read in full."
+  },
+  "access": {
+    "platform": "magento",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.mosca.com.uy/catalogsearch/result/?q={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.mosca.com.uy/",
+        "supports": "nationwide shipping, free threshold, same-day rule, categories",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
