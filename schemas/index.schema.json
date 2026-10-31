@@ -31,6 +31,21 @@
         }
       }
     },
-    "shards": { "description": "Reserved for category shards once a country file grows large. Empty for now.", "type": "array" }
+    "shards": {
+      "description": "Slices of a country file, so an assistant fetches only the part it needs. Empty when no country file is split.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["country", "kind", "id", "url", "store_count"],
+        "properties": {
+          "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "kind": { "description": "city: stores that deliver to or are based in the city. nationwide: stores that deliver across the country. category: stores in one category.", "enum": ["city", "nationwide", "category"] },
+          "id": { "description": "City id, or category id, as the kind says. nationwide for the nationwide shard.", "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 60 },
+          "url": { "type": "string", "pattern": "^https://" },
+          "store_count": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
   }
 }

@@ -1,7 +1,7 @@
 import path from 'node:path';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
-import { readJson } from './config.js';
+import { ROOT, readJson } from './config.js';
 import { loadStores, loadCategories, loadCountries, siteHost, today, STORES_DIR } from './data.js';
 import { lintText, lintableFields } from './lint.js';
 
@@ -12,6 +12,7 @@ export function createValidators() {
     store: ajv.compile(readJson('schemas/store.schema.json')),
     categories: ajv.compile(readJson('schemas/categories.schema.json')),
     index: ajv.compile(readJson('schemas/index.schema.json')),
+    countries: ajv.compile(readJson('schemas/countries.schema.json')),
   };
 }
 
@@ -36,9 +37,24 @@ export function validateAll({ storesDir = STORES_DIR, validators = createValidat
   for (const category of categories.categories) {
     if (category.parent && !categoryIds.has(category.parent)) report(categoriesFile, `category ${category.id} has unknown parent ${category.parent}`);
   }
-  const countryList = loadCountries().countries;
+  const countriesFile = path.join(ROOT, 'data', 'countries.json');
+  const countryRegistry = loadCountries();
+  if (!validators.countries(countryRegistry)) {
+    for (const message of formatAjvErrors(validators.countries.errors)) report(countriesFile, message);
+  }
+  const countryList = countryRegistry.countries;
   const countryCodes = new Set(countryList.map((country) => country.country));
   const regionCodes = new Map(countryList.map((country) => [country.country, new Set((country.regions || []).map((region) => region.code))]));
+  const cityIds = new Map(countryList.map((country) => [country.country, new Set((country.cities || []).map((city) => city.id))]));
+  for (const country of countryList) {
+    const regions = regionCodes.get(country.country);
+    const seen = new Set();
+    for (const city of country.cities || []) {
+      if (seen.has(city.id)) report(countriesFile, `${country.country} city ${city.id} is listed twice`);
+      seen.add(city.id);
+      if (!regions.has(city.region)) report(countriesFile, `${country.country} city ${city.id}: region ${city.region} is not in ${country.country}.regions`);
+    }
+  }
 
   const stores = loadStores(storesDir);
   const seenIds = new Map();
@@ -77,7 +93,13 @@ export function validateAll({ storesDir = STORES_DIR, validators = createValidat
         if (!region.startsWith(`${entry.country}-`)) report(file, `fulfillment.ships_to[${i}].regions: ${region} is not in ${entry.country}`);
         else if (!regionCodes.get(entry.country)?.has(region)) report(file, `fulfillment.ships_to[${i}].regions: ${region} is not in data/countries.json`);
       }
+      for (const city of entry.cities || []) {
+        if (!cityIds.get(entry.country)?.has(city)) report(file, `fulfillment.ships_to[${i}].cities: ${city} is not a city of ${entry.country} in data/countries.json`);
+      }
     });
+    if (manifest.city && !cityIds.get(manifest.country)?.has(manifest.city)) {
+      report(file, `city ${manifest.city} is not a city of ${manifest.country} in data/countries.json`);
+    }
 
     for (const category of manifest.categories || []) {
       if (!categoryIds.has(category)) report(file, `unknown category "${category}"`);
