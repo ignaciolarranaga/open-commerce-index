@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "uy-coda-cafe",
+  "name": "Coda Café",
+  "website": "https://codacafe.com/",
+  "description": "Specialty coffee roaster in Uruguay that roasts in small batches and sells online on Shopify. Sells whole-bean and ground coffee from several origins, and a gift box. States shipping across Uruguay; interior shipping cost is not shown on the homepage.",
+  "description_es": "Tostador de café de especialidad en Uruguay que tuesta en micro-lotes y vende online sobre Shopify. Vende café en grano y molido de varios orígenes, y una caja de regalo. Indica envíos a todo Uruguay; el costo del envío al interior no figura en la página principal.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "coffee"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Homepage states shipping across all of Uruguay. Shipping cost and interior delivery time not shown on the homepage."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Pickup not described on the homepage."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://codacafe.com/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://codacafe.com/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://codacafe.com/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://codacafe.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://codacafe.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://codacafe.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://codacafe.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "shopping_notes": "Direct fetch was rate-limited during review; the coverage statement comes from the store's homepage text as surfaced by search. Confirm at checkout.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://codacafe.com/",
+        "supports": "nationwide shipping statement, roaster description, UYU pricing",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
