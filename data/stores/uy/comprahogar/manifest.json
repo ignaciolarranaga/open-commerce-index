@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "uy-comprahogar",
+  "name": "CompraHogar",
+  "website": "https://www.comprahogar.com.uy/",
+  "description": "Hardware, tools and building materials retailer based in Montevideo, selling through its own online store. States nationwide delivery in 24 to 48 hours. Interior shipping cost is not stated on the homepage.",
+  "description_es": "Comercio de ferretería, herramientas y materiales de construcción con sede en Montevideo, que vende por su tienda online propia. Indica entregas a todo el país en 24 a 48 horas. El costo de envío al interior no figura en la página principal.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "hardware-tools"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Header states nationwide shipping in 24 to 48 hours. Cost not stated on the homepage."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Lists a Montevideo address; in-store pickup is not stated."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.comprahogar.com.uy/search?q={query}&type=product",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.comprahogar.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.comprahogar.com.uy/",
+        "supports": "nationwide shipping and delivery time, free shipping badges",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

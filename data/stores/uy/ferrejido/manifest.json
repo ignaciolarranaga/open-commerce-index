@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "uy-ferrejido",
+  "name": "Ferrejido",
+  "website": "https://ferrejido.com.uy/",
+  "description": "Hardware store in Uruguay with an online shop and branches. States shipping across the country, plus express delivery in two hours in covered zones. Zones, standard delivery times and shipping costs are not listed on the homepage.",
+  "description_es": "Ferretería en Uruguay con tienda online y sucursales. Indica envíos a todo el país y entrega exprés en 2 horas en zonas cubiertas. Las zonas, los plazos estándar y los costos de envío no figuran en la página principal.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "hardware-tools"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Banner states shipping to the whole country. Express 2-hour delivery by zone; zones and costs not listed."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Links to a branches page; pickup at branches is not confirmed."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://ferrejido.com.uy/buscar?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://ferrejido.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://ferrejido.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://ferrejido.com.uy/",
+        "supports": "nationwide shipping banner and express delivery",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
