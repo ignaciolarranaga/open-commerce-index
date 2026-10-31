@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "uy-la-vigne",
+  "name": "La Vigne",
+  "website": "https://lavigne.com.uy/",
+  "description": "Wine, champagne and spirits retailer in Montevideo with an online store on the Fenicio platform. Sells wines, sparkling wines, spirits, vermouth and gourmet products such as coffee, water, preserves and drinks. States delivery across the country through La Nave Cargo and a pickup centre; the homepage gives no fee or delivery time.",
+  "description_es": "Comercio de vinos, espumantes y espirituosos en Montevideo con tienda online sobre la plataforma Fenicio. Vende vinos, champagne, espirituosos, vermut y productos gourmet como café, aguas, conservas y bebidas. Indica entrega a todo el país a través de La Nave Cargo y un centro de retiro; la página principal no informa costo ni plazo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "grocery"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Delivery across the whole country through La Nave Cargo. Fee and delivery time not stated on the homepage."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup centre linked from the homepage; store at Costa Rica 1740, Carrasco, Montevideo."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://lavigne.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://lavigne.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://lavigne.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://lavigne.com.uy/",
+        "supports": "nationwide delivery via La Nave Cargo, pickup centre and store address, categories",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
