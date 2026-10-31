@@ -19,7 +19,7 @@ Los archivos JSON incluyen `generated_at` y `source_revision` para que puedas ci
 Cada ficha sigue el [esquema de tienda](https://github.com/ignaciolarranaga/open-commerce-index/blob/main/schemas/store.schema.json) (JSON Schema 2020-12), versión 1. Los campos clave para un agente:
 
 - `categories` y `brands`: selección de candidatas. La ausencia de una marca significa "desconocido", no "no la vende".
-- `fulfillment.ships_to`: cobertura `confirmed`, `partial` o `unknown` por país.
+- `fulfillment.ships_to`: cobertura `confirmed`, `partial` o `unknown` por país. El campo opcional `regions` lista las subdivisiones ISO 3166-2 atendidas (códigos y nombres en `countries.json`); sin él, la cobertura vale para todo el país.
 - `access.search.url_template`: dirección de búsqueda con `{query}`; `status` indica si se verificó que devuelve resultados en el HTML.
 - `access.endpoints`: fuentes estructuradas (búsqueda JSON, listado de productos, `llms.txt`, UCP, MCP) con su estado.
 - `access.robots.ai_user_agents`: si `disallowed`, no consultes el sitio de forma automática; mostrá el enlace.

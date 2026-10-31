@@ -5,7 +5,7 @@
  *   node scripts/probe.js https://www.example.com.uy -q cafetera > /tmp/probe.json
  *   node scripts/new-store.js --probe /tmp/probe.json --name "Example" --country UY \
  *     --categories appliances,small-appliances --description "..." \
- *     --source "https://www.example.com.uy/envios|shipping coverage" [--ships-to UY:confirmed] [--pickup yes]
+ *     --source "https://www.example.com.uy/envios|shipping coverage" [--ships-to UY:confirmed] [--regions UY-MO,UY-CA] [--pickup yes]
  *
  * Writes data/stores/<cc>/<slug>/manifest.json (refusing to overwrite unless --force) and prints its path.
  * Verification fields are always written as unverified: only maintainers change them, by hand, in review.
@@ -29,6 +29,7 @@ const { values } = parseArgs({
     currencies: { type: 'string' },
     brands: { type: 'string' },
     'ships-to': { type: 'string', multiple: true },
+    regions: { type: 'string' },
     pickup: { type: 'string', default: 'unknown' },
     'pickup-notes': { type: 'string' },
     notes: { type: 'string' },
@@ -74,6 +75,15 @@ const shipsTo = (values['ships-to'] || []).map((entry) => {
   return { country: code.toUpperCase(), coverage, ...(notes ? { notes } : {}) };
 });
 if (!shipsTo.length) shipsTo.push({ country, coverage: 'unknown' });
+// --regions lists ISO 3166-2 codes; each goes on the ships_to entry of its country.
+for (const region of split(values.regions)) {
+  const entry = shipsTo.find((item) => region.toUpperCase().startsWith(`${item.country}-`));
+  if (!entry) {
+    console.error(`region ${region} has no matching --ships-to country`);
+    process.exit(2);
+  }
+  entry.regions = [...(entry.regions || []), region.toUpperCase()];
+}
 
 const manifest = {
   schema_version: 1,

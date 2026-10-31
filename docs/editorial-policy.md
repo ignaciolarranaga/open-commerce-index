@@ -14,6 +14,7 @@ Not listed: marketplaces and classifieds platforms (for now), brand pages that o
 
 - Every fact comes from a public page of the store or from a probe of the store's website, and is cited in `provenance.sources` with the date it was read.
 - Delivery coverage is `confirmed` only when the store's own shipping page states it; `partial` when it covers some areas or has conditions; `unknown` otherwise.
+- `regions` (ISO 3166-2 codes from `data/countries.json`) are recorded only when the store's shipping page names the areas it serves. Cities and neighbourhoods go in `notes`, not in `regions`.
 - Brands are listed only when a store page names them. Absence means unknown, never "does not carry".
 - Descriptions are factual, in English, without superlatives or promotional claims. Spanish descriptions are translations of the same facts.
 - `shopping_notes` explain how to find products (currency shown, where model codes appear, which pages render without JavaScript). They never evaluate the store or address assistants.

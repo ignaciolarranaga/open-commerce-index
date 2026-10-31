@@ -6,7 +6,28 @@
       "languages": ["es"],
       "currencies": ["UYU", "USD"],
       "status": "launching",
-      "notes": "Prices are commonly shown in Uruguayan pesos (UYU, written $ or $U) and, for electronics and appliances, in US dollars (written U$S or USD)."
+      "notes": "Prices are commonly shown in Uruguayan pesos (UYU, written $ or $U) and, for electronics and appliances, in US dollars (written U$S or USD).",
+      "regions": [
+        { "code": "UY-AR", "name": "Artigas" },
+        { "code": "UY-CA", "name": "Canelones" },
+        { "code": "UY-CL", "name": "Cerro Largo" },
+        { "code": "UY-CO", "name": "Colonia" },
+        { "code": "UY-DU", "name": "Durazno" },
+        { "code": "UY-FS", "name": "Flores" },
+        { "code": "UY-FD", "name": "Florida" },
+        { "code": "UY-LA", "name": "Lavalleja" },
+        { "code": "UY-MA", "name": "Maldonado" },
+        { "code": "UY-MO", "name": "Montevideo" },
+        { "code": "UY-PA", "name": "Paysandú" },
+        { "code": "UY-RN", "name": "Río Negro" },
+        { "code": "UY-RV", "name": "Rivera" },
+        { "code": "UY-RO", "name": "Rocha" },
+        { "code": "UY-SA", "name": "Salto" },
+        { "code": "UY-SJ", "name": "San José" },
+        { "code": "UY-SO", "name": "Soriano" },
+        { "code": "UY-TA", "name": "Tacuarembó" },
+        { "code": "UY-TT", "name": "Treinta y Tres" }
+      ]
     }
   ]
 }

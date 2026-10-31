@@ -76,3 +76,18 @@ test('verification is required and constrained', () => {
   const result = validateAll({ storesDir: tempStores({ 'uy/example-store': manifest }) });
   assert.ok(messages(result).some((m) => m.includes('/verification/domain_ownership')));
 });
+
+test('regions from data/countries.json are accepted', () => {
+  const manifest = validManifest();
+  manifest.fulfillment.ships_to = [{ country: 'UY', coverage: 'partial', regions: ['UY-MO', 'UY-CA'] }];
+  const result = validateAll({ storesDir: tempStores({ 'uy/example-store': manifest }) });
+  assert.deepEqual(messages(result), []);
+});
+
+test('regions must belong to the ships_to country and be known', () => {
+  const manifest = validManifest();
+  manifest.fulfillment.ships_to = [{ country: 'UY', coverage: 'partial', regions: ['AR-B', 'UY-ZZ'] }];
+  const result = validateAll({ storesDir: tempStores({ 'uy/example-store': manifest }) });
+  assert.ok(messages(result).some((m) => m.includes('AR-B is not in UY')));
+  assert.ok(messages(result).some((m) => m.includes('UY-ZZ is not in data/countries.json')));
+});

@@ -19,7 +19,7 @@ The JSON files carry `generated_at` and `source_revision` so you can cite the ex
 Every profile follows the [store schema](https://github.com/ignaciolarranaga/open-commerce-index/blob/main/schemas/store.schema.json) (JSON Schema 2020-12), version 1. The fields an agent cares about:
 
 - `categories` and `brands`: candidate selection. A missing brand means "unknown", not "does not carry it".
-- `fulfillment.ships_to`: `confirmed`, `partial` or `unknown` coverage per country.
+- `fulfillment.ships_to`: `confirmed`, `partial` or `unknown` coverage per country. Optional `regions` lists the ISO 3166-2 subdivisions served (codes and names in `countries.json`); without it, coverage applies to the whole country.
 - `access.search.url_template`: search address with `{query}`; `status` says whether it was verified to return results in the HTML.
 - `access.endpoints`: structured sources (JSON search, product listing, `llms.txt`, UCP, MCP) with their status.
 - `access.robots.ai_user_agents`: when `disallowed`, do not query the site automatically; show the link instead.

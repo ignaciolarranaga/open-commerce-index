@@ -77,6 +77,11 @@ export function categoryLabel(id, categories, lang) {
   return category ? category.labels[lang] : id;
 }
 
+function regionName(code, ctx) {
+  const country = ctx.countries.find((c) => code.startsWith(`${c.country}-`));
+  return country?.regions?.find((r) => r.code === code)?.name || code;
+}
+
 /** Store profile page body. */
 export function storePage(store, ctx, lang) {
   const t = ctx.strings[lang];
@@ -87,7 +92,8 @@ export function storePage(store, ctx, lang) {
   const countryName = ctx.countries.find((c) => c.country === m.country)?.names[lang] || m.country;
   const shipsTo = m.fulfillment.ships_to.map((s) => {
     const name = ctx.countries.find((c) => c.country === s.country)?.names[lang] || s.country;
-    return `${esc(name)} ${valueBadge(s.coverage, t)}${s.notes ? ` <span class="muted small">${esc(s.notes)}</span>` : ''}`;
+    const regions = s.regions ? ` <span class="small">${esc(s.regions.map((code) => regionName(code, ctx)).join(', '))}</span>` : '';
+    return `${esc(name)} ${valueBadge(s.coverage, t)}${regions}${s.notes ? ` <span class="muted small">${esc(s.notes)}</span>` : ''}`;
   }).join('<br>');
   const endpoints = m.access.endpoints.length
     ? `<ul>${m.access.endpoints.map((e) => `<li>${esc(t.values[e.type] || e.type)} ${valueBadge(e.status, t)} <a href="${esc(e.url)}" rel="nofollow noopener">${esc(e.url)}</a>${e.notes ? `<br><span class="muted small">${esc(e.notes)}</span>` : ''}</li>`).join('')}</ul>`
@@ -161,7 +167,7 @@ export function storeMarkdown(store, ctx) {
   lines.push(`| Country | ${m.country} |`);
   lines.push(`| Categories | ${m.categories.join(', ')} |`);
   if (m.brands?.length) lines.push(`| Known brands | ${m.brands.join(', ')} |`);
-  lines.push(`| Delivers to | ${m.fulfillment.ships_to.map((s) => `${s.country} (${s.coverage})${s.notes ? `: ${s.notes}` : ''}`).join('; ')} |`);
+  lines.push(`| Delivers to | ${m.fulfillment.ships_to.map((s) => `${s.country} (${s.coverage})${s.regions ? ` in ${s.regions.join(', ')}` : ''}${s.notes ? `: ${s.notes}` : ''}`).join('; ')} |`);
   lines.push(`| Pickup | ${m.fulfillment.pickup}${m.fulfillment.pickup_notes ? `: ${m.fulfillment.pickup_notes}` : ''} |`);
   lines.push(`| Languages | ${m.languages.join(', ')} |`);
   lines.push(`| Currencies | ${m.currencies.join(', ')} |`);
