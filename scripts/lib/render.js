@@ -47,6 +47,8 @@ ${page.body}
 <a href="${config.pluginRepoUrl}">${esc(t.footer.plugin_repo)}</a>
 <a href="${config.discussionsUrl}">${esc(t.footer.discussions)}</a>
 <a href="${config.releasesUrl}">${esc(t.footer.releases)}</a>
+<a href="${url(`${page.lang}/privacy/`)}">${esc(t.footer.privacy)}</a>
+<a href="${url(`${page.lang}/terms/`)}">${esc(t.footer.terms)}</a>
 <span>${esc(t.footer.license)}</span>
 <span>${esc(t.footer.generated)} ${ctx.generatedAt.slice(0, 10)} · ${esc(ctx.revision)}</span>
 </div></footer>

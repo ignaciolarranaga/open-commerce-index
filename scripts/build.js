@@ -225,7 +225,7 @@ function emitPage(lang, relativePath, title, description, body, nav, alternate) 
 
 for (const lang of config.languages) {
   const t = strings[lang];
-  for (const [file, relativePath, nav] of [['index.md', '', ''], ['connect/index.md', 'connect/', 'connect/'], ['merchants.md', 'merchants/', 'merchants/'], ['agents.md', 'agents/', 'agents/'], ['about.md', 'about/', 'about/']]) {
+  for (const [file, relativePath, nav] of [['index.md', '', ''], ['connect/index.md', 'connect/', 'connect/'], ['merchants.md', 'merchants/', 'merchants/'], ['agents.md', 'agents/', 'agents/'], ['about.md', 'about/', 'about/'], ['privacy.md', 'privacy/', 'about/'], ['terms.md', 'terms/', 'about/']]) {
     const { data, body } = readContent(lang, file);
     emitPage(lang, relativePath, data.title, data.description, renderBlocks(body, lang, data), nav);
   }

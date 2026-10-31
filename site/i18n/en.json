@@ -2,8 +2,24 @@
   "lang_name": "English",
   "switch_label": "Español",
   "tagline": "An open directory of stores for your assistant",
-  "nav": { "home": "Home", "connect": "Connect your assistant", "merchants": "For stores", "directory": "Directory", "agents": "For developers and agents", "about": "About" },
-  "footer": { "repo": "Index repository", "plugin_repo": "Plugin repository", "discussions": "Questions and feedback", "releases": "Releases", "license": "Data under CC0 1.0 · Code under Apache 2.0", "generated": "Generated on" },
+  "nav": {
+    "home": "Home",
+    "connect": "Connect your assistant",
+    "merchants": "For stores",
+    "directory": "Directory",
+    "agents": "For developers and agents",
+    "about": "About"
+  },
+  "footer": {
+    "repo": "Index repository",
+    "plugin_repo": "Plugin repository",
+    "discussions": "Questions and feedback",
+    "releases": "Releases",
+    "license": "Data under CC0 1.0 · Code under Apache 2.0",
+    "generated": "Generated on",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
   "directory": {
     "title": "Store directory",
     "intro": "Stores listed by country and category. Each profile describes what the store sells, where it delivers and how an assistant can query it. We publish no prices or catalogs: your assistant looks those up live on the store's site.",
@@ -49,14 +65,40 @@
     "disclaimer": "This profile describes how to find information on the store. It is not a commercial recommendation or a guarantee about the seller."
   },
   "values": {
-    "yes": "Yes", "no": "No", "unknown": "Not confirmed",
-    "confirmed": "Confirmed", "partial": "Partial",
-    "verified": "Verified", "unverified": "Unverified", "failing": "Failing", "never": "Never",
-    "allowed": "Allowed", "disallowed": "Disallowed",
-    "server": "Results in the HTML", "client": "Results load with JavaScript", "mixed": "Partly in the HTML",
-    "none": "No blocking detected", "challenge": "Anti-bot challenge", "blocked": "Blocked",
-    "editorial": "Editorial", "owner_submitted": "Submitted by the store", "community": "Community",
-    "json_search": "JSON search", "products_feed": "Product listing", "sitemap": "Sitemap", "ai_text": "Assistant guide", "ucp": "UCP profile", "acp": "ACP profile", "mcp": "MCP server", "api": "API"
+    "yes": "Yes",
+    "no": "No",
+    "unknown": "Not confirmed",
+    "confirmed": "Confirmed",
+    "partial": "Partial",
+    "verified": "Verified",
+    "unverified": "Unverified",
+    "failing": "Failing",
+    "never": "Never",
+    "allowed": "Allowed",
+    "disallowed": "Disallowed",
+    "server": "Results in the HTML",
+    "client": "Results load with JavaScript",
+    "mixed": "Partly in the HTML",
+    "none": "No blocking detected",
+    "challenge": "Anti-bot challenge",
+    "blocked": "Blocked",
+    "editorial": "Editorial",
+    "owner_submitted": "Submitted by the store",
+    "community": "Community",
+    "json_search": "JSON search",
+    "products_feed": "Product listing",
+    "sitemap": "Sitemap",
+    "ai_text": "Assistant guide",
+    "ucp": "UCP profile",
+    "acp": "ACP profile",
+    "mcp": "MCP server",
+    "api": "API"
   },
-  "status": { "tested": "Tested", "experimental": "Experimental", "planned": "Planned", "unsupported": "Unsupported", "manual": "Manual setup" }
+  "status": {
+    "tested": "Tested",
+    "experimental": "Experimental",
+    "planned": "Planned",
+    "unsupported": "Unsupported",
+    "manual": "Manual setup"
+  }
 }
