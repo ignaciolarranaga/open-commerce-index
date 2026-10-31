@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "uy-nespresso-uruguay",
+  "name": "Nespresso Uruguay",
+  "website": "https://nespresso.com.uy/",
+  "description": "Official Nespresso online store for Uruguay, built on Shopify. Sells Nespresso coffee capsules, coffee machines and accessories. States shipping to any part of the country for orders above a stated threshold, dispatch within 24 hours, and pickup through pickup points and boutiques.",
+  "description_es": "Tienda online oficial de Nespresso en Uruguay, desarrollada sobre Shopify. Vende cápsulas de café, máquinas y accesorios Nespresso. Indica envíos a cualquier parte del país para pedidos superiores a un monto indicado, despacho en 24 horas, y retiro en puntos de retiro y boutiques.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "coffee",
+    "appliances"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Nespresso"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Free shipping to any part of the country for orders above a stated threshold. Costs below it and interior times not stated."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup points and boutiques linked from the homepage; interior locations not listed."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://nespresso.com.uy/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://nespresso.com.uy/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://nespresso.com.uy/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://nespresso.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://nespresso.com.uy/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://nespresso.com.uy/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://nespresso.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://nespresso.com.uy/",
+        "supports": "nationwide shipping above threshold, dispatch time, pickup options, categories",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
