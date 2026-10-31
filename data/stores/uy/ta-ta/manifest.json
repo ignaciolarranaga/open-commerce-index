@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "uy-ta-ta",
+  "name": "Ta-Ta",
+  "website": "https://www.tata.com.uy/",
+  "description": "Supermarket chain in Uruguay with an online store on the VTEX platform, selling groceries, beverages, household and personal care, and small appliances. Home delivery is limited to 15 listed localities; customers elsewhere can order but must choose a branch pickup. Free home delivery above a stated threshold.",
+  "description_es": "Cadena de supermercados de Uruguay con tienda online sobre la plataforma VTEX, que vende comestibles, bebidas, limpieza, cuidado personal y pequeños electrodomésticos. La entrega a domicilio se limita a 15 localidades; desde otras zonas se puede comprar, pero se retira en sucursal. Envío gratis por encima de un monto indicado.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "grocery",
+    "appliances"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "partial",
+        "notes": "Home delivery limited to 15 listed localities; orders from elsewhere require branch pickup."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at enabled branches; hours vary by city."
+  },
+  "access": {
+    "platform": "vtex",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.tata.com.uy/{query}?_q={query}&map=ft",
+      "status": "verified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.tata.com.uy/lp/preguntas-frecuentes",
+        "supports": "localities with home delivery, branch pickup, free-shipping threshold",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
