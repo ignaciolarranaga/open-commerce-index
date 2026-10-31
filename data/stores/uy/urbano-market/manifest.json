@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "uy-urbano-market",
+  "name": "Urbano Market",
+  "website": "https://urbanomarketuy.com/",
+  "description": "Online general-merchandise retailer in Uruguay on Shopify. Sells decoration and lighting, school and office supplies, home and kitchen goods, children's products and toys, watches and thermoses. States shipping across Uruguay mainly through DAC, free above a stated threshold.",
+  "description_es": "Comercio online de artículos generales en Uruguay sobre Shopify. Vende decoración e iluminación, útiles escolares y de oficina, hogar y cocina, productos infantiles y juguetes, relojes y termos. Indica envíos a todo el país principalmente por DAC, gratis por encima de un monto indicado.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "general",
+    "home-furniture",
+    "toys",
+    "office"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "FAQ states shipping across the country mainly through DAC; free from a stated threshold. Costs and times"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup at DAC agencies for a fee; no in-store pickup mentioned."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://urbanomarketuy.com/search?q={query}&type=product",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://urbanomarketuy.com/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://urbanomarketuy.com/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://urbanomarketuy.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://urbanomarketuy.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://urbanomarketuy.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://urbanomarketuy.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://urbanomarketuy.com/",
+        "supports": "nationwide DAC shipping, free threshold, interior delivery times, categories",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
