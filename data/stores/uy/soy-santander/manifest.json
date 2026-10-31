@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "uy-soy-santander",
+  "name": "Soy Santander",
+  "website": "https://tienda.soysantander.com.uy/",
+  "description": "Online store of Soy Santander, a rewards and retail platform for Banco Santander customers, operated by RIOLUX S.A. and built on the Fenicio platform. Sells electronics, appliances, home, sports and other categories. Ships to the interior of Uruguay in 2 to 5 business days after payment.",
+  "description_es": "Tienda online de Soy Santander, plataforma de puntos y venta para clientes del Banco Santander, operada por RIOLUX S.A. y desarrollada sobre la plataforma Fenicio. Vende electrónica, electrodomésticos, hogar, deportes y otras categorías. Envía al interior del país en 2 a 5 días hábiles después del pago.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU",
+    "USD"
+  ],
+  "categories": [
+    "large-appliances",
+    "appliances",
+    "climate",
+    "general"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "partial",
+        "notes": "Page says shipping to the interior; departments not listed, store support confirms coverage by zone. Cost USD 5 to 50 by size and weight."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://tienda.soysantander.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://tienda.soysantander.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://tienda.soysantander.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://tienda.soysantander.com.uy/",
+        "supports": "what it sells, operator, platform",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://tienda.soysantander.com.uy/envios-y-devoluciones",
+        "supports": "interior shipping, cost range and delivery time",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

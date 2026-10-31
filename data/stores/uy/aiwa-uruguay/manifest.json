@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-aiwa-uruguay",
+  "name": "Aiwa Uruguay",
+  "website": "https://aiwa.com.uy/",
+  "description": "Official Uruguayan online store of the Aiwa brand, built on the Fenicio platform. Sells audio and TV products and air conditioners. States that it ships across Uruguay; delivery times and shipping costs are not given on the homepage.",
+  "description_es": "Tienda online oficial de la marca Aiwa en Uruguay, desarrollada sobre la plataforma Fenicio. Vende productos de audio y TV y aires acondicionados. Indica que envía a todo el país; los plazos y costos de envío no figuran en la página principal.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "climate",
+    "tv-audio",
+    "appliances"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Aiwa"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Homepage banner says shipping covers the whole country. Cost and time not stated."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Lists a store in Maldonado and a store page; pickup availability is not stated."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://aiwa.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://aiwa.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://aiwa.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://aiwa.com.uy/",
+        "supports": "nationwide shipping banner, store address, brand and platform",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

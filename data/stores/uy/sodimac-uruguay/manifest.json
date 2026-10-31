@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "uy-sodimac-uruguay",
+  "name": "Sodimac Uruguay",
+  "website": "https://www.sodimac.com.uy/",
+  "description": "Uruguayan site of the Sodimac home-improvement chain. Sells construction materials, tools, plumbing and electrical supplies, bathroom and kitchen products, appliances, furniture and garden goods. Offers home delivery nationwide, with shipping cost shown at checkout, and store pickup.",
+  "description_es": "Sitio uruguayo de la cadena de mejoramiento del hogar Sodimac. Vende materiales de construcción, herramientas, plomería y electricidad, productos de baño y cocina, electrodomésticos, muebles y artículos de jardín. Ofrece entrega a domicilio en todo el país, con costo de envío visible en el carrito, y retiro en tienda.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "hardware-tools",
+    "bedding",
+    "large-appliances",
+    "climate",
+    "home-furniture"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Home delivery to the whole country per the store's delivery page; cost and time confirmed at order time."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free store pickup; order held 10 days. Pickup requires account holder ID and order number."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "client",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.sodimac.com.uy/?s={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.sodimac.com.uy/sodimac-uy/",
+        "supports": "what it sells, store locator and contact channels",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.sodimac.com.uy/sodimac-uy/content/Entrega_o_retiro/?cid=hom292",
+        "supports": "home delivery nationwide and store pickup rules",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
