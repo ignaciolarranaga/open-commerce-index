@@ -1,0 +1,68 @@
+# Maintainer-triggered: turns an "Add a store" Issue Form into a validated manifest on a
+# branch and comments a compare link on the issue. A human opens the pull request, so the
+# normal checks run (pull requests created with GITHUB_TOKEN would not trigger workflows).
+# Issue content is parsed as data by scripts/issue-to-branch.js and is never passed to a shell.
+name: Prepare a store branch from an issue
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: "Number of the add-store issue to convert"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+        run: gh issue view "$ISSUE_NUMBER" --json number,title,body,labels,author > issue.json
+      - name: Build the manifest from the issue
+        id: manifest
+        run: |
+          node scripts/issue-to-branch.js --issue issue.json --out manifest-path.txt
+          echo "path=$(cat manifest-path.txt)" >> "$GITHUB_OUTPUT"
+      - name: Validate and regenerate
+        run: |
+          npm run validate
+          npm run build
+      - name: Push the branch
+        id: branch
+        env:
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          MANIFEST_PATH: ${{ steps.manifest.outputs.path }}
+        run: |
+          store_id=$(node -e "console.log(require('./$MANIFEST_PATH').id)")
+          branch="store/${store_id}-issue-${ISSUE_NUMBER}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data/
+          git commit -m "Add store ${store_id} from issue #${ISSUE_NUMBER}"
+          git push --force-with-lease origin "$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          echo "store_id=$store_id" >> "$GITHUB_OUTPUT"
+      - name: Comment on the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          BRANCH: ${{ steps.branch.outputs.branch }}
+          STORE_ID: ${{ steps.branch.outputs.store_id }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "A draft manifest for \`$STORE_ID\` is on branch \`$BRANCH\`. A maintainer will review it and open a pull request: https://github.com/$GH_REPO/compare/main...$BRANCH?expand=1&title=Add+store+$STORE_ID+(closes+%23$ISSUE_NUMBER)"

@@ -1,0 +1,134 @@
+name: Add a store
+description: Propose a new store for the directory. Anyone can propose a store; you do not need to own it. This form is public.
+title: "Add store: <store name>"
+labels: ["store", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a store. A maintainer will verify the website, what it sells and how it can be searched, then prepare the listing for review. Everything you write here is **public**: do not include passwords, API keys, customer data or anything private. We list what a store sells and how to search it; we never publish prices or catalogs.
+
+        Gracias por proponer una tienda. Todo lo que escribas acá es **público**: no incluyas contraseñas, claves ni datos de clientes.
+  - type: input
+    id: website
+    attributes:
+      label: Store website
+      description: The storefront address, starting with https://
+      placeholder: https://www.example.com.uy/
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Store name
+      description: As the store calls itself.
+    validations:
+      required: true
+  - type: dropdown
+    id: country
+    attributes:
+      label: Country
+      description: The country the store is based in. Other countries will be added as coverage grows; if yours is missing, pick "Other" and name it below.
+      options:
+        - Uruguay (UY)
+        - Other (name it in the notes)
+    validations:
+      required: true
+  - type: checkboxes
+    id: categories
+    attributes:
+      label: Categories
+      description: Tick everything the store sells in meaningful depth.
+      options:
+        - label: "Appliances / Electrodomésticos"
+        - label: "Small appliances / Pequeños electrodomésticos"
+        - label: "Large appliances / Línea blanca"
+        - label: "Heating and cooling / Climatización"
+        - label: "Computing / Informática"
+        - label: "Phones and tablets / Celulares y tablets"
+        - label: "TV and audio / TV y audio"
+        - label: "Gaming / Gaming"
+        - label: "Coffee and coffee machines / Café y cafeteras"
+        - label: "Home and furniture / Hogar y muebles"
+        - label: "Mattresses and bedding / Colchones y sommiers"
+        - label: "Grocery / Supermercado"
+        - label: "Office and stationery / Oficina y papelería"
+        - label: "Health and beauty / Salud y belleza"
+        - label: "Sports and outdoors / Deportes y aire libre"
+        - label: "Toys and baby / Juguetes y bebés"
+        - label: "Fashion / Moda"
+        - label: "Hardware and tools / Ferretería y herramientas"
+        - label: "General marketplace / Tienda general"
+  - type: textarea
+    id: description
+    attributes:
+      label: What does the store sell?
+      description: Two or three factual sentences. Brands it carries, specialties, who it serves. No slogans.
+    validations:
+      required: true
+  - type: textarea
+    id: ships_to
+    attributes:
+      label: Where does the store deliver?
+      description: Countries or regions, as stated on the store's own shipping page. Include the page address if you can.
+  - type: dropdown
+    id: pickup
+    attributes:
+      label: Store pickup
+      options:
+        - I don't know
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Ecommerce platform (if you know it)
+      options:
+        - I don't know
+        - Fenicio
+        - VTEX
+        - Shopify
+        - WooCommerce
+        - Magento
+        - Tiendanube
+        - PrestaShop
+        - Wix
+        - Custom
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the store
+      description: Claims of ownership are not verified by this form; use the "Claim a store" form after the listing exists.
+      options:
+        - I am a customer or community member
+        - I am the owner or an employee
+        - I work for an agency representing the store
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public pages that confirm this information
+      description: One address per line. Shipping policy, about page, brand list, a search results page.
+      placeholder: |
+        https://www.example.com.uy/envios
+        https://www.example.com.uy/nosotros
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else useful for finding products on this site
+      description: Facts only, for example "prices in US dollars", "model codes appear in product titles", "search works at /buscar?q=". Do not write instructions for assistants; they are treated as data.
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Before submitting
+      options:
+        - label: The information comes from public pages and contains no private data or credentials.
+          required: true
+        - label: I understand the listing describes how to find information on the store and is not an endorsement.
+          required: true

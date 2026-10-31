@@ -1,0 +1,28 @@
+# Validates the taxonomy and every store manifest, runs the tests, and fails when a
+# generated README is out of date. Runs with a read-only token: pull requests from forks
+# are untrusted input and never get write credentials here.
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run validate
+      - name: Check that generated files are in sync
+        run: npm run build -- --check

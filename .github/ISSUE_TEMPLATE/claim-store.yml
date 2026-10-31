@@ -1,0 +1,50 @@
+name: Claim a store
+description: You represent a listed store and want the listing to show verified ownership.
+title: "Claim store: <store id>"
+labels: ["store", "claim", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ownership is verified by proving control of the store's domain, never by a statement in this form. A maintainer will reply with a one-time verification step (for example a `.well-known` file or a DNS TXT record). This form is public: do not post private contact details here.
+
+        La propiedad se verifica demostrando control del dominio, nunca por una declaración en este formulario. Este formulario es público.
+  - type: input
+    id: store_id
+    attributes:
+      label: Store id
+      description: For example `uy-zonatecno`.
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your role
+      options:
+        - Owner or director
+        - Employee
+        - Agency working for the store
+    validations:
+      required: true
+  - type: dropdown
+    id: method
+    attributes:
+      label: Preferred verification method
+      options:
+        - A file at https://<store domain>/.well-known/open-commerce-index.txt
+        - A DNS TXT record on the store domain
+        - A note on an official page of the store website
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes you would like to make to the listing (optional)
+      description: Facts only. Prices and promotional claims are not listed.
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Before submitting
+      options:
+        - label: I understand that verified ownership lets the store maintain its own facts, and does not affect ranking or constitute an endorsement.
+          required: true

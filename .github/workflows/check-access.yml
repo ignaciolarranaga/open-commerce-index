@@ -1,0 +1,45 @@
+# Re-probes every listed store once a week and reports differences against the manifests.
+# It never edits manifests: runner IP addresses are often blocked by bot protection, so a
+# failed probe from here is a signal for a human, not a verdict. The report lands in a
+# single rolling issue labelled "access-report".
+name: Check store access
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Probe every store
+        run: node scripts/check-access.js --out reports/access-report.md --json reports/access-report.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: access-report
+          path: reports/
+      - name: Publish the report in the rolling issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          title="Weekly store access report"
+          number=$(gh issue list --label access-report --state open --json number --jq '.[0].number // empty')
+          if [ -z "$number" ]; then
+            gh label create access-report --description "Automated store access reports" --color 0E8A16 --force
+            number=$(gh issue create --title "$title" --label access-report --body-file reports/access-report.md --json number --jq .number 2>/dev/null || gh issue create --title "$title" --label access-report --body-file reports/access-report.md | grep -oE '[0-9]+$')
+          else
+            gh issue edit "$number" --body-file reports/access-report.md
+          fi
+          echo "Report in issue #$number"

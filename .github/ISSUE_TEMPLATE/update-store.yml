@@ -1,0 +1,50 @@
+name: Correct a store listing
+description: Report wrong or outdated information in an existing listing.
+title: "Update store: <store id or name>"
+labels: ["store", "update", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is public. Describe what is wrong and point to the public page that shows the correct information. / Este formulario es público. Indicá qué está mal y la página pública que muestra la información correcta.
+  - type: input
+    id: store_id
+    attributes:
+      label: Store id or name
+      description: The id shown on the store page, for example `uy-zonatecno`, or the store name.
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: What needs to change?
+      options:
+        - Description or categories
+        - Delivery coverage or pickup
+        - Website address
+        - Search address or assistant access details
+        - Brands
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Current information and the correction
+      description: Quote what the listing says and what it should say.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public pages that confirm the correction
+      description: One address per line.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Before submitting
+      options:
+        - label: The information comes from public pages and contains no private data or credentials.
+          required: true

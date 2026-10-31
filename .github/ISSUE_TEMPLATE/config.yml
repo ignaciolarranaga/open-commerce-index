@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and feedback
+    url: https://github.com/ignaciolarranaga/open-commerce-index/discussions
+    about: Ask how the directory works, share results from your assistant, or suggest improvements.
+  - name: Problems installing or using the plugin
+    url: https://github.com/ignaciolarranaga/open-commerce-plugin/issues/new/choose
+    about: Report issues with ChatGPT, Claude, Claude Code, Codex, Cursor or other assistants in the plugin repository.
+  - name: Website
+    url: https://ignaciolarranaga.github.io/open-commerce-index/
+    about: The directory, installation guides and the merchant page.

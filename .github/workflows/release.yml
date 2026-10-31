@@ -1,0 +1,49 @@
+# Cuts a release of the index: verifies the version in project.config.json, builds, and
+# publishes the public JSON files as release assets so anyone can download a snapshot.
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release without the v prefix (must match project.config.json)"
+        required: true
+        type: string
+      notes:
+        description: "Markdown release notes"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ inputs.version }}
+      NOTES: ${{ inputs.notes }}
+    steps:
+      - name: Validate the version format
+        run: echo "$VERSION" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Verify the configured version
+        run: |
+          configured=$(node -e "console.log(require('./project.config.json').version)")
+          [ "$configured" = "$VERSION" ] || { echo "::error::project.config.json says $configured, expected $VERSION"; exit 1; }
+      - run: npm run build
+      - name: Package the snapshot
+        run: |
+          mkdir -p release
+          cp dist/index.json dist/categories.json dist/countries.json release/
+          cp dist/*.json release/ 2>/dev/null || true
+          tar -czf "release/open-commerce-index-$VERSION.tar.gz" -C dist index.json categories.json countries.json schemas stores $(cd dist && ls *.json | grep -vE '^(index|categories|countries)\.json$')
+      - name: Create the tag and the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "v$VERSION" --target "$(git rev-parse HEAD)" --title "v$VERSION" --notes "$NOTES" release/*

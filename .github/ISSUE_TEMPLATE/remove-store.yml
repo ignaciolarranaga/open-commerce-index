@@ -1,0 +1,33 @@
+name: Request removal of a store
+description: Ask for a listing to be removed, for example because the store closed or asks not to be listed.
+title: "Remove store: <store id>"
+labels: ["store", "removal", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Listings are built from public information. A store can ask to be removed at any time; closed or unreachable stores are also removed after confirmation. This form is public. / Una tienda puede pedir su baja en cualquier momento. Este formulario es público.
+  - type: input
+    id: store_id
+    attributes:
+      label: Store id
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      options:
+        - The store asks not to be listed
+        - The store closed or no longer sells online
+        - The listing is about a different business
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: If you represent the store, a maintainer will confirm the request through the store's domain or an official channel.
+    validations:
+      required: true

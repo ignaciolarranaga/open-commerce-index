@@ -1,0 +1,7 @@
+# Every change is reviewed by the maintainer. Verification fields inside manifests and the
+# schema are maintainer-only by policy; CODEOWNERS makes that review mandatory when branch
+# protection requires code-owner approval.
+*                 @ignaciolarranaga
+/schemas/         @ignaciolarranaga
+/data/            @ignaciolarranaga
+/.github/         @ignaciolarranaga
