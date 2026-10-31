@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "uy-farmacity-uruguay",
+  "name": "Farmacity Uruguay",
+  "website": "https://www.farmacity.com.uy/",
+  "description": "Pharmacy and beauty retailer in Uruguay with an online store. Sells medicines, perfumes, skincare, hair care, body care and wellness products. States shipping to the whole country, with free shipping above a stated threshold.",
+  "description_es": "Farmacia y perfumería de Uruguay con tienda online. Vende medicamentos, perfumes, cuidado de la piel, cabello, cuerpo y bienestar. Indica envíos a todo Uruguay, gratis desde un monto indicado.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "health-beauty"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "States shipping to all of Uruguay; free above a stated threshold. Costs and times in linked pages not read."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Mentions ordering by phone through a branch; in-store pickup is not stated on the homepage."
+  },
+  "access": {
+    "platform": "vtex",
+    "rendering": "client",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.farmacity.com.uy/{query}?_q={query}&map=ft",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.farmacity.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.farmacity.com.uy/",
+        "supports": "nationwide shipping, free threshold, categories",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
