@@ -31,4 +31,4 @@ npm run serve                 # http://localhost:8080/open-commerce-index/
 
 ## Releases
 
-Bump `version` in `project.config.json`, merge to `main`, then run the **Release** workflow with the same version. It tags `v<version>` and attaches the JSON snapshot.
+Every merge to `main` that changes `data/` releases the next patch version automatically: the **Release** workflow tags `v<x.y.z+1>`, attaches the JSON snapshot, and lists the merged pull requests as notes. For a minor or major bump (schema, taxonomy, breaking changes to the public files), run **Release** by hand with the new version. Git tags are the source of truth for the version; there is no version field to edit.
