@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "uy-poliflex",
+  "name": "Poliflex",
+  "website": "https://poliflex.com.uy/",
+  "description": "Uruguayan mattress and sommier manufacturer selling online and through a showroom in Montevideo. Lists double-sensation, hybrid, extra-support and adjustable mattresses, bed bases and pillows. States nationwide shipping with times varying by location; free shipping above a stated cart threshold.",
+  "description_es": "Fabricante uruguayo de colchones y sommiers que vende online y a través de un showroom en Montevideo. Ofrece colchones de doble sensación, híbridos, de extra soporte y articulables, bases de cama y almohadas. Indica envíos a todo el país, con plazos según la localidad, y envío gratis por encima de un monto indicado en el carrito.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "bedding"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "States it delivers to all of the country; times vary by locality. Free shipping above a cart threshold (about UYU 8,000 shown in the cart)."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Showroom in Montevideo (Cam. Manuel M. Flores 8672); pickup at the showroom is implied by the site but not confirmed in detail."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://poliflex.com.uy/?s={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://poliflex.com.uy/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "unverified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://poliflex.com.uy/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://poliflex.com.uy/",
+        "supports": "nationwide shipping, free-shipping threshold, showroom, factory warranty and categories",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
