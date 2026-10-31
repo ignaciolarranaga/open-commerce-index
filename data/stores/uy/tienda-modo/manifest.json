@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "uy-tienda-modo",
+  "name": "Tienda Modo",
+  "website": "https://tiendamodo.uy/",
+  "description": "Online retailer in Uruguay selling technology, home, sports and other products, including phones, computers, gaming, audio, smart TV, smart home, tablets, electric mobility and cycling. States shipping across the country, with cost and time calculated at checkout by address, and in-person pickup at its Montevideo store.",
+  "description_es": "Comercio online de Uruguay que vende tecnología, hogar, deporte y otros productos, incluidos celulares, computadoras, gaming, audio, smart TV, smart home, tablets, movilidad eléctrica y ciclismo. Indica envíos a todo el país, con costo y plazo calculados al finalizar la compra según la dirección, y retiro en persona en su local de Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "general",
+    "computing",
+    "phones",
+    "tv-audio",
+    "gaming"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "States it ships across Uruguay; cost and time calculated at checkout by address. Fixed rates not listed."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "In-person pickup at Av. Italia 5758, Montevideo; weekday and Saturday hours stated."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://tiendamodo.uy/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://tiendamodo.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://tiendamodo.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://tiendamodo.uy/",
+        "supports": "nationwide shipping, checkout-calculated costs, pickup address and hours, categories",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
