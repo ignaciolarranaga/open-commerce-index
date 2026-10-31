@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-vinos-del-mundo",
+  "name": "Vinos del Mundo",
+  "website": "https://vinosdelmundo.com.uy/",
+  "description": "Wine and spirits retailer in Uruguay with an online store on WooCommerce. Sells wines by country, champagne and sparkling wines, spirits, glassware and gourmet products such as coffee and olive oil. States nationwide shipping by DAC: 48 business hours to Montevideo, Maldonado and Canelones and 72 to the rest of the country, with a fixed fee below a stated threshold.",
+  "description_es": "Comercio de vinos y espirituosos en Uruguay con tienda online en WooCommerce. Vende vinos por país, champagne y espumantes, espirituosos, copas y productos gourmet como café y aceite de oliva. Indica envíos a todo el país mediante DAC: 48 horas hábiles a Montevideo, Maldonado y Canelones, y 72 al resto del país, con un costo fijo por debajo de un monto indicado.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "grocery"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Shipping to the whole country by DAC; 48 business hours to Montevideo, Maldonado and Canelones, 72 to the rest; fixed fee below UYU 2,500."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup points in Montevideo (Punta Carretas, Radisson), Maldonado (Punta del Este, José Ignacio) and Colonia."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://vinosdelmundo.com.uy/?s={query}&post_type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://vinosdelmundo.com.uy/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://vinosdelmundo.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://vinosdelmundo.com.uy/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://vinosdelmundo.com.uy/",
+        "supports": "nationwide DAC shipping, delivery times, fee and threshold, pickup points, categories",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
