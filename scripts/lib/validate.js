@@ -36,7 +36,9 @@ export function validateAll({ storesDir = STORES_DIR, validators = createValidat
   for (const category of categories.categories) {
     if (category.parent && !categoryIds.has(category.parent)) report(categoriesFile, `category ${category.id} has unknown parent ${category.parent}`);
   }
-  const countryCodes = new Set(loadCountries().countries.map((country) => country.country));
+  const countryList = loadCountries().countries;
+  const countryCodes = new Set(countryList.map((country) => country.country));
+  const regionCodes = new Map(countryList.map((country) => [country.country, new Set((country.regions || []).map((region) => region.code))]));
 
   const stores = loadStores(storesDir);
   const seenIds = new Map();
@@ -69,6 +71,13 @@ export function validateAll({ storesDir = STORES_DIR, validators = createValidat
       if (seenHosts.has(host)) report(file, `duplicate website host ${host} (also in ${seenHosts.get(host)})`);
       seenHosts.set(host, path.relative(process.cwd(), file));
     }
+
+    (manifest.fulfillment?.ships_to || []).forEach((entry, i) => {
+      for (const region of entry.regions || []) {
+        if (!region.startsWith(`${entry.country}-`)) report(file, `fulfillment.ships_to[${i}].regions: ${region} is not in ${entry.country}`);
+        else if (!regionCodes.get(entry.country)?.has(region)) report(file, `fulfillment.ships_to[${i}].regions: ${region} is not in data/countries.json`);
+      }
+    });
 
     for (const category of manifest.categories || []) {
       if (!categoryIds.has(category)) report(file, `unknown category "${category}"`);
