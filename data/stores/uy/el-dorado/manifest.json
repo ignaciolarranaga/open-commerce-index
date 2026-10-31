@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-el-dorado",
+  "name": "El Dorado",
+  "website": "https://www.eldorado.com.uy/",
+  "description": "Supermarket chain in Uruguay with an online store on the VTEX platform, selling groceries, beverages, household and personal care products. Groceries are delivered only to enabled zones; appliances ship across the country by agency. Stores pickup is free for orders above a stated threshold.",
+  "description_es": "Cadena de supermercados de Uruguay con tienda online sobre la plataforma VTEX, que vende comestibles, bebidas, limpieza y cuidado personal. Los comestibles se entregan solo en zonas habilitadas; los electrodomésticos se envían a todo el país por agencia. El retiro en sucursal es gratuito por encima de un monto indicado.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "grocery",
+    "appliances"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "partial",
+        "notes": "Groceries only to enabled delivery zones; appliances ship to the whole country by agency. Zones not listed in the FAQ."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Store pickup free per the offers page; pickup for online orders at branches stated as free above a threshold."
+  },
+  "access": {
+    "platform": "vtex",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.eldorado.com.uy/{query}?_q={query}&map=ft",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.eldorado.com.uy/api/io/_v/api/intelligent-search/product_search/?query={query}&count=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.eldorado.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.eldorado.com.uy/institucional/preguntas-frecuentes",
+        "supports": "grocery delivery limited to enabled zones, appliances nationwide by agency",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.eldorado.com.uy/ofertas",
+        "supports": "free store pickup and shipping thresholds",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
