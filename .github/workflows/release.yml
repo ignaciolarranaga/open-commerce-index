@@ -1,49 +1,87 @@
-# Cuts a release of the index: verifies the version in project.config.json, builds, and
-# publishes the public JSON files as release assets so anyone can download a snapshot.
+# Cuts a release of the index and publishes the public JSON files as release assets so
+# anyone can download a snapshot. Every merge to main that changes data/ releases the next
+# patch version automatically; run it by hand with a version for minor or major bumps.
+# Git tags are the source of truth for the version.
 name: Release
 
 on:
+  push:
+    branches: [main]
+    paths: ["data/**"]
   workflow_dispatch:
     inputs:
       version:
-        description: "Version to release without the v prefix (must match project.config.json)"
+        description: "Version to release without the v prefix (must be higher than the latest tag)"
         required: true
         type: string
       notes:
-        description: "Markdown release notes"
-        required: true
+        description: "Markdown notes shown above the generated list of merged pull requests"
+        required: false
         type: string
 
 permissions:
   contents: write
 
+# One release at a time. A queued run checks out the newest commit, so it covers any
+# pushes whose runs were superseded while waiting.
+concurrency:
+  group: release
+  cancel-in-progress: false
+
 jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      VERSION: ${{ inputs.version }}
+      REQUESTED: ${{ inputs.version }}
       NOTES: ${{ inputs.notes }}
     steps:
-      - name: Validate the version format
-        run: echo "$VERSION" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Compute the version
+        id: version
+        run: |
+          if [ -n "$(git tag --points-at HEAD --list 'v*')" ]; then
+            echo "HEAD is already released as $(git tag --points-at HEAD --list 'v*')"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          latest=$(git tag --list 'v*' --sort=-v:refname | head -1)
+          latest=${latest#v}
+          latest=${latest:-0.0.0}
+          if [ -n "$REQUESTED" ]; then
+            echo "$REQUESTED" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$' || { echo "::error::Invalid version $REQUESTED"; exit 1; }
+            if [ "$REQUESTED" = "$latest" ] || [ "$(printf '%s\n%s\n' "$latest" "$REQUESTED" | sort -V | tail -1)" != "$REQUESTED" ]; then
+              echo "::error::$REQUESTED is not higher than the latest release $latest"; exit 1
+            fi
+            version=$REQUESTED
+          else
+            IFS=. read -r major minor patch <<< "$latest"
+            version="$major.$minor.$((patch + 1))"
+          fi
+          echo "Releasing $version (previous: $latest)"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
+        if: steps.version.outputs.skip != 'true'
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
-      - name: Verify the configured version
-        run: |
-          configured=$(node -e "console.log(require('./project.config.json').version)")
-          [ "$configured" = "$VERSION" ] || { echo "::error::project.config.json says $configured, expected $VERSION"; exit 1; }
-      - run: npm run build
+      - if: steps.version.outputs.skip != 'true'
+        run: npm ci
+      - if: steps.version.outputs.skip != 'true'
+        run: npm run build
       - name: Package the snapshot
+        if: steps.version.outputs.skip != 'true'
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
         run: |
           mkdir -p release
           cp dist/index.json dist/categories.json dist/countries.json release/
           cp dist/*.json release/ 2>/dev/null || true
           tar -czf "release/open-commerce-index-$VERSION.tar.gz" -C dist index.json categories.json countries.json schemas stores $(cd dist && ls *.json | grep -vE '^(index|categories|countries)\.json$')
       - name: Create the tag and the release
+        if: steps.version.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "v$VERSION" --target "$(git rev-parse HEAD)" --title "v$VERSION" --notes "$NOTES" release/*
+          VERSION: ${{ steps.version.outputs.version }}
+        run: gh release create "v$VERSION" --target "$GITHUB_SHA" --title "v$VERSION" --notes "$NOTES" --generate-notes release/*
