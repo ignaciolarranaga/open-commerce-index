@@ -16,7 +16,8 @@
     "large-appliances",
     "appliances",
     "climate",
-    "tv-audio"
+    "tv-audio",
+    "small-appliances"
   ],
   "taxonomy_version": 1,
   "fulfillment": {
@@ -64,6 +65,11 @@
       {
         "url": "https://www.impobarato.uy/",
         "supports": "nationwide free shipping with account, categories and Montevideo branch",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.impobarato.uy/",
+        "supports": "coffee makers and air fryers among small appliances",
         "accessed_on": "2026-10-31"
       }
     ],

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "uy-mix-up",
+  "name": "Mix Up",
+  "website": "https://mixup.com.uy/",
+  "description": "Multi-brand fashion retailer in Montevideo with an online store on the Fenicio platform. Sells clothing and accessories for women, men and children from several labels. States shipping across the country, with free shipping above a stated threshold.",
+  "description_es": "Comercio multimarca de moda en Montevideo con tienda online sobre la plataforma Fenicio. Vende ropa y accesorios para mujeres, hombres y niños de varias marcas. Indica envíos a todo el país, con envío gratis por encima de un monto indicado.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "fashion"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Motor Oil",
+    "Emmanuelle",
+    "Happy Socks",
+    "Citrus",
+    "Zingara"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Footer states shipping to the whole country; free above a stated threshold. Costs below it not stated."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Lists a Montevideo presence; in-store pickup not stated."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://mixup.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://mixup.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://mixup.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://mixup.com.uy/",
+        "supports": "nationwide shipping, free threshold, labels carried",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
