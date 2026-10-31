@@ -22,8 +22,8 @@
     "ships_to": [
       {
         "country": "UY",
-        "coverage": "partial",
-        "notes": "Online delivery within published delivery zones only; the zones are not listed on the homepage."
+        "coverage": "confirmed",
+        "notes": "Deliveries are made within Uruguayan territory (FAQ) and advertised nationwide (homepage). Cost depends on delivery zone and products; some products may be unavailable for a given address; zone list not published in the pages read."
       }
     ],
     "pickup": "unknown",
@@ -63,6 +63,11 @@
       {
         "url": "https://www.disco.com.uy/",
         "supports": "online store categories, delivery-area price note, delivery zone link",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://discouy.disco.com.uy/preguntas-frecuentes",
+        "supports": "deliveries within Uruguayan territory; cost depends on zone; minimum purchase UYU 400; Disco al auto branches",
         "accessed_on": "2026-10-31"
       }
     ],
