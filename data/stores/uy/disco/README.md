@@ -11,7 +11,7 @@ Supermarket chain in Uruguay with an online store. Sells groceries, beverages, h
 | Website | <https://www.disco.com.uy/> |
 | Country | UY |
 | Categories | grocery, appliances, tv-audio |
-| Delivers to | UY (partial): Online delivery within published delivery zones only; the zones are not listed on the homepage. |
+| Delivers to | UY (confirmed): Deliveries are made within Uruguayan territory (FAQ) and advertised nationwide (homepage). Cost depends on delivery zone and products; some products may be unavailable for a given address; zone list not published in the pages read. |
 | Pickup | unknown: Links to store pickup and branches; details not read. |
 | Languages | es |
 | Currencies | UYU |
@@ -30,6 +30,7 @@ Supermarket chain in Uruguay with an online store. Sells groceries, beverages, h
 Origin: editorial; added on 2026-10-31.
 
 - <https://www.disco.com.uy/> — online store categories, delivery-area price note, delivery zone link (accessed 2026-10-31)
+- <https://discouy.disco.com.uy/preguntas-frecuentes> — deliveries within Uruguayan territory; cost depends on zone; minimum purchase UYU 400; Disco al auto branches (accessed 2026-10-31)
 
 ## Verification
 
