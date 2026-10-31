@@ -32,6 +32,7 @@ Store blocks automated access (HTTP 403 and a bot challenge on every URL tried).
 Origin: editorial; added on 2026-10-31.
 
 - <https://www.tiendainglesa.com.uy/supermercado/landing/envios/38> — interior delivery via DAC, fee and threshold, rural exclusions, excluded categories (search excerpt; store blocks direct fetch) (accessed 2026-10-31)
+- <https://apps.apple.com/uy/app/tienda-inglesa/id603235187> — "Envíos a todo el país" and Click&Go pickup in the store listing; fetched directly (accessed 2026-10-31)
 
 ## Verification
 

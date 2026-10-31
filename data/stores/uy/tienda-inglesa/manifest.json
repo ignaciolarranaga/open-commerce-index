@@ -52,6 +52,11 @@
         "url": "https://www.tiendainglesa.com.uy/supermercado/landing/envios/38",
         "supports": "interior delivery via DAC, fee and threshold, rural exclusions, excluded categories (search excerpt; store blocks direct fetch)",
         "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://apps.apple.com/uy/app/tienda-inglesa/id603235187",
+        "supports": "\"Envíos a todo el país\" and Click&Go pickup in the store listing; fetched directly",
+        "accessed_on": "2026-10-31"
       }
     ],
     "added_on": "2026-10-31"
