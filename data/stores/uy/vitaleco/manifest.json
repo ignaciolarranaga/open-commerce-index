@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "id": "uy-vitaleco",
+  "name": "Vitaleco",
+  "website": "https://www.vitaleco.com.uy/",
+  "description": "Montevideo specialist in high-end kitchen appliances: espresso and coffee machines, cold-press juicers, blenders, dehydrators, stand mixers and water purifiers from brands such as Philips, De'Longhi, KitchenAid, Bosch, Krups and Cuisinart. Ships only within Uruguay.",
+  "description_es": "Especialista de Montevideo en electrodomésticos de cocina de alta gama: cafeteras espresso, jugueras cold press, licuadoras, deshidratadores, batidoras planetarias y purificadores de agua de marcas como Philips, De'Longhi, KitchenAid, Bosch, Krups y Cuisinart. Envía solo dentro de Uruguay.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "coffee",
+    "small-appliances",
+    "appliances"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Alkanatur",
+    "Ariete",
+    "Bosch",
+    "Cuisinart",
+    "De'Longhi",
+    "James",
+    "KitchenAid",
+    "Krups",
+    "Kuvings",
+    "Oster",
+    "Philips",
+    "Ufesa",
+    "Ventus",
+    "Xion"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Home delivery nationwide; free on selected products or promotions, otherwise the cost is shown at checkout."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Orders can be collected at postal agencies nationwide."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.vitaleco.com.uy/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.vitaleco.com.uy/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://www.vitaleco.com.uy/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://www.vitaleco.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.vitaleco.com.uy/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.vitaleco.com.uy/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.vitaleco.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "shopping_notes": "Shopify store: /search/suggest.json and /products.json return structured product data with prices in Uruguayan pesos, and the store publishes a storefront MCP endpoint, a UCP profile and an llms.txt agent guide. Product titles include the brand and model when the brand uses one.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.vitaleco.com.uy/pages/sobre-nosotros",
+        "supports": "what the store sells",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.vitaleco.com.uy/pages/nuestras-marcas",
+        "supports": "brands carried",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.vitaleco.com.uy/policies/shipping-policy",
+        "supports": "ships only within Uruguay; postal agency pickup",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.vitaleco.com.uy/llms.txt",
+        "supports": "agent guide published by the store",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

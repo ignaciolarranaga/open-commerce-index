@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignaciolarranaga.github.io/open-commerce-index/schemas/index.schema.json",
+  "title": "OpenCommerceIndex root index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "schema_version", "taxonomy_version", "generated_at", "source_revision", "base_url", "license", "countries", "categories_url", "store_schema_url", "shards"],
+  "properties": {
+    "name": { "const": "OpenCommerceIndex" },
+    "schema_version": { "type": "integer" },
+    "taxonomy_version": { "type": "integer" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "source_revision": { "type": "string" },
+    "base_url": { "type": "string", "pattern": "^https://" },
+    "license": { "type": "string" },
+    "usage": { "type": "string" },
+    "categories_url": { "type": "string", "pattern": "^https://" },
+    "store_schema_url": { "type": "string", "pattern": "^https://" },
+    "countries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["country", "name", "store_count", "url", "categories"],
+        "properties": {
+          "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "name": { "type": "object" },
+          "store_count": { "type": "integer", "minimum": 0 },
+          "url": { "type": "string", "pattern": "^https://" },
+          "categories": { "type": "object", "additionalProperties": { "type": "integer" } }
+        }
+      }
+    },
+    "shards": { "description": "Reserved for category shards once a country file grows large. Empty for now.", "type": "array" }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "open-commerce-index",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An open directory of online stores that shopping assistants and agents can read.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "validate": "node scripts/validate.js",
+    "build": "node scripts/build.js",
+    "probe": "node scripts/probe.js",
+    "new-store": "node scripts/new-store.js",
+    "check-access": "node scripts/check-access.js",
+    "serve": "node scripts/serve.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

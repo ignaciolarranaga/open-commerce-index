@@ -1,0 +1,11 @@
+{
+  "name": "OpenCommerceIndex",
+  "version": "0.1.0",
+  "schema_version": 1,
+  "owner": "ignaciolarranaga",
+  "repository": "open-commerce-index",
+  "plugin_repository": "open-commerce-plugin",
+  "custom_domain": null,
+  "default_language": "es",
+  "languages": ["es", "en"]
+}

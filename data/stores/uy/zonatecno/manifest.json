@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "uy-zonatecno",
+  "name": "ZonaTecno",
+  "website": "https://www.zonatecno.com.uy/",
+  "description": "Importer and retailer of technology products in Uruguay: notebooks, phones, tablets, speakers, headphones, consoles, smartwatches and accessories. Ships nationwide with same-day options in Montevideo.",
+  "description_es": "Importador y vendedor de productos tecnológicos en Uruguay: notebooks, celulares, tablets, parlantes, auriculares, consolas, relojes inteligentes y accesorios. Envía a todo el país con opciones en el día en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "computing",
+    "phones",
+    "tv-audio",
+    "gaming"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide; cost and time depend on product and location."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.zonatecno.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.zonatecno.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.zonatecno.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "shopping_notes": "The search page at /catalogo?q= is server-rendered and lists products with prices in US dollars. The store's llms.txt states that its public content may be used by language models for information, comparison and product recommendations.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.zonatecno.com.uy/envios-y-devoluciones",
+        "supports": "nationwide shipping and delivery options",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.zonatecno.com.uy/nosotros",
+        "supports": "company profile",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.zonatecno.com.uy/llms.txt",
+        "supports": "permission for language-model use of public content",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://www.zonatecno.com.uy/",
+        "supports": "store exists and what it sells",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

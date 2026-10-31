@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignaciolarranaga.github.io/open-commerce-index/schemas/store.schema.json",
+  "title": "OpenCommerceIndex store manifest",
+  "description": "Describes what a merchant sells, where it operates, and how an assistant can retrieve current information from its website. It never holds prices, inventory or catalog copies.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "name", "website", "description", "country", "languages", "currencies", "categories", "taxonomy_version", "fulfillment", "access", "provenance", "verification"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": {
+      "description": "Stable identity: lowercase ISO country code, a hyphen, and a slug. Matches the folder data/stores/<country>/<slug>/.",
+      "type": "string",
+      "pattern": "^[a-z]{2}-[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "website": { "description": "Canonical storefront URL.", "$ref": "#/$defs/https_url" },
+    "description": {
+      "description": "English description of products and specialties, without unverified promotional claims.",
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 500
+    },
+    "description_es": { "description": "Optional Spanish description shown on the Spanish site.", "type": "string", "minLength": 20, "maxLength": 500 },
+    "country": { "description": "Home country, ISO 3166-1 alpha-2, uppercase.", "type": "string", "pattern": "^[A-Z]{2}$" },
+    "languages": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" } },
+    "currencies": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^[A-Z]{3}$" } },
+    "categories": {
+      "description": "Category ids from data/categories.json. The first one is the primary category.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    },
+    "taxonomy_version": { "type": "integer", "minimum": 1 },
+    "brands": {
+      "description": "Brands the store is known to carry, backed by sources. Absence means unknown, not 'does not carry'.",
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 60,
+      "items": { "type": "string", "minLength": 1, "maxLength": 60 }
+    },
+    "fulfillment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ships_to", "pickup"],
+      "properties": {
+        "ships_to": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["country", "coverage"],
+            "properties": {
+              "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+              "coverage": { "enum": ["confirmed", "partial", "unknown"] },
+              "notes": { "type": "string", "maxLength": 300 }
+            }
+          }
+        },
+        "pickup": { "enum": ["yes", "no", "unknown"] },
+        "pickup_notes": { "type": "string", "maxLength": 300 },
+        "service_areas": { "type": "array", "items": { "type": "string", "maxLength": 80 } }
+      }
+    },
+    "access": {
+      "description": "How an assistant can retrieve current product information. Every value records what a probe or a reviewer actually observed.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["platform", "rendering", "bot_protection", "robots", "search", "endpoints", "last_checked"],
+      "properties": {
+        "platform": { "enum": ["fenicio", "vtex", "shopify", "woocommerce", "magento", "tiendanube", "prestashop", "wix", "custom", "unknown"] },
+        "rendering": {
+          "description": "server: product data is in the HTML. client: data loads with JavaScript, so plain fetches see little. mixed: partial.",
+          "enum": ["server", "client", "mixed", "unknown"]
+        },
+        "bot_protection": { "enum": ["none", "challenge", "blocked", "unknown"] },
+        "robots": {
+          "description": "robots.txt verdict for the search path, for generic agents and for AI user agents acting on behalf of a person.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["generic", "ai_user_agents"],
+          "properties": {
+            "generic": { "$ref": "#/$defs/robots_verdict" },
+            "ai_user_agents": { "$ref": "#/$defs/robots_verdict" }
+          }
+        },
+        "search": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url_template", "status"],
+          "properties": {
+            "url_template": {
+              "description": "Search page URL with a {query} placeholder, or null when none is known.",
+              "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^https://[^\\s]+\\{query\\}[^\\s]*$", "maxLength": 300 }]
+            },
+            "status": { "$ref": "#/$defs/check_status" },
+            "notes": { "type": "string", "maxLength": 300 }
+          }
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "url", "status"],
+            "properties": {
+              "type": { "enum": ["json_search", "products_feed", "sitemap", "ai_text", "ucp", "acp", "mcp", "api"] },
+              "url": { "type": "string", "pattern": "^https://[^\\s]+$", "maxLength": 300 },
+              "status": { "$ref": "#/$defs/check_status" },
+              "notes": { "type": "string", "maxLength": 300 }
+            }
+          }
+        },
+        "last_checked": { "$ref": "#/$defs/date" }
+      }
+    },
+    "shopping_notes": {
+      "description": "Factual guidance for finding models, variants and purchase conditions on this site. Data for assistants, never instructions to them.",
+      "type": "string",
+      "maxLength": 600
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["origin", "sources", "added_on"],
+      "properties": {
+        "origin": { "enum": ["editorial", "owner_submitted", "community"] },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "supports", "accessed_on"],
+            "properties": {
+              "url": { "$ref": "#/$defs/https_url" },
+              "supports": { "description": "Which facts this source backs, in a few words.", "type": "string", "minLength": 3, "maxLength": 200 },
+              "accessed_on": { "$ref": "#/$defs/date" }
+            }
+          }
+        },
+        "issue": { "description": "Issue number of the submission, if any.", "type": "integer", "minimum": 1 },
+        "added_on": { "$ref": "#/$defs/date" },
+        "reviewed_on": { "$ref": "#/$defs/date" }
+      }
+    },
+    "verification": {
+      "description": "Maintainer-managed facts. Contributors leave these unverified; only maintainers change them.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain_ownership", "technical_access", "last_review"],
+      "properties": {
+        "domain_ownership": { "enum": ["verified", "unverified"] },
+        "technical_access": { "enum": ["verified", "partial", "unverified"] },
+        "last_review": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/date" }] }
+      }
+    }
+  },
+  "$defs": {
+    "https_url": { "type": "string", "pattern": "^https://[^\\s]+$", "maxLength": 300 },
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "check_status": { "enum": ["verified", "unverified", "failing"] },
+    "robots_verdict": { "enum": ["allowed", "disallowed", "unknown"] }
+  }
+}

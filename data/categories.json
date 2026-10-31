@@ -1,0 +1,24 @@
+{
+  "taxonomy_version": 1,
+  "categories": [
+    { "id": "appliances", "labels": { "en": "Appliances", "es": "Electrodomésticos" }, "synonyms": { "en": ["home appliances"], "es": ["electro", "electrodomesticos"] } },
+    { "id": "small-appliances", "parent": "appliances", "labels": { "en": "Small appliances", "es": "Pequeños electrodomésticos" }, "synonyms": { "en": ["coffee maker", "espresso machine", "blender", "air fryer", "kettle", "toaster", "vacuum"], "es": ["cafetera", "cafetera espresso", "licuadora", "freidora de aire", "air fryer", "hervidor", "tostadora", "aspiradora", "batidora", "microondas"] } },
+    { "id": "large-appliances", "parent": "appliances", "labels": { "en": "Large appliances", "es": "Línea blanca" }, "synonyms": { "en": ["refrigerator", "fridge", "washing machine", "dryer", "dishwasher", "oven", "stove"], "es": ["heladera", "refrigerador", "lavarropas", "secarropas", "lavavajillas", "horno", "cocina", "freezer"] } },
+    { "id": "climate", "parent": "appliances", "labels": { "en": "Heating and cooling", "es": "Climatización" }, "synonyms": { "en": ["air conditioner", "heater", "fan"], "es": ["aire acondicionado", "estufa", "calefactor", "ventilador", "caloventilador"] } },
+    { "id": "computing", "labels": { "en": "Computing", "es": "Informática" }, "synonyms": { "en": ["laptop", "notebook", "desktop", "monitor", "printer", "components", "storage"], "es": ["notebook", "laptop", "computadora", "pc", "monitor", "impresora", "componentes", "disco", "memoria"] } },
+    { "id": "phones", "labels": { "en": "Phones and tablets", "es": "Celulares y tablets" }, "synonyms": { "en": ["smartphone", "mobile", "tablet"], "es": ["celular", "smartphone", "telefono", "tablet"] } },
+    { "id": "tv-audio", "labels": { "en": "TV and audio", "es": "TV y audio" }, "synonyms": { "en": ["television", "speaker", "headphones", "soundbar"], "es": ["televisor", "tele", "parlante", "auriculares", "barra de sonido"] } },
+    { "id": "gaming", "labels": { "en": "Gaming", "es": "Gaming" }, "synonyms": { "en": ["video games", "console"], "es": ["videojuegos", "consola", "juegos"] } },
+    { "id": "coffee", "labels": { "en": "Coffee and coffee machines", "es": "Café y cafeteras" }, "synonyms": { "en": ["espresso", "coffee beans", "capsules", "grinder"], "es": ["cafe", "espresso", "capsulas", "molinillo", "cafe en grano"] } },
+    { "id": "home-furniture", "labels": { "en": "Home and furniture", "es": "Hogar y muebles" }, "synonyms": { "en": ["furniture", "decor", "kitchenware"], "es": ["muebles", "decoracion", "bazar", "cocina"] } },
+    { "id": "bedding", "parent": "home-furniture", "labels": { "en": "Mattresses and bedding", "es": "Colchones y sommiers" }, "synonyms": { "en": ["mattress", "bed", "pillow"], "es": ["colchon", "sommier", "almohada", "ropa de cama"] } },
+    { "id": "grocery", "labels": { "en": "Grocery", "es": "Supermercado" }, "synonyms": { "en": ["supermarket", "food", "beverages"], "es": ["super", "almacen", "alimentos", "bebidas"] } },
+    { "id": "office", "labels": { "en": "Office and stationery", "es": "Oficina y papelería" }, "synonyms": { "en": ["stationery", "school supplies", "books"], "es": ["papeleria", "utiles", "utiles escolares", "libreria", "libros"] } },
+    { "id": "health-beauty", "labels": { "en": "Health and beauty", "es": "Salud y belleza" }, "synonyms": { "en": ["cosmetics", "perfume", "personal care"], "es": ["cosmetica", "perfumeria", "cuidado personal", "farmacia"] } },
+    { "id": "sports", "labels": { "en": "Sports and outdoors", "es": "Deportes y aire libre" }, "synonyms": { "en": ["fitness", "bicycle", "camping"], "es": ["deporte", "fitness", "bicicleta", "camping"] } },
+    { "id": "toys", "labels": { "en": "Toys and baby", "es": "Juguetes y bebés" }, "synonyms": { "en": ["toys", "baby"], "es": ["jugueteria", "juguetes", "bebe"] } },
+    { "id": "fashion", "labels": { "en": "Fashion", "es": "Moda" }, "synonyms": { "en": ["clothing", "shoes", "accessories"], "es": ["ropa", "calzado", "accesorios", "indumentaria"] } },
+    { "id": "hardware-tools", "labels": { "en": "Hardware and tools", "es": "Ferretería y herramientas" }, "synonyms": { "en": ["tools", "hardware", "garden"], "es": ["ferreteria", "herramientas", "jardin", "construccion"] } },
+    { "id": "general", "labels": { "en": "General marketplace", "es": "Tienda general" }, "synonyms": { "en": ["department store", "marketplace"], "es": ["tienda por departamentos", "multitienda"] } }
+  ]
+}

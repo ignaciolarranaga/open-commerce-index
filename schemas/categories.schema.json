@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignaciolarranaga.github.io/open-commerce-index/schemas/categories.schema.json",
+  "title": "OpenCommerceIndex category taxonomy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["taxonomy_version", "categories"],
+  "properties": {
+    "taxonomy_version": { "type": "integer", "minimum": 1 },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "labels", "synonyms"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "parent": { "type": "string" },
+          "labels": { "$ref": "#/$defs/localized_string" },
+          "synonyms": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["en", "es"],
+            "properties": {
+              "en": { "type": "array", "items": { "type": "string" } },
+              "es": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localized_string": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "es"],
+      "properties": { "en": { "type": "string", "minLength": 1 }, "es": { "type": "string", "minLength": 1 } }
+    }
+  }
+}

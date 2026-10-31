@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "uy-loi",
+  "name": "LOi",
+  "website": "https://loi.com.uy/",
+  "description": "Multi-brand online retailer based in Montevideo. Sells phones, notebooks, TVs, speakers, consoles, home appliances, furniture, beauty, toys, sports goods and grocery, including its own brands NAPPO and KOLKE. Ships within Uruguay; Chile is served by a separate site.",
+  "description_es": "Tienda online multimarca con sede en Montevideo. Vende celulares, notebooks, televisores, parlantes, consolas, electrodomésticos, muebles, belleza, juguetes, deportes y almacén, incluyendo sus marcas propias NAPPO y KOLKE. Envía dentro de Uruguay; Chile se atiende desde otro sitio.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "general",
+    "appliances",
+    "small-appliances",
+    "phones",
+    "computing",
+    "tv-audio",
+    "home-furniture",
+    "health-beauty"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "NAPPO",
+    "KOLKE",
+    "Philips"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide delivery through several carriers; same-day options in Montevideo."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Online order pickup at selected LOi Store locations."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://loi.com.uy/buscar?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://loi.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ai_text",
+        "url": "https://loi.com.uy/faq-ai.txt",
+        "status": "verified",
+        "notes": "Plain-text faq-ai.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://loi.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-10-31"
+  },
+  "shopping_notes": "Search results load with JavaScript, so the search page HTML shows few results; product pages are server-rendered and carry the model code in the title. Prices are in Uruguayan pesos. The store publishes llms.txt and faq-ai.txt with company, shipping and payment facts.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://loi.com.uy/faq-ai.txt",
+        "supports": "company profile, categories, shipping within Uruguay, pickup, UYU pricing",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://loi.com.uy/electrodomesticos/electrodomesticos-para-cocina/pequenos-electrodomesticos/cafetera-philips-expreso-ep5541-50",
+        "supports": "carries Philips small appliances",
+        "accessed_on": "2026-10-31"
+      },
+      {
+        "url": "https://loi.com.uy/",
+        "supports": "store exists and what it sells",
+        "accessed_on": "2026-10-31"
+      }
+    ],
+    "added_on": "2026-10-31"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
