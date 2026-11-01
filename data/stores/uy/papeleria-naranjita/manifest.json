@@ -6,6 +6,7 @@
   "description": "Stationery store in Colonia Nicolich, Canelones, with a WooCommerce shop for pens, notebooks, school items, crafts, planners, backpacks and geometry supplies. States shipping across Uruguay and has a local at Arenas Shopping.",
   "description_es": "Papelería de Colonia Nicolich, Canelones, con tienda en WooCommerce de escritura, cuadernos, artículos escolares, manualidades, agendas, mochilas y geometría. Indica envíos a todo Uruguay y tiene un local en Arenas Shopping.",
   "country": "UY",
+  "city": "canelones",
   "languages": [
     "es"
   ],

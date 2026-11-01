@@ -6,6 +6,7 @@
   "description": "Long-established sports retailer in Montevideo with an online store. Sells contact sports, swimming, training, pilates, skating, hockey, balls, sportswear and orthopedic products. States shipping across Uruguay, free in Montevideo above a stated amount, with interior orders by DAC paid on delivery.",
   "description_es": "Comercio deportivo tradicional de Montevideo con tienda online. Vende deportes de contacto, natación, entrenamiento, pilates, patín y hockey, pelotas, indumentaria y productos ortopédicos. Indica envíos a todo Uruguay: gratis en Montevideo por encima de un monto indicado, y envíos al interior por DAC con pago contra entrega.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

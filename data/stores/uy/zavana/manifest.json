@@ -6,6 +6,7 @@
   "description": "Uruguayan online store of handbags, backpacks, belts, wallets, accessories and shoes, with a physical store in Montevideo. Delivery terms are not published on a shipping page.",
   "description_es": "Tienda online uruguaya de carteras, mochilas, cintos, billeteras, accesorios y calzado, con local físico en Montevideo. Las condiciones de envío no se publican en una página de envíos.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

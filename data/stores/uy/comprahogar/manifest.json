@@ -6,6 +6,7 @@
   "description": "Hardware, tools and building materials retailer based in Montevideo, selling through its own online store. States nationwide delivery in 24 to 48 hours. Interior shipping cost is not stated on the homepage.",
   "description_es": "Comercio de ferretería, herramientas y materiales de construcción con sede en Montevideo, que vende por su tienda online propia. Indica entregas a todo el país en 24 a 48 horas. El costo de envío al interior no figura en la página principal.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

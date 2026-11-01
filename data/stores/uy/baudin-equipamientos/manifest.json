@@ -6,6 +6,7 @@
   "description": "Uruguayan online store for commercial refrigeration, gastronomy equipment and household appliances, shipping from El Pinar, Canelones to all of Uruguay.",
   "description_es": "Tienda online uruguaya de heladeras comerciales, equipos gastronómicos y electrodomésticos, con envíos a todo Uruguay desde El Pinar, Canelones.",
   "country": "UY",
+  "city": "canelones",
   "languages": [
     "es"
   ],

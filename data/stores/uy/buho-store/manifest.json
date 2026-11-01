@@ -6,6 +6,7 @@
   "description": "Uruguayan online store selling home organization and decor: organizers, baskets, shelves, textiles, kitchen and bath accessories, tableware, lighting and candles. Ships nationwide with store pickup in Montevideo.",
   "description_es": "Tienda online uruguaya de organización y decoración del hogar: organizadores, canastos, estantes, textiles, accesorios de cocina y baño, vajilla, iluminación y velas. Envía a todo el país y ofrece retiro en tienda en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

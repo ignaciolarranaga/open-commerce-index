@@ -6,6 +6,7 @@
   "description": "Gaming retailer in Uruguay with an online store on the Fenicio platform and a store in Montevideo. Sells PlayStation, Nintendo and Xbox consoles, board and card games, figures and PC accessories. States shipping across the whole country in up to 72 business hours.",
   "description_es": "Comercio de gaming en Uruguay con tienda online sobre la plataforma Fenicio y un local en Montevideo. Vende consolas PlayStation, Nintendo y Xbox, juegos de mesa y cartas, figuras y accesorios para PC. Indica envíos a todo el país en hasta 72 horas hábiles.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

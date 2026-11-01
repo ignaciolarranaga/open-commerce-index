@@ -6,6 +6,7 @@
   "description": "Uruguayan online store for home, kitchen, bathroom and organization items, toys and small household appliances, with branches in Montevideo. Ships nationwide at a flat fee and offers free pickup in branches.",
   "description_es": "Tienda online uruguaya de hogar, cocina, baño, organización, juguetes y electrohogar, con sucursales en Montevideo. Envía a todo el país con costo fijo y ofrece retiro gratis en sucursales.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

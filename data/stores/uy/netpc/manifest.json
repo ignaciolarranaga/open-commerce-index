@@ -6,6 +6,7 @@
   "description": "Uruguayan online store selling notebooks, gaming PCs and phones, with physical branches in Montevideo.",
   "description_es": "Tienda online uruguaya de notebooks, PC gamer y celulares, con sucursales en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

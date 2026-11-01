@@ -6,6 +6,7 @@
   "description": "Uruguayan retailer of mattresses, sommiers, furniture, refrigerators, air conditioners and household goods, with its own online store on the Fenicio platform. States shipping to the whole country at a standard rate, with pickup centres in Montevideo.",
   "description_es": "Comercio uruguayo de colchones, sommiers, muebles, heladeras, aires acondicionados y artículos para el hogar, con tienda online propia sobre la plataforma Fenicio. Indica envíos a todo el país con tarifa estándar, y centros de retiro en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

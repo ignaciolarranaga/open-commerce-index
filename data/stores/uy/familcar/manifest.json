@@ -6,6 +6,7 @@
   "description": "Uruguayan importer and online seller of auto parts for many car makes, including lighting, brakes, filters, suspension and engine parts. Ships nationwide through a transport agency chosen by the customer; Montevideo pickup is available.",
   "description_es": "Importador y tienda online uruguaya de repuestos para autos de muchas marcas: iluminación, frenos, filtros, suspensión y motor. Envía a todo el país por la agencia de transporte que elija el cliente; hay retiro en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Uruguayan online store for kitchenware, home goods, small appliances, air conditioners and hardware. Offers same-day delivery in Montevideo, dispatch to the country by agency, and free pickup in Montevideo.",
   "description_es": "Tienda online uruguaya de artículos de cocina, hogar, pequeños electrodomésticos, aires acondicionados y ferretería. Ofrece entrega en el día en Montevideo, despacho al interior por agencia y retiro gratis en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

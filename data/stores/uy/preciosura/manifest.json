@@ -6,6 +6,7 @@
   "description": "Uruguayan online store for perfumes (Arabic, designer, niche), makeup, hair and body care, and mate items. Ships nationwide by DAC and offers pickup at two Montevideo points; orders are made to order in about 3 to 7 business days.",
   "description_es": "Tienda online uruguaya de perfumes (árabes, diseñador, nicho), maquillaje, cuidado capilar y corporal y artículos para mate. Envía a todo el país por DAC y ofrece retiro en dos puntos de Montevideo; pedidos por encargo de 3 a 7 días hábiles.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

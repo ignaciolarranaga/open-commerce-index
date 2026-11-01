@@ -6,6 +6,7 @@
   "description": "Online retailer of unlocked phones, tablets, smartwatches, audio and accessories in Uruguay. Sells Apple, Samsung, Xiaomi and Motorola products. States shipping to the whole country for purchases above USD 75, with same-day delivery in Montevideo for orders before 13:00.",
   "description_es": "Comercio online de celulares libres, tablets, smartwatches, audio y accesorios en Uruguay. Vende productos de Apple, Samsung, Xiaomi y Motorola. Indica envíos a todo el país para compras superiores a USD 75, y entrega en el día en Montevideo para pedidos antes de las 13 horas.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

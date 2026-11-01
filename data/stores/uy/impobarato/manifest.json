@@ -6,6 +6,7 @@
   "description": "Appliance retailer in Uruguay with an online store on the Fenicio platform and a branch in Montevideo. Sells kitchen, refrigeration, laundry, TV and audio, climate and small home appliances. States free shipping across the country for customers with an account; no minimum purchase is stated.",
   "description_es": "Comercio de electrodomésticos en Uruguay con tienda online sobre la plataforma Fenicio y una sucursal en Montevideo. Vende cocina, refrigeración, lavado, TV y audio, climatización y pequeños electrodomésticos. Indica envío gratis a todo el país para clientes con cuenta, sin mínimo de compra indicado.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Uruguayan mattress and sommier manufacturer selling online and through a showroom in Montevideo. Lists double-sensation, hybrid, extra-support and adjustable mattresses, bed bases and pillows. States nationwide shipping with times varying by location; free shipping above a stated cart threshold.",
   "description_es": "Fabricante uruguayo de colchones y sommiers que vende online y a través de un showroom en Montevideo. Ofrece colchones de doble sensación, híbridos, de extra soporte y articulables, bases de cama y almohadas. Indica envíos a todo el país, con plazos según la localidad, y envío gratis por encima de un monto indicado en el carrito.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

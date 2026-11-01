@@ -6,6 +6,7 @@
   "description": "Uruguayan online pharmacy selling health and pharmacy products, dermocosmetics, perfumery and makeup, personal care, nutrition, orthopedics, baby products and home items. Ships nationwide and offers free pickup at its Montevideo stores.",
   "description_es": "Farmacia online uruguaya con productos de salud y farmacia, dermocosmética, perfumería y maquillaje, cuidado personal, nutrición, ortopedia, mamá y bebé y hogar. Envía a todo el país y ofrece retiro sin costo en sus locales de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Uruguayan online hardware store selling power and hand tools, construction, paints and chemicals, locksmith items, electrical, lighting, plumbing, garden and automotive tools. Ships to all of Uruguay, with pickup in San Jose de Mayo and Montevideo.",
   "description_es": "Ferretería online uruguaya: herramientas eléctricas y manuales, construcción, pinturas, cerrajería, electricidad, iluminación, plomería, jardín y herramientas para auto. Envía a todo Uruguay, con retiro en San José de Mayo y Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

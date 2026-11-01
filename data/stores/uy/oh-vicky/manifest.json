@@ -6,6 +6,7 @@
   "description": "Uruguayan online lingerie boutique selling bras, panties, bodysuits, shapewear and swimwear. Ships to all of Uruguay with free shipping over a purchase threshold and offers pickup in Montevideo.",
   "description_es": "Boutique online uruguaya de lencería que vende corpiños, bombachas, bodys, modeladores y línea de baño. Envía a todo Uruguay, con envío sin costo sobre un monto, y ofrece retiro en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

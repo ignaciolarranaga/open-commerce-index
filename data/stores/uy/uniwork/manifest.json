@@ -6,6 +6,7 @@
   "description": "Uruguayan online store for workwear, uniforms and safety gear, plus footwear, with custom printing and embroidery. Delivers in Montevideo and ships to the interior through agencies.",
   "description_es": "Tienda online uruguaya de ropa de trabajo, uniformes y artículos de seguridad, además de calzado, con estampado y bordado a pedido. Entrega en Montevideo y envía al interior por agencias.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],
