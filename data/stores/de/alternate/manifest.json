@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "de-alternate",
+  "name": "ALTERNATE",
+  "website": "https://www.alternate.de/",
+  "description": "German electronics retailer selling PCs and components, notebooks, gaming, smartphones, TV and audio, household appliances, tools and toys. Its shipping page covers shipping within Germany and lists pickup locations in Linden and Pohlheim.",
+  "description_es": "Minorista alemán de electrónica con PC y componentes, notebooks, gaming, celulares, TV y audio, electrodomésticos, herramientas y juguetes. Su página de envíos cubre envíos dentro de Alemania y lista puntos de retiro en Linden y Pohlheim.",
+  "country": "DE",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "computing",
+    "phones",
+    "gaming",
+    "tv-audio",
+    "appliances",
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "ASUS",
+    "Samsung",
+    "Sony Interactive Entertainment",
+    "Lenovo",
+    "Apple",
+    "HP",
+    "Dell"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "DE",
+        "coverage": "confirmed",
+        "notes": "The shipping page states its rates apply to shipping within Germany, with DHL Packstation delivery available only in Germany. Islands not mentioned."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup warehouses in Linden and Pohlheim are listed. Two of them are pickup only and orders are paid at Store 1."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.alternate.de/listing.xhtml?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.alternate.de/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.alternate.de/sitemap.xml.gz",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Country-specific shops exist for other countries. Orders to foreign addresses via this shop are treated as a quote request. Product pages in German.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.alternate.de/",
+        "supports": "product range and brands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.alternate.de/HILFE/Versand-Lieferung",
+        "supports": "shipping within Germany and pickup locations",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.alternate.de/HILFE/ALTERNATE/Stores-vor-Ort",
+        "supports": "pickup warehouses in Linden and Pohlheim",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

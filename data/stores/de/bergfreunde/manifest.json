@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "de-bergfreunde",
+  "name": "Bergfreunde",
+  "website": "https://www.bergfreunde.de/",
+  "description": "German outdoor retailer selling clothing, footwear and equipment for mountain sports, climbing, trekking, biking, winter sports and camping. Its delivery page lists Germany with a free-shipping threshold and about 30 other countries.",
+  "description_es": "Tienda alemana de artículos outdoor con ropa, calzado y equipamiento para montañismo, escalada, trekking, ciclismo, deportes de invierno y camping. Su página de entrega incluye Alemania con envío gratis desde un monto mínimo y unos 30 países más.",
+  "country": "DE",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "sports",
+    "fashion"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Mammut",
+    "Salewa",
+    "Vaude",
+    "Petzl",
+    "Patagonia"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "DE",
+        "coverage": "confirmed",
+        "notes": "Delivery zone Germany at 3.95 EUR, free from 99 EUR order value. No regional or island limits stated."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Customer pickup is not described on the delivery page."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.bergfreunde.de/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.bergfreunde.de/sitemap/sitemap.xml.gz",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Product pages in German. Invoice payment is offered. Free return period is advertised as 100 days.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.bergfreunde.de/",
+        "supports": "product range and brands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.bergfreunde.de/lieferung-und-zahlung/",
+        "supports": "delivery countries including Germany and shipping thresholds",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
