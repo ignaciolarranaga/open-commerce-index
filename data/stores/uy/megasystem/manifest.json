@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-megasystem",
+  "name": "MegaSystem",
+  "website": "https://megasystem.uy/",
+  "description": "Uruguayan online store for phone repair parts (screens, batteries, charging boards), tools and phone accessories, with physical stores. Ships across Uruguay by transport agency.",
+  "description_es": "Tienda online uruguaya de repuestos para celulares (pantallas, baterías, placas de carga), herramientas y accesorios, con locales físicos. Envía a todo Uruguay por agencia de transporte.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "phones"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Home page FAQ says it ships to all of Uruguay with agencies such as Correo Uruguayo and DAC; free shipping on purchases over 3,000 pesos."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Physical stores are listed in Montevideo, Las Piedras and Paysandu; the locations page does not describe online-order pickup."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://megasystem.uy/?s={query}&post_type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://megasystem.uy/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://megasystem.uy/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Catalog is mostly repair parts, tools and supplies for phones, aimed at repair shops as well as consumers. Shipping cost depends on agency and locality.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://megasystem.uy/",
+        "supports": "Home page FAQ: shipping to all of Uruguay via Correo Uruguayo, DAC or agency of choice; free shipping threshold",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://megasystem.uy/locales/",
+        "supports": "Store locations",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

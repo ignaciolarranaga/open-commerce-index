@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "uy-tecsys",
+  "name": "Tecsys",
+  "website": "https://tecsys.com.uy/",
+  "description": "Uruguayan online store for notebooks, gaming PCs, components, monitors, printers and supplies, with some small appliances. Ships across Uruguay and delivers same day in Montevideo and Ciudad de la Costa.",
+  "description_es": "Tienda online uruguaya de notebooks, equipos gamer, componentes, monitores, impresoras e insumos, con algunos pequeños electrodomésticos. Envía a todo el país y entrega en el día en Montevideo y Ciudad de la Costa.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "computing",
+    "small-appliances"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "FAQ says shipping to the whole country; free same-day delivery in Montevideo and Ciudad de la Costa for orders before 17"
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "FAQ lists Retiro en Local (Pickup Center) but does not say whether it applies to online orders."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://tecsys.com.uy/?s={query}&post_type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://tecsys.com.uy/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://tecsys.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://tecsys.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Robots.txt disallows Amazonbot and Applebot-Extended and carries content signals; automated access should follow robots.txt.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://tecsys.com.uy/preguntas-frecuentes/",
+        "supports": "FAQ section Sobre los envios: delivery options and Pickup Center",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://tecsys.com.uy/",
+        "supports": "Home page: notebooks, components, monitors, printers categories and cart",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

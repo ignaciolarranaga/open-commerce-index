@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "uy-grupo-dos",
+  "name": "Grupo Dos",
+  "website": "https://grupodos.com.uy/",
+  "description": "Uruguayan online store for kitchenware, home goods, small appliances, air conditioners and hardware. Offers same-day delivery in Montevideo, dispatch to the country by agency, and free pickup in Montevideo.",
+  "description_es": "Tienda online uruguaya de artículos de cocina, hogar, pequeños electrodomésticos, aires acondicionados y ferretería. Ofrece entrega en el día en Montevideo, despacho al interior por agencia y retiro gratis en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "small-appliances",
+    "climate"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Flash and Express delivery cover Montevideo and coverage zones; dispatch to the Tres Cruces terminal reaches the whole country through the agency chosen by the buyer."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at the local in Montevideo; buyer is notified by email when the order is ready."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://grupodos.com.uy/tienda?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://grupodos.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://grupodos.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Catalog is mainly kitchen, bazaar and home goods with some appliances, air conditioners and console accessories; no TV or audio seen. Robots.txt disallows /carrito, /finalizar-compra and /api.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://grupodos.com.uy/envios-y-devoluciones",
+        "supports": "Shipping page: Flash (Montevideo), Express, dispatch to Tres Cruces terminal for the whole country, free pickup",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://grupodos.com.uy/",
+        "supports": "Home page: category list (small appliances, air conditioners, console accessories) and add-to-cart",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

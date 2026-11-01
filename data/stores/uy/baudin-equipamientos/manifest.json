@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "uy-baudin-equipamientos",
+  "name": "Baudin Equipamientos",
+  "website": "https://baudinequipamientos.com/",
+  "description": "Uruguayan online store for commercial refrigeration, gastronomy equipment and household appliances, shipping from El Pinar, Canelones to all of Uruguay.",
+  "description_es": "Tienda online uruguaya de heladeras comerciales, equipos gastronómicos y electrodomésticos, con envíos a todo Uruguay desde El Pinar, Canelones.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "appliances",
+    "large-appliances",
+    "small-appliances"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Ships to all of Uruguay; free shipping from USD 100 of goods in Montevideo, Ciudad de la Costa, Pando and Colonia Nicolich; rest of the country by agency chosen by the buyer, freight paid on receipt."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at the showroom and warehouse in El Pinar, Canelones; coordinate by WhatsApp."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://baudinequipamientos.com/buscar?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://baudinequipamientos.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://baudinequipamientos.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices shown in USD. Robots.txt has per-bot rules and disallows /api, /checkout and /carrito for all agents. Catalog is oriented to professional kitchens: commercial fridges, gastronomy equipment, appliances; no TV seen.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://baudinequipamientos.com/preguntas-frecuentes/",
+        "supports": "FAQ: shipping coverage, USD 100 free-shipping rule, agencies, pickup in El Pinar",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://baudinequipamientos.com/",
+        "supports": "Home page: categories (commercial fridges, appliances), USD prices, cart",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
