@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "mx-cyberpuerta",
+  "name": "Cyberpuerta",
+  "website": "https://www.cyberpuerta.mx/",
+  "description": "Mexican online retailer of computer hardware, laptops, peripherals, phones and audio/video. Its shipping page lists standard delivery of 1 to 4 business days through Paquete Express, Estafeta and DHL but does not name a coverage area; it states there is no showroom and no merchandise pickup.",
+  "description_es": "Tienda en línea mexicana de hardware, laptops, periféricos, celulares y audio y video. Su página de envíos indica entrega estándar de 1 a 4 días hábiles con Paquete Express, Estafeta y DHL, pero no nombra una zona de cobertura; indica que no tiene showroom ni recolección de mercancía.",
+  "country": "MX",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "MXN"
+  ],
+  "categories": [
+    "computing",
+    "phones",
+    "tv-audio"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "MX",
+        "coverage": "unknown",
+        "notes": "Shipping page states standard delivery of 1 to 4 business days via Paquete Express, Estafeta and DHL; no coverage area is named."
+      }
+    ],
+    "pickup": "no",
+    "pickup_notes": "Shipping page says there is no merchandise pickup and no showroom."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.cyberpuerta.mx/search?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.cyberpuerta.mx/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.cyberpuerta.mx/export/google/sitemap-mx.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Spanish-language store; search by product name. Shipping page names the carriers but not the coverage area.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.cyberpuerta.mx/",
+        "supports": "categories and brands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.cyberpuerta.mx/Modos-de-Envio/",
+        "supports": "standard delivery time, carriers, no pickup or showroom",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
