@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "uy-glowup-uy",
+  "name": "GlowUp Uy",
+  "website": "https://glowupuy.com/",
+  "description": "Uruguayan online store for makeup, skincare, body, hair care and fragrances from international beauty brands. Free shipping across Uruguay via the UES courier; prices in USD.",
+  "description_es": "Tienda online uruguaya de maquillaje, skincare, cuidado corporal, capilar y fragancias de marcas internacionales. Envío gratis a todo Uruguay por UES; precios en USD.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "health-beauty"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "Fenty Beauty",
+    "Charlotte Tilbury",
+    "Rare Beauty",
+    "Tarte",
+    "Clarins",
+    "Moroccanoil"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Free shipping nationwide by UES courier; typical 5 to 20 business days per the shipping page"
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Orders can be sent to a courier pickup point (UES or Xpres!); no own store pickup stated"
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://glowupuy.com/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://glowupuy.com/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://glowupuy.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://glowupuy.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://glowupuy.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://glowupuy.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify store. Shipping page states delivery usually takes 5 to 20 business days.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://glowupuy.com/",
+        "supports": "home page: categories, brands, USD prices",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://glowupuy.com/pages/envios",
+        "supports": "shipping: free nationwide, UES courier, pickup points, times",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

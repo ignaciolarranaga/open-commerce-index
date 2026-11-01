@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "uy-optica-onix",
+  "name": "Óptica Ónix",
+  "website": "https://opticaonix.uy/",
+  "description": "Uruguayan online optical store selling prescription glasses, sunglasses, children's glasses, contact lenses and care solutions. Prices in UYU.",
+  "description_es": "Óptica online uruguaya con lentes de receta, lentes de sol, lentes para niños, lentes de contacto y soluciones de cuidado. Precios en UYU.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "health-beauty",
+    "fashion"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "Ray Ban",
+    "Calvin Klein",
+    "Lacoste",
+    "Nike",
+    "Vogue"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "unknown",
+        "notes": "Home page banner says shipping to the whole country; no dedicated shipping page found"
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://opticaonix.uy/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://opticaonix.uy/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://opticaonix.uy/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://opticaonix.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://opticaonix.uy/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://opticaonix.uy/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://opticaonix.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify store with cart. Home page banner also states a free-shipping minimum order. The home page also links to booking a visual exam.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://opticaonix.uy/",
+        "supports": "home page: categories, brands, UYU prices, cart, shipping banner",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
