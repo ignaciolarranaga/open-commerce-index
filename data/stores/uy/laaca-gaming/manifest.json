@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "uy-laaca-gaming",
+  "name": "Laaca Gaming",
+  "website": "https://laaca.com.uy/",
+  "description": "Uruguayan WooCommerce store for PC gaming hardware and peripherals, gaming PCs, PlayStation, Xbox and Nintendo Switch consoles and accessories, and VR headsets. Prices shown in US dollars; ships across Uruguay and offers pickup in Montevideo.",
+  "description_es": "Tienda uruguaya en WooCommerce de hardware y periféricos gamer, PCs gamer, consolas PlayStation, Xbox y Nintendo Switch con accesorios, y lentes de realidad virtual. Precios en dólares; envía a todo Uruguay y ofrece retiro en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "gaming",
+    "computing"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "ASUS",
+    "Razer",
+    "HyperX",
+    "Gigabyte"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Ships anywhere in Uruguay; same-day delivery in Montevideo depends on stock, time and zone; interior shipping arranged by available carrier."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup at the Montevideo store after the order is confirmed."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://laaca.com.uy/?s={query}&post_type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://laaca.com.uy/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://laaca.com.uy/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices show separate amounts for cash or transfer and for cards. Stock and delivery type are shown per product page.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://laaca.com.uy/",
+        "supports": "categories, brands, USD prices, cart",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://laaca.com.uy/faqs/",
+        "supports": "nationwide shipping, same-day Montevideo delivery, pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

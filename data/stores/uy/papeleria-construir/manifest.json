@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "uy-papeleria-construir",
+  "name": "Papelería Construir",
+  "website": "https://papeleriaconstruir.com.uy/",
+  "description": "Uruguayan WooCommerce store for office and school supplies, architecture model materials, laser cutting and paper reams. Offers home delivery and free store pickup; coverage areas are not listed.",
+  "description_es": "Tienda uruguaya en WooCommerce de artículos de oficina y escolares, materiales para maquetas de arquitectura, corte láser y resmas. Ofrece entrega a domicilio y retiro gratis en el local; no lista zonas de cobertura.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU",
+    "USD"
+  ],
+  "categories": [
+    "office"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "unknown",
+        "notes": "Home delivery is offered; the purchase guide lists no coverage areas, costs or times."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free in-store pickup stated in the purchase guide."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "client",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "unknown",
+      "ai_user_agents": "unknown"
+    },
+    "search": {
+      "url_template": null,
+      "status": "unverified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "No robots.txt could be read by the probe. A nationwide 48 hour delivery block on the homepage has a placeholder link, so it is not recorded. Currency not shown on opened pages.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://papeleriaconstruir.com.uy/",
+        "supports": "categories, cart icon",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://papeleriaconstruir.com.uy/guia-de-compras/",
+        "supports": "purchase process, home delivery, free pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

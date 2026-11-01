@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "uy-mesa-games",
+  "name": "Mesa Games",
+  "website": "https://www.mesagames.com.uy/",
+  "description": "Uruguayan board game publisher selling its own modern board games online with add-to-cart. States shipping to the whole country, free above a stated amount.",
+  "description_es": "Editorial uruguaya de juegos de mesa que vende sus propios juegos modernos online con carrito. Indica envíos a todo el país, gratis desde un monto indicado.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "toys"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "States free shipping nationwide above a stated amount; the homepage mentions 24 to 48 hours."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "unknown",
+    "bot_protection": "challenge",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": null,
+      "status": "unverified",
+      "notes": "Homepage returned 429; automated access looks restricted (challenge)."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.mesagames.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Built on Wix Stores. The probe met a bot challenge, so automated access may be restricted. The catalogue lists about a dozen products. A points-of-sale page exists but pickup is not stated.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.mesagames.com.uy/",
+        "supports": "publisher, board games, delivery mention",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.mesagames.com.uy/category/all-products",
+        "supports": "12 products, add-to-cart, free nationwide shipping above a stated amount",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

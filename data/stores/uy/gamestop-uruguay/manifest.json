@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "uy-gamestop-uruguay",
+  "name": "GameStop Uruguay",
+  "website": "https://www.gamestop.com.uy/",
+  "description": "Uruguayan technology and entertainment retailer on the Fenicio platform, unrelated to the US chain as far as its own pages say. Sells PlayStation consoles, video games and accessories, computing, audio, phones and more, with six physical stores in shopping malls.",
+  "description_es": "Comercio uruguayo de tecnología y entretenimiento sobre la plataforma Fenicio. Vende consolas PlayStation, videojuegos y accesorios, computación, audio, celulares y más, con seis locales en shoppings.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD",
+    "UYU"
+  ],
+  "categories": [
+    "gaming",
+    "computing",
+    "phones",
+    "tv-audio",
+    "toys"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "Sony",
+    "JBL",
+    "Redragon",
+    "Havit"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Montevideo shipped by Distrilogic and the interior by DAC; dispatch in about 24 to 48 business hours; fee varies by product type, size and weight."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Choose branch pickup at checkout and collect at the chosen store; stock transfers between branches can take up to 2 business days."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.gamestop.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.gamestop.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.gamestop.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "The company describes itself as Uruguayan; its pages do not state a link to GameStop Corp. Prices appear in USD and in pesos with a dollar sign. Warranty and return limits are on the shipping and returns page.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.gamestop.com.uy/",
+        "supports": "categories, brands, USD prices",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.gamestop.com.uy/envios-y-devoluciones",
+        "supports": "carriers, timing, pickup",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.gamestop.com.uy/locales",
+        "supports": "six store locations in malls",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.gamestop.com.uy/nosotros",
+        "supports": "describes itself as a Uruguayan company",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.gamestop.com.uy/como-comprar",
+        "supports": "cart and checkout with home delivery or store pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

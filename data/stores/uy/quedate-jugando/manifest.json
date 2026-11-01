@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-quedate-jugando",
+  "name": "Quedate Jugando",
+  "website": "https://www.quedatejugando.com.uy/",
+  "description": "Montevideo shop selling board games, card games, puzzles, outdoor games and stationery such as agendas and notebooks, and publishing a few games of its own. Ships to the whole country and offers free pickup at its Montevideo store.",
+  "description_es": "Tienda de Montevideo que vende juegos de mesa, juegos de cartas, puzzles, juegos de aire libre y papelería como agendas y cuadernos, y edita algunos juegos propios. Envía a todo el país y ofrece retiro gratis en su local de Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "toys",
+    "office"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "Devir",
+    "Filgo"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Home delivery in Montevideo and Canelones with cost shown at checkout; rest of the country by agency with cost calculated at checkout. No delivery times stated."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at the Montevideo store, weekday and Saturday morning hours stated on the shipping page."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.quedatejugando.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.quedatejugando.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices show a transfer price alongside the list price. Checkout is at /checkout.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.quedatejugando.com.uy/",
+        "supports": "categories, brands, cart link, nationwide shipping mention",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.quedatejugando.com.uy/envios-y-pagos",
+        "supports": "home delivery in Montevideo and Canelones, agency shipping elsewhere, free pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
