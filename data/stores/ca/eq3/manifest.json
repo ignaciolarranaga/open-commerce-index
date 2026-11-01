@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "ca-eq3",
+  "name": "EQ3",
+  "website": "https://www.eq3.com/",
+  "description": "Winnipeg-based modern furniture brand with an online store covering sofas, sectionals, chairs, tables, storage and accessories. Its shipping page describes freight delivery of large furniture and courier delivery of small items from a Winnipeg warehouse, and states that online orders cannot be picked up in store.",
+  "description_es": "Marca de muebles modernos de Winnipeg con tienda en línea de sofás, seccionales, sillas, mesas, almacenamiento y accesorios. Su página de envíos describe entrega por flete para muebles grandes y por mensajería para artículos pequeños desde un depósito en Winnipeg, y indica que los pedidos en línea no se retiran en tienda.",
+  "country": "CA",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "CAD"
+  ],
+  "categories": [
+    "home-furniture"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "CA",
+        "coverage": "confirmed",
+        "notes": "Delivery within Canada from a Winnipeg warehouse; large furniture by freight (minimum 2 to 4 weeks in stock), small items by courier in 5 to 10 business days."
+      }
+    ],
+    "pickup": "no",
+    "pickup_notes": "Page states in-store pickup of online orders is not currently available."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.eq3.com/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.eq3.com/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://www.eq3.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.eq3.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.eq3.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.eq3.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.eq3.com/ca/en/questions/shipping-delivery",
+        "supports": "Canada delivery methods, timelines, no in-store pickup, Winnipeg warehouse",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "ca-indigo",
+  "name": "Indigo",
+  "website": "https://www.indigo.ca/",
+  "description": "Canadian bookstore chain with an online store at indigo.ca selling books, gifts, home and kids products, toys and stationery on Shopify. States free standard shipping to Canadian addresses over 49 dollars and free pickup in store.",
+  "description_es": "Cadena canadiense de librerías con tienda en línea en indigo.ca que vende libros, regalos, artículos para el hogar y niños, juguetes y papelería. Indica envío estándar gratis a direcciones canadienses sobre 49 dólares y retiro gratis en tienda.",
+  "country": "CA",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "CAD"
+  ],
+  "categories": [
+    "general",
+    "office",
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "CA",
+        "coverage": "confirmed",
+        "notes": "Free standard shipping to a Canadian address on orders of 49 dollars or more before taxes; delivery typically 1 to 9 business days."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pick up in store from Indigo, Chapters and Coles locations; in-stock items ready within 3 hours per its help centre."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.indigo.ca/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.indigo.ca/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://www.indigo.ca/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://www.indigo.ca/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.indigo.ca/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.indigo.ca/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.indigo.ca/a/sitemaps/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.indigo.ca/pages/free-shipping",
+        "supports": "free shipping threshold and Canadian addresses",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://help.indigo.ca/app/answers/detail/a_id/2309/~/pickup-in-store-(frequently-asked-questions)",
+        "supports": "pickup in store",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "ca-mastermind-toys",
+  "name": "Mastermind Toys",
+  "website": "https://www.mastermindtoys.com/",
+  "description": "Canadian toy retailer with an online store covering LEGO and building sets, games and puzzles, dolls and pretend play, arts and crafts, baby and preschool toys, plush and books. States free shipping on orders over 75 dollars within Canada, same-day delivery in parts of the GTA, Calgary and Vancouver, and in-store pickup.",
+  "description_es": "Juguetería canadiense con tienda en línea de LEGO, juegos y rompecabezas, muñecas, manualidades, juguetes para bebés, peluches y libros. Indica envío gratis sobre 75 dólares dentro de Canadá, entrega el mismo día en zonas del GTA, Calgary y Vancouver y retiro en tienda.",
+  "country": "CA",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "CAD"
+  ],
+  "categories": [
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "CA",
+        "coverage": "confirmed",
+        "notes": "Free shipping on orders 75 dollars and over within Canada. Same-day or next-day delivery in the GTA, Calgary and Vancouver; 2 to 3 business days listed for non-GTA Ontario and Quebec."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Buy online, pick up in store; ready the same day."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.mastermindtoys.com/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.mastermindtoys.com/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://www.mastermindtoys.com/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://www.mastermindtoys.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.mastermindtoys.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.mastermindtoys.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.mastermindtoys.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.mastermindtoys.com/policies/shipping-policy",
+        "supports": "Canada shipping, same-day delivery cities, in-store pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

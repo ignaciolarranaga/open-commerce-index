@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "ca-mygreenscape",
+  "name": "MyGreenscape",
+  "website": "https://mygreenscape.ca/",
+  "description": "Online houseplant shop based in the Toronto area selling indoor plants, planters, pots, soil and plant care products, with plant bundles and gift cards. Offers local pickup in Richmond Hill, local delivery in the GTA, and standard shipping in Ontario and Quebec.",
+  "description_es": "Tienda en línea de plantas de interior del área de Toronto que vende plantas, macetas, tierra y productos de cuidado, además de paquetes y tarjetas de regalo. Ofrece retiro en Richmond Hill, entrega local en el GTA y envío estándar en Ontario y Quebec.",
+  "country": "CA",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "currencies": [
+    "CAD"
+  ],
+  "categories": [
+    "general"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "CA",
+        "coverage": "partial",
+        "notes": "Shipping policy lists local GTA delivery and standard shipping for Ontario and Quebec; other provinces are not listed on that page.",
+        "regions": [
+          "CA-ON",
+          "CA-QC"
+        ]
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at Shabi's, Richmond Hill (Ontario), ready within 48 hours."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://mygreenscape.ca/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://mygreenscape.ca/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://mygreenscape.ca/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://mygreenscape.ca/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://mygreenscape.ca/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://mygreenscape.ca/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Site offers English and French. Plants ship on set weekdays chosen at checkout; some pot sizes are limited for local delivery.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://mygreenscape.ca/policies/shipping-policy",
+        "supports": "pickup in Richmond Hill, GTA delivery, standard shipping for Ontario and Quebec, languages English and French",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
