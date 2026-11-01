@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "uy-tremendos-libros",
+  "name": "Tremendos Libros",
+  "website": "https://tremendoslibros.com/",
+  "description": "Uruguayan online bookstore of curated used books, including classics, rare titles, literature, philosophy and history. Based in San Carlos, Maldonado; ships across Uruguay through Correo Uruguayo and DAC.",
+  "description_es": "Librería en línea uruguaya de libros usados seleccionados: clásicos, títulos raros, literatura, filosofía e historia. Con sede en San Carlos, Maldonado; envía a todo Uruguay por Correo Uruguayo y DAC.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "books-media"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "FAQ states shipping to all of Uruguay by Correo Uruguayo and DAC, free from a stated minimum"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "FAQ offers pickup at the San Carlos, Maldonado address, weekdays afternoon, coordinated by WhatsApp"
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://tremendoslibros.com/buscar?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Used and rare books; shipping and pickup details in /preguntas-frecuentes.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://tremendoslibros.com",
+        "supports": "used books catalog, free shipping threshold",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://tremendoslibros.com/preguntas-frecuentes",
+        "supports": "carriers, shipping to all Uruguay, pickup in San Carlos",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

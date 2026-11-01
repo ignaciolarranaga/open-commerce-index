@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-xpro-uruguay",
+  "name": "Xpro Uruguay",
+  "website": "https://uy.xprostore.com/",
+  "description": "Uruguayan online store for musical instruments and professional audio: guitars and basses, drums, keyboards, microphones, amplifiers, pedals, cables, stage gear, stands and cases.",
+  "description_es": "Tienda en línea uruguaya de instrumentos musicales y audio profesional: guitarras y bajos, baterías, teclados, micrófonos, amplificadores, pedales, cables, equipamiento de escenario, soportes y estuches.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD",
+    "UYU"
+  ],
+  "categories": [
+    "musical-instruments",
+    "tv-audio"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "RCF",
+    "Fender",
+    "Allen & Heath"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "unknown"
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://uy.xprostore.com/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://uy.xprostore.com/index.php?route=extension/feed/google_sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Store at uy.xprostore.com with currency selector (USD, UYU). No shipping or warranty page found; delivery terms unknown.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://uy.xprostore.com",
+        "supports": "categories, brands, cart and currency selector",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://uy.xprostore.com/terminos-y-condiciones-uruguay",
+        "supports": "terms page; contains no delivery information",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
