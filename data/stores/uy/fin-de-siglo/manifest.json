@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "uy-fin-de-siglo",
+  "name": "Fin de Siglo",
+  "website": "https://www.findesiglo.com.uy/",
+  "description": "Online bookstore of Editorial Fin de Siglo, a Uruguayan publisher, selling books in categories such as narrative, history, politics, children's and music. States free shipping nationwide on orders above a threshold.",
+  "description_es": "Tienda en línea de libros de la Editorial Fin de Siglo, editorial uruguaya, con narrativa, historia, política, infantiles y música. Informa envío gratis a todo el país sobre un monto mínimo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "books-media"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Store states free shipping to the whole country above a minimum order; carriers Correo Uruguayo, Marco Postal (Montevideo) and DAC (interior)"
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.findesiglo.com.uy/tienda/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "WooCommerce store under /tienda/. Delivery options and free-shipping threshold are on the Ayuda y Privacidad page.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.findesiglo.com.uy/tienda/",
+        "supports": "catalog of books, cart, categories",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.findesiglo.com.uy/tienda/como-comprar/",
+        "supports": "free shipping nationwide above stated minimum",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.findesiglo.com.uy/tienda/ayuda-y-politica-de-privacidad/",
+        "supports": "carriers and delivery options for Montevideo and interior",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-multiarte",
+  "name": "Multiarte",
+  "website": "https://www.multiarte.uy/",
+  "description": "Uruguayan online store of art and craft supplies: decoupage, blanks for decorating, canvases, sublimation, paints, brushes, crafts and creative stationery. Ships nationwide through UES, DAC or Mirtrans.",
+  "description_es": "Tienda en línea uruguaya de insumos de arte y manualidades: decoupage, bases para decorar, bastidores, sublimación, pinturas, pinceles, manualidades y papelería creativa. Envía a todo el país por UES, DAC o Mirtrans.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "art-collectibles"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Shipping page states shipping to all of Uruguay via UES, DAC or Mirtrans"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Shipping page says pickup at the store is possible if coordinated beforehand"
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.multiarte.uy/?s={query}&post_type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.multiarte.uy/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.multiarte.uy/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "WooCommerce store; checkout via Mercado Pago. Free shipping above a stated minimum.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.multiarte.uy",
+        "supports": "categories, cart and checkout",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.multiarte.uy/envios/",
+        "supports": "nationwide shipping carriers, free-shipping threshold, pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
