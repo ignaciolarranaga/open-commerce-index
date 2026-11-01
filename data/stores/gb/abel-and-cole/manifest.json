@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "gb-abel-and-cole",
+  "name": "Abel & Cole",
+  "website": "https://www.abelandcole.co.uk/",
+  "description": "Organic food delivery company based in England. Sells fruit and vegetable boxes, meat and fish, dairy, bakery, pantry items, recipe kits, household products, homeware and pet items. Delivers to areas on a fixed weekly day, checked by postcode.",
+  "country": "GB",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "GBP"
+  ],
+  "categories": [
+    "grocery"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "GB",
+        "coverage": "partial",
+        "notes": "Home page states delivery to each area on a set weekday and directs shoppers to a postcode checker; the list of covered areas is not published on the page read."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.abelandcole.co.uk/?search={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.abelandcole.co.uk/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Delivery is by postcode area and weekly day; the site states a postcode checker is needed to see whether an address is covered.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.abelandcole.co.uk/",
+        "supports": "categories, weekly delivery by area, postcode checker, England base",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
