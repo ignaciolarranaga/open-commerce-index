@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "uy-papeleria-naranjita",
+  "name": "Papelería Naranjita",
+  "website": "https://naranjitapapeleria.com.uy/",
+  "description": "Stationery store in Colonia Nicolich, Canelones, with a WooCommerce shop for pens, notebooks, school items, crafts, planners, backpacks and geometry supplies. States shipping across Uruguay and has a local at Arenas Shopping.",
+  "description_es": "Papelería de Colonia Nicolich, Canelones, con tienda en WooCommerce de escritura, cuadernos, artículos escolares, manualidades, agendas, mochilas y geometría. Indica envíos a todo Uruguay y tiene un local en Arenas Shopping.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "office",
+    "art-collectibles"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "States shipping anywhere in Uruguay; costs and delivery times not stated."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Two stores are listed, but the pages do not say whether online orders can be collected."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://naranjitapapeleria.com.uy/?s={query}&post_type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://naranjitapapeleria.com.uy/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://naranjitapapeleria.com.uy/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Payment via Mercado Pago in installments is stated at checkout.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://naranjitapapeleria.com.uy/",
+        "supports": "categories, cart, nationwide shipping mention",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://naranjitapapeleria.com.uy/nosotros/",
+        "supports": "ships anywhere in Uruguay, two store locations",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

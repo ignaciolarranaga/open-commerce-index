@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "uy-pika-uruguay",
+  "name": "Pika Uruguay",
+  "website": "https://www.pika.com.uy/",
+  "description": "Uruguayan shop selling board and card games, puzzles, children's books, colouring pads and build-it-yourself games, many with Uruguayan themes, organised by age. Ships nationwide and offers free pickup in Pocitos, Montevideo.",
+  "description_es": "Tienda uruguaya de juegos de mesa y cartas, puzzles, libros infantiles, blocks para colorear y juegos para armar, muchos con temática uruguaya, organizados por edad. Envía a todo el país y ofrece retiro gratis en Pocitos, Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "toys",
+    "books-media",
+    "baby-kids"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Montevideo by courier with a stated fee and free nationwide shipping above a stated order amount; interior dispatched by carriers on set weekdays, carrier fee paid by the buyer."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at a Pocitos, Montevideo point on weekdays and Saturday mornings, per the shipping page."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "unknown",
+    "bot_protection": "challenge",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": null,
+      "status": "unverified",
+      "notes": "Homepage returned 429; automated access looks restricted (challenge)."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.pika.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Built on Wix Stores. The probe met a bot challenge, so automated access may be restricted; use the website links. Product pages have add-to-cart buttons; the shop lists products across several pages.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.pika.com.uy/",
+        "supports": "what the store sells",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.pika.com.uy/tienda",
+        "supports": "categories and add-to-cart on products",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.pika.com.uy/formasdepagoyenvio",
+        "supports": "shipping, carriers and pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
