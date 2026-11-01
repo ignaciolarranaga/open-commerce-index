@@ -58,6 +58,15 @@ body:
         - label: "Toys and baby / Juguetes y bebés"
         - label: "Fashion / Moda"
         - label: "Hardware and tools / Ferretería y herramientas"
+        - label: "Vehicles and auto parts / Vehículos y autopartes"
+        - label: "Books and media / Libros y medios"
+        - label: "Musical instruments / Instrumentos musicales"
+        - label: "Art and collectibles / Arte y coleccionables"
+        - label: "Industrial and safety / Industria y seguridad"
+        - label: "Pets / Mascotas"
+        - label: "Garden / Jardín"
+        - label: "Baby and kids / Bebés y niños"
+        - label: "Jewelry and watches / Joyas y relojes"
         - label: "General marketplace / Tienda general"
   - type: textarea
     id: description
