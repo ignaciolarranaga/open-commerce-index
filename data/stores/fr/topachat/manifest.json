@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "fr-topachat",
+  "name": "TopAchat",
+  "website": "https://www.topachat.com/",
+  "description": "French online retailer of gaming and custom-built PCs, laptops, PC components, peripherals and monitors. Its delivery page says products sold and shipped by TopAchat are deliverable to metropolitan France, Belgium and Luxembourg and that it does not deliver to other countries.",
+  "description_es": "Tienda online francesa de PC gaming y a medida, portátiles, componentes, periféricos y monitores. Su página de entrega indica que los productos vendidos y enviados por TopAchat se entregan en Francia metropolitana, Bélgica y Luxemburgo, y que no entrega a otros países.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "computing",
+    "gaming"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "MSI",
+    "Corsair",
+    "ASUS",
+    "Gigabyte",
+    "AMD",
+    "Intel",
+    "Acer",
+    "Samsung"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "confirmed",
+        "notes": "Delivery page says deliverable to metropolitan France including Corsica via Chronopost; DOM-TOM not mentioned."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Pickup points (relais) are offered for delivery; in-store pickup is not mentioned."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.topachat.com/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Delivery page also lists Belgium and Luxembourg and states no other countries are served.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.topachat.com/",
+        "supports": "categories and brands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.topachat.com/p/assistance/avant-ma-commande/livraison",
+        "supports": "delivery countries, Corsica and relay pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

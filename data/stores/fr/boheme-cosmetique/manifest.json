@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "fr-boheme-cosmetique",
+  "name": "Bohème Cosmétique",
+  "website": "https://boheme-cosmetique.com/",
+  "description": "French brand selling organic skincare, body care, essential oils, wellness items, herbal teas and gift sets, made in Aix-en-Provence. Its FAQ mentions shipping offers for France and Belgium, with relay-point delivery.",
+  "description_es": "Marca francesa que vende cosmética ecológica, cuidado corporal, aceites esenciales, bienestar, infusiones y cofres de regalo, elaborados en Aix-en-Provence. Su FAQ menciona ofertas de envío para Francia y Bélgica, con entrega en puntos relais.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "health-beauty"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Bohème Cosmétique"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "confirmed",
+        "notes": "FAQ mentions shipping offers in France and Belgium with Chronopost Pick Up and Mondial Relay relay points; Corsica and DOM-TOM not mentioned in the FAQ."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Relay-point delivery is offered; the pages read do not describe collection at the Aix-en-Provence shop."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://boheme-cosmetique.com/?s={query}&post_type=product",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://boheme-cosmetique.com/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "unverified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://boheme-cosmetique.com/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Homepage reports dispatch within 24 to 48 business hours; free relay delivery in France and Belgium.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://boheme-cosmetique.com/",
+        "supports": "range, brand, shipping banner",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://boheme-cosmetique.com/faq/",
+        "supports": "delivery countries and relay carriers",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

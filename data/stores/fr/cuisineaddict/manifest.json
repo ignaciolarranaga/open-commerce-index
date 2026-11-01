@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "fr-cuisineaddict",
+  "name": "CuisineAddict",
+  "website": "https://www.cuisineaddict.com/",
+  "description": "French online shop for kitchen utensils, baking equipment, cookware, knives, tableware, small appliances and pantry goods, operating since 2009. Its delivery page lists courier and relay options in France; Corsica and overseas territories are not mentioned.",
+  "description_es": "Tienda online francesa de utensilios de cocina, repostería, batería de cocina, cuchillos, vajilla, pequeños electrodomésticos y despensa, activa desde 2009. Su página de entregas indica opciones de mensajería y puntos relais en Francia; no menciona Córcega ni los territorios de ultramar.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "small-appliances",
+    "grocery"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "De Buyer",
+    "Le Creuset",
+    "Peugeot",
+    "Valrhona",
+    "Cacao Barry",
+    "Nordic Ware",
+    "Silikomart"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "confirmed",
+        "notes": "Delivery page lists DPD delivery to metropolitan France and relay points in France; Corsica and DOM-TOM not mentioned."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Relay-point and post-office collection is offered with carriers; no physical store pickup is mentioned."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "client",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.cuisineaddict.com/?s={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.cuisineaddict.com/1_index_sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Delivery page also lists Mondial Relay to Belgium, Luxembourg, the Netherlands, Spain and Germany, and Colissimo within the EU. A separate Spanish site exists at cuisineaddict.es.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.cuisineaddict.com/",
+        "supports": "categories, brands, language selector",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.cuisineaddict.com/13-livraison-et-suivi-colis.htm",
+        "supports": "carrier delivery areas and relay points",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.cuisineaddict.com/qui-sommes-nous.htm",
+        "supports": "operating since 2009",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

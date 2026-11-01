@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "fr-ldlc",
+  "name": "LDLC",
+  "website": "https://www.ldlc.com/",
+  "description": "French online retailer of computers, components, peripherals, refurbished devices, audio and image products, and connected objects, with an Apple section. Its help page says it delivers to the overseas territories (DOM-TOM) and lists a store locator; the pages read do not give a full list of delivery countries.",
+  "description_es": "Tienda online francesa de computadoras, componentes, periféricos, equipos reacondicionados, audio e imagen y objetos conectados, con una sección Apple. Su página de ayuda indica que entrega en los territorios de ultramar (DOM-TOM) y ofrece un localizador de tiendas; las páginas consultadas no dan una lista completa de países de entrega.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "computing",
+    "gaming",
+    "phones",
+    "tv-audio"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Apple",
+    "Logitech",
+    "Razer",
+    "Corsair",
+    "LEGO"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "partial",
+        "notes": "Help page states delivery to the DOM-TOM; it does not list metropolitan France or other countries explicitly."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Store locator page exists and the delivery help page mentions choosing a preferred shop; pickup terms were not readable on the pages checked."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.ldlc.com/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.ldlc.com/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Footer links to separate storefronts for Belgium, Luxembourg, Switzerland, Spain and Italy. Homepage offers a PC configurator.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.ldlc.com/",
+        "supports": "categories, brands, storefront links and DOM-TOM delivery statement",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.ldlc.com/aide/u1-avant-vente/",
+        "supports": "delivery help: DOM-TOM delivery, Chrono Relais and international delivery headings",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.ldlc.com/magasins-ldlc/",
+        "supports": "store locator",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
