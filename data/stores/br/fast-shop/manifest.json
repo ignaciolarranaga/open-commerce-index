@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "br-fast-shop",
+  "name": "Fast Shop",
+  "website": "https://site.fastshop.com.br/",
+  "description": "Brazilian online appliance and electronics retailer on VTEX. Sells large and small appliances, TVs, computers, phones, audio, air conditioning, furniture and a supermarket section, from brands such as Brastemp, Electrolux, Samsung and Apple. Its terms say shipping options and times depend on the postal code, and some items are sold by marketplace partners.",
+  "description_es": "Minorista brasileño de electrodomésticos y electrónica en VTEX. Vende electrodomésticos grandes y pequeños, TV, computadoras, teléfonos, audio, aire acondicionado, muebles y una sección de supermercado, de marcas como Brastemp, Electrolux, Samsung y Apple. Sus términos indican que las opciones y plazos de envío dependen del código postal y que algunos artículos los venden socios del marketplace.",
+  "country": "BR",
+  "languages": [
+    "pt"
+  ],
+  "currencies": [
+    "BRL"
+  ],
+  "categories": [
+    "appliances",
+    "large-appliances",
+    "small-appliances",
+    "tv-audio",
+    "computing",
+    "phones"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Brastemp",
+    "Electrolux",
+    "Samsung",
+    "Apple",
+    "JBL",
+    "TCL",
+    "Haier",
+    "Midea",
+    "Lenovo"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "BR",
+        "coverage": "partial",
+        "notes": "Terms say shipping options, prices and times depend on the postal code (CEP); the free-shipping subscription covers listed regions only. No nationwide statement found."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Terms mention a Click & Collect store pickup in the context of warranty; availability per order is not stated."
+  },
+  "access": {
+    "platform": "vtex",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://site.fastshop.com.br/s?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://site.fastshop.com.br/api/io/_v/api/intelligent-search/product_search/?query={query}&count=10",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://site.fastshop.com.br/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices in BRL. Shipping quoted by CEP. Some items are sold and shipped by marketplace partners with their own rules. Search results render with JavaScript.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://site.fastshop.com.br/",
+        "supports": "product range, brands, platform",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://site.fastshop.com.br/termos-e-condicoes-de-venda",
+        "supports": "CEP-based shipping options, marketplace partners, store pickup mention",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

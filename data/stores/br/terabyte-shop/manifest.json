@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "br-terabyte-shop",
+  "name": "Terabyte Shop",
+  "website": "https://www.terabyteshop.com.br/",
+  "description": "Brazilian online computer hardware store, founded in Curitiba. Sells processors, graphics cards, memory, SSDs, pre-assembled gaming PCs, peripherals, monitors, notebooks, smartphones and networking gear. Its llms.txt states it delivers across Brazil via Correios and other carriers.",
+  "description_es": "Tienda online brasileña de hardware informático, fundada en Curitiba. Vende procesadores, placas de video, memoria, SSD, PC gamer armadas, periféricos, monitores, notebooks, smartphones y equipos de red. Su llms.txt indica que entrega en todo Brasil mediante Correios y otras transportadoras.",
+  "country": "BR",
+  "languages": [
+    "pt"
+  ],
+  "currencies": [
+    "BRL"
+  ],
+  "categories": [
+    "computing",
+    "gaming",
+    "phones"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "BR",
+        "coverage": "confirmed",
+        "notes": "llms.txt states delivery across Brazil via Correios and other carriers. Free shipping above a threshold is stated for Curitiba and the surrounding region only."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "No pickup option mentioned in llms.txt."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "unknown",
+    "bot_protection": "challenge",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": null,
+      "status": "unverified",
+      "notes": "Homepage returned 403; automated access looks restricted (challenge)."
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices in BRL. Automated access is restricted: the homepage returned 403 with a challenge to the probe, so the site is listed for people to follow. Store publishes an llms.txt and a delivery policy page at /suporte/entrega.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://terabyteshop.com.br/llms.txt",
+        "supports": "product range, delivery across Brazil, Curitiba free-shipping region, delivery policy link",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

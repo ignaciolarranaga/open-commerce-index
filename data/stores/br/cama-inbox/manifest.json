@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "br-cama-inbox",
+  "name": "Cama inBox",
+  "website": "https://www.camainbox.com.br/",
+  "description": "Brazilian online store specialised in mattresses, beds and box-spring bases, sofas, sofa-beds, armchairs, pillows and accessories. Its homepage states that it delivers to all of Brazil; no states or shipping rules are listed there.",
+  "description_es": "Tienda online brasileña especializada en colchones, camas y bases box, sofás, sofás cama, sillones, almohadas y accesorios. Su página principal indica que entrega a todo Brasil; no lista estados ni reglas de envío.",
+  "country": "BR",
+  "languages": [
+    "pt"
+  ],
+  "currencies": [
+    "BRL"
+  ],
+  "categories": [
+    "bedding",
+    "home-furniture"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "BR",
+        "coverage": "confirmed",
+        "notes": "Homepage says it delivers to all of Brazil. No state list or shipping rules shown on the homepage."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "No pickup option mentioned on the homepage."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.camainbox.com.br/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.camainbox.com.br/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://www.camainbox.com.br/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.camainbox.com.br/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.camainbox.com.br/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.camainbox.com.br/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices in BRL. Shopify storefront; shipping is quoted at checkout.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.camainbox.com.br/",
+        "supports": "product range, delivery to all of Brazil statement, platform",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

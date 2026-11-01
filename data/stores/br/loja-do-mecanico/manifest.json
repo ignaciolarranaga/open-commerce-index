@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "br-loja-do-mecanico",
+  "name": "Loja do Mecânico",
+  "website": "https://www.lojadomecanico.com.br/",
+  "description": "Brazilian online store of tools and machinery for workshops and professionals. Categories include electric and hand tools, pneumatic tools, auto-center equipment, car-wash equipment, gardening, construction and personal protective equipment. Its homepage quotes delivery by postal code and links a page of physical stores; the delivery area is not stated there.",
+  "description_es": "Tienda online brasileña de herramientas y maquinaria para talleres y profesionales. Las categorías incluyen herramientas eléctricas y manuales, neumáticas, equipos para centros automotrices, lavado de autos, jardinería, construcción y equipos de protección personal. Su página principal calcula la entrega por código postal y enlaza una página de tiendas físicas; el área de entrega no figura allí.",
+  "country": "BR",
+  "languages": [
+    "pt"
+  ],
+  "currencies": [
+    "BRL"
+  ],
+  "categories": [
+    "hardware-tools"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "BR",
+        "coverage": "unknown",
+        "notes": "Homepage has a ship-to field that asks for the postal code (CEP) but states no coverage area."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Homepage links a page of physical stores; pickup is not stated."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "unknown",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": null,
+      "status": "unverified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.lojadomecanico.com.br/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.lojadomecanico.com.br/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices in BRL. Shipping quoted by CEP. Some inner pages redirect automated clients to a bot-protection check.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.lojadomecanico.com.br/",
+        "supports": "product categories, CEP shipping field, physical stores link",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

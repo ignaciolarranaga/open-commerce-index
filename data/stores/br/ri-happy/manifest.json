@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "br-ri-happy",
+  "name": "Ri Happy",
+  "website": "https://www.rihappy.com.br/",
+  "description": "Brazilian online toy store of the Ri Happy chain. Sells toys, dolls and action figures, games, baby items and collectibles from brands such as LEGO, Barbie, Hot Wheels and Mattel. Its shipping policy page refers to delivery across Brazil with costs and times set by postal code, and some partner sellers apply their own shipping rules.",
+  "description_es": "Tienda online brasileña de juguetes de la cadena Ri Happy. Vende juguetes, muñecas y figuras, juegos, artículos para bebés y coleccionables de marcas como LEGO, Barbie, Hot Wheels y Mattel. Su página de política de envío menciona entregas a todo Brasil, con costos y plazos según el código postal, y algunos vendedores asociados aplican sus propias reglas de envío.",
+  "country": "BR",
+  "languages": [
+    "pt"
+  ],
+  "currencies": [
+    "BRL"
+  ],
+  "categories": [
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "LEGO",
+    "Barbie",
+    "Hot Wheels",
+    "Mattel",
+    "Hasbro",
+    "Fisher-Price"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "BR",
+        "coverage": "confirmed",
+        "notes": "Shipping policy page mentions delivery for all of Brazil with free-shipping thresholds; cost and time depend on the postal code (CEP). Partner stores set their own rules and some limit free shipping to the South and Southeast."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup in a store is offered for products sold directly by Ri Happy when the CEP lookup on the product page shows the option."
+  },
+  "access": {
+    "platform": "vtex",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.rihappy.com.br/busca?ft={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.rihappy.com.br/api/io/_v/api/intelligent-search/product_search/?query={query}&count=10",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://www.rihappy.com.br/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.rihappy.com.br/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices in BRL. Shipping is quoted by CEP. Some products are sold and shipped by partner sellers with their own shipping rules.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.rihappy.com.br/",
+        "supports": "categories, brands, platform, store pickup mention",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.rihappy.com.br/politicas-de-frete",
+        "supports": "delivery to all of Brazil, shipping options, pickup in store",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
