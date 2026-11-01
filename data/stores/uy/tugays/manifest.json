@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "uy-tugays",
+  "name": "Tugays",
+  "website": "https://tugays.com/",
+  "description": "Uruguayan online store for home, kitchen, bathroom and organization items, toys and small household appliances, with branches in Montevideo. Ships nationwide at a flat fee and offers free pickup in branches.",
+  "description_es": "Tienda online uruguaya de hogar, cocina, baño, organización, juguetes y electrohogar, con sucursales en Montevideo. Envía a todo el país con costo fijo y ofrece retiro gratis en sucursales.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "home-furniture",
+    "small-appliances",
+    "toys"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide at a flat fee; Montevideo and interior 3-5 business days via carriers chosen by the store"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at branches in Montevideo (Pablo de Maria, Roxlo, Paso Molino and two on Av. 8 de Octubre); the customer is notified when the order is ready."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://tugays.com/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://tugays.com/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://tugays.com/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://tugays.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://tugays.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://tugays.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://tugays.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://tugays.com/policies/shipping-policy",
+        "supports": "Delivery modes, nationwide coverage, free branch pickup, delivery times",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://tugays.com/pages/sucursales",
+        "supports": "Branch list in Montevideo for free pickup",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://tugays.com/",
+        "supports": "Navigation categories: Hogar, Cocina, Baño, Organizacion, Juguetes, Electrohogar",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

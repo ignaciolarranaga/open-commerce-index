@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "uy-buho-store",
+  "name": "Buho Store",
+  "website": "https://www.buhostore.uy/",
+  "description": "Uruguayan online store selling home organization and decor: organizers, baskets, shelves, textiles, kitchen and bath accessories, tableware, lighting and candles. Ships nationwide with store pickup in Montevideo.",
+  "description_es": "Tienda online uruguaya de organización y decoración del hogar: organizadores, canastos, estantes, textiles, accesorios de cocina y baño, vajilla, iluminación y velas. Envía a todo el país y ofrece retiro en tienda en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "home-furniture",
+    "bedding"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide; free over a stated threshold in 1-3 business days; same-day in Montevideo and Ciudad de la Costa; interior via DAC or Mirtrans"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at two Montevideo stores (Libres and Luis Alberto de Herrera addresses listed on the shipping page)."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.buhostore.uy/catalogo?q={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.buhostore.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.buhostore.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "robots.txt disallows internal search URLs for automated agents; search was not tested. Browse category pages instead.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.buhostore.uy/envios-devoluciones",
+        "supports": "Shipping options, nationwide coverage, free threshold, store pickup",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.buhostore.uy/",
+        "supports": "Product categories",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
