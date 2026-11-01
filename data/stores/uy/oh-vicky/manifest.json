@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "uy-oh-vicky",
+  "name": "Oh Vicky!",
+  "website": "https://www.ohvicky.com/",
+  "description": "Uruguayan online lingerie boutique selling bras, panties, bodysuits, shapewear and swimwear. Ships to all of Uruguay with free shipping over a purchase threshold and offers pickup in Montevideo.",
+  "description_es": "Boutique online uruguaya de lencería que vende corpiños, bombachas, bodys, modeladores y línea de baño. Envía a todo Uruguay, con envío sin costo sobre un monto, y ofrece retiro en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "fashion"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Delivery to all of Uruguay in 24 to 48 business hours (up to 72 in some cities); interior orders go by UES, per the store's shipping page."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup point in Montevideo Centro."
+  },
+  "access": {
+    "platform": "prestashop",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.ohvicky.com/buscar?controller=search&s={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.ohvicky.com/1_index_sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "PrestaShop storefront. robots.txt disallows the internal search (search_query and controller=search), cart and account paths; browse by category instead.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.ohvicky.com/",
+        "supports": "Store home page: free-shipping banner and categories",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.ohvicky.com/content/9-envios-a-domicilio-y-retiro-en-agencia",
+        "supports": "Delivery options and times, UES to the interior, pickup in Montevideo",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

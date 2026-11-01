@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "uy-zavana",
+  "name": "Zavana",
+  "website": "https://zavana.uy/",
+  "description": "Uruguayan online store of handbags, backpacks, belts, wallets, accessories and shoes, with a physical store in Montevideo. Delivery terms are not published on a shipping page.",
+  "description_es": "Tienda online uruguaya de carteras, mochilas, cintos, billeteras, accesorios y calzado, con local físico en Montevideo. Las condiciones de envío no se publican en una página de envíos.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "fashion"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "unknown",
+        "notes": "No shipping page found; only an exchange policy page is published."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://zavana.uy/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://zavana.uy/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://zavana.uy/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://zavana.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://zavana.uy/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://zavana.uy/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://zavana.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify storefront. No shipping or delivery page was found, so delivery coverage and pickup stay unknown. The exchange policy page mentions a physical store in Montevideo.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://zavana.uy/",
+        "supports": "Store home page: categories (handbags, backpacks, belts, wallets, accessories, shoes) and cart",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://zavana.uy/pages/politica-de-cambio",
+        "supports": "Exchange policy and physical store mention",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

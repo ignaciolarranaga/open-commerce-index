@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "uy-new-balance-uruguay",
+  "name": "New Balance Uruguay",
+  "website": "https://www.newbalance.com.uy/",
+  "description": "Online store of New Balance in Uruguay. Sells footwear, clothing and accessories such as bags, backpacks and socks for men, women and children. Ships to the whole country and offers free store pickup.",
+  "description_es": "Tienda online de New Balance en Uruguay. Vende calzado, indumentaria y accesorios como bolsos, mochilas y medias para hombre, mujer y niños. Envía a todo el país y ofrece retiro gratis en sucursal.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "fashion",
+    "sports"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "New Balance"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide delivery by UES (Montevideo 24 business hours; 72 business hours elsewhere in the country), per the store's shipping page."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at its stores with prior coordination; ready within 72 business hours."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.newbalance.com.uy/catalogo?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.newbalance.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.newbalance.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Brand flagship on a Fenicio storefront.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.newbalance.com.uy/",
+        "supports": "Store home page: categories and nationwide delivery banner",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.newbalance.com.uy/envios-devoluciones",
+        "supports": "UES delivery nationwide and free store pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
