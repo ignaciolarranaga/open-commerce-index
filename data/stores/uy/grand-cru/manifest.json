@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-grand-cru",
+  "name": "Grand Cru",
+  "website": "https://www.grandcru.com.uy/",
+  "description": "Uruguayan online wine shop selling wines by type, country, grape and winery, gift boxes, spirits, glassware and accessories. Its shipping page says it delivers in Punta del Este, Montevideo and the rest of Uruguay in under 48 hours.",
+  "description_es": "Tienda de vinos en línea uruguaya con vinos por tipo, país, cepa y bodega, cajas de regalo, destilados, copas y accesorios. Su página de envíos indica entregas en Punta del Este, Montevideo y el resto del Uruguay en menos de 48 horas.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "grocery"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Punta del Este, Montevideo and the rest of Uruguay, deliveries in under 48 hours per the store's shipping page; costs not stated"
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.grandcru.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.grandcru.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.grandcru.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Fenicio platform; product search is verified by the probe. Sales of alcohol are for adults. Shipping costs and pickup are not stated on the shipping page.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.grandcru.com.uy/envios-devoluciones",
+        "supports": "Shipping: Punta del Este, Montevideo and rest of Uruguay, under 48 hours",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.grandcru.com.uy/",
+        "supports": "Home page: product range",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

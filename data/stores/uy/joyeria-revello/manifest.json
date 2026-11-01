@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "uy-joyeria-revello",
+  "name": "Joyería Revello",
+  "website": "https://www.joyeriarevello.com.uy/",
+  "description": "Uruguayan online jewelry and watch store selling rings, wedding bands, chains, bracelets, pendants, earrings and watches in gold and silver, with prices in USD. Home delivery takes about 3 to 5 business days and orders can be picked up in two Montevideo shopping-center stores.",
+  "description_es": "Joyería y relojería en línea uruguaya con anillos, alianzas, cadenas, pulseras, colgantes, caravanas y relojes en oro y plata, con precios en USD. La entrega a domicilio demora entre 3 y 5 días hábiles y los pedidos pueden retirarse en dos locales en shoppings de Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "jewelry-watches"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "partial",
+        "notes": "Home delivery about 3 to 5 business days; delivery zones and costs are not listed on the shipping page"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup at the Portones Shopping head office and the Montevideo Shopping store, per the shipping page"
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.joyeriarevello.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.joyeriarevello.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.joyeriarevello.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Fenicio platform; product search is verified by the probe. Delivery zones and costs are not stated.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.joyeriarevello.com.uy/envios-y-devoluciones",
+        "supports": "Shipping: 3 to 5 business days, pickup at two Montevideo stores",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.joyeriarevello.com.uy/",
+        "supports": "Home page: product range, USD prices",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
