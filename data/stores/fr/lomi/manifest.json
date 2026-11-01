@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "fr-lomi",
+  "name": "Lomi",
+  "website": "https://lomi.cafe/",
+  "description": "French coffee roaster in Paris and the Drôme that sells coffee online alongside training courses and equipment for hotels and restaurants. Its delivery page lists delivery within France including Corsica and to the EU, the UK and Switzerland.",
+  "description_es": "Tostador de café francés, con sede en París y la Drôme, que vende café online junto con formaciones y equipamiento para hoteles y restaurantes. Su página de entregas indica entrega en Francia, incluida Córcega, y en la UE, el Reino Unido y Suiza.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "coffee"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Lomi"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "confirmed",
+        "notes": "Delivery page lists France including Corsica; a separate zone exists for professionals in intra-muros Paris."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "The site lists a boutique and roastery addresses; the delivery page does not say orders can be collected there."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://lomi.cafe/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Delivery page also lists the EU, the UK and Switzerland, and quotes on request for the rest of the world. Currency not read from the pages checked.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://lomi.cafe/",
+        "supports": "products and addresses",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://lomi.cafe/livraison-et-frais-de-port",
+        "supports": "delivery zones",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

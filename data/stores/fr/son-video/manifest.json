@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "fr-son-video",
+  "name": "Son-Vidéo.com",
+  "website": "https://www.son-video.com/",
+  "description": "French online retailer of hi-fi, home cinema, speakers, televisions, projectors, headphones, vinyl, cables and connected-home products. Its delivery FAQ says it delivers across French territory including most DOM-TOM products, with free delivery to its shops in France.",
+  "description_es": "Tienda online francesa de alta fidelidad, cine en casa, altavoces, televisores, proyectores, auriculares, vinilos, cables y productos para el hogar conectado. Su FAQ de entrega indica que entrega en todo el territorio francés, incluidos la mayoría de los productos en los DOM-TOM, y que la entrega en sus tiendas de Francia es gratuita.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "tv-audio",
+    "gaming"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Sony",
+    "Sonos",
+    "Denon",
+    "Yamaha",
+    "Cambridge Audio",
+    "Elipson",
+    "Samsung",
+    "LG",
+    "Marantz",
+    "Focal"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "confirmed",
+        "notes": "Delivery FAQ states delivery across French territory including DOM-TOM for most products; some carrier services exclude Corsica."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Delivery FAQ offers free delivery to a shop anywhere in France; homepage mentions 18 shops in France."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.son-video.com/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.son-video.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.son-video.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Delivery FAQ also says it ships across Europe and to Switzerland, and outside Europe on request. Chronopost on appointment and Mondial Relay exclude Corsica.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.son-video.com/",
+        "supports": "categories, brands, shop count",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.son-video.com/faq/livraison",
+        "supports": "delivery areas, Corsica exclusions and free delivery to shops",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.son-video.com/magasins-hifi-home-cinema",
+        "supports": "shop list",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

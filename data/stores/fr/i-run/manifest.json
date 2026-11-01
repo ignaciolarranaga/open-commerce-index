@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "fr-i-run",
+  "name": "i-Run",
+  "website": "https://www.i-run.fr/",
+  "description": "French online specialist in running, trail, fitness and hiking gear, founded in 2007 and based in Toulouse, with over 200 brands and shops in several French cities. Its delivery page lists metropolitan France, overseas departments and territories and many European countries, with in-store pickup.",
+  "description_es": "Especialista francés online en running, trail, fitness y senderismo, fundado en 2007 y con sede en Toulouse, con más de 200 marcas y tiendas en varias ciudades francesas. Su página de entregas indica Francia metropolitana, departamentos y territorios de ultramar y numerosos países europeos, con retiro en tienda.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "sports",
+    "fashion"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "ASICS",
+    "adidas",
+    "HOKA",
+    "Nike",
+    "Garmin",
+    "Salomon",
+    "New Balance"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "confirmed",
+        "notes": "Delivery page lists metropolitan France, DOM (971-976) and TOM (986-988); Corsica not mentioned separately."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Delivery page offers in-store pickup in metropolitan France at shops in Paris, Toulouse, Montpellier, Marseille, Nice, Rennes, Lyon, Grenoble, Annecy, Lille and Bordeaux."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.i-run.fr/recherche.html?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.i-run.fr/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Delivery page also lists many EU countries and Switzerland. Sister sites exist for other markets (i-run.com, .de, .es, .it).",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.i-run.fr/",
+        "supports": "categories, brands, shops, sister sites",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.i-run.fr/infos-pratiques/livraison.html",
+        "supports": "delivery areas and in-store pickup",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.i-run.fr/entreprise/",
+        "supports": "founded 2007, Toulouse",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

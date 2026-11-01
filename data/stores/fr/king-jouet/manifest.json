@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "fr-king-jouet",
+  "name": "King Jouet",
+  "website": "https://www.king-jouet.com/",
+  "description": "French toy and game retailer with over 20,000 references, trading cards and used toys, and more than 240 shops in France plus shops in Switzerland. The homepage offers free delivery to shop and reserve-and-collect in store; home delivery areas were not readable on the pages checked.",
+  "description_es": "Minorista francés de juguetes y juegos con más de 20.000 referencias, cartas coleccionables y juguetes de segunda mano, con más de 240 tiendas en Francia y tiendas en Suiza. La página principal ofrece entrega gratuita en tienda y reserva con retiro en tienda; las zonas de entrega a domicilio no se pudieron leer en las páginas consultadas.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "LEGO",
+    "Playmobil",
+    "Ravensburger",
+    "Mattel",
+    "Hasbro",
+    "VTech",
+    "Smoby",
+    "Schleich"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "unknown",
+        "notes": "Home delivery areas not stated on the homepage; shops are listed across France."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Homepage links free delivery to shop and a reserve-and-collect page."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "unknown",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": null,
+      "status": "unverified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shop list also includes Switzerland.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.king-jouet.com/",
+        "supports": "catalogue size, brands, shops, in-store services",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

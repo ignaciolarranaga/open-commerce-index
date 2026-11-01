@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "fr-bricozor",
+  "name": "Bricozor",
+  "website": "https://www.bricozor.com/",
+  "description": "French online hardware and DIY store based in Normandy, listing about 69,000 products in hardware, tools, electrical, plumbing, heating and garden. It says it ships across France; other countries are not mentioned on the pages read.",
+  "description_es": "Ferretería y tienda de bricolaje online francesa con sede en Normandía, con unos 69.000 productos de ferretería, herramientas, electricidad, fontanería, calefacción y jardín. Indica que envía a toda Francia; no se mencionan otros países en las páginas consultadas.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "hardware-tools",
+    "climate"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Bosch",
+    "Makita",
+    "Dewalt",
+    "Facom",
+    "Stanley",
+    "Ryobi",
+    "Legrand",
+    "Hettich"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "confirmed",
+        "notes": "Homepage and about page say delivery everywhere in France; Corsica and overseas territories are not mentioned."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "No in-store or click-and-collect pickup is mentioned on the pages read; orders ship from a warehouse in Normandy."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.bricozor.com/recherche/?term={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.bricozor.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "robots.txt disallows AI user agents per the probe; automated access is restricted.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.bricozor.com/",
+        "supports": "catalogue size, categories, brands and delivery statement",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.bricozor.com/qui-sommes-nous.html",
+        "supports": "company, delivery everywhere in France, warehouse",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

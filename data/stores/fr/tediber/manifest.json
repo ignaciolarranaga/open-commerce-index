@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "fr-tediber",
+  "name": "Tediber",
+  "website": "https://www.tediber.com/",
+  "description": "French direct-to-consumer bedding and furniture brand selling mattresses, bedding packs, bed bases, beds, duvets, pillows, bed linen, children's ranges and sofas online. Its delivery page states delivery to France and to several European countries.",
+  "description_es": "Marca francesa de venta directa de ropa de cama y mobiliario: colchones, packs de ropa de cama, bases, camas, edredones, almohadas, ropa de cama, gama infantil y sofás. Su página de entregas indica entrega en Francia y en varios países europeos.",
+  "country": "FR",
+  "languages": [
+    "fr"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "bedding",
+    "home-furniture"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Tediber"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "FR",
+        "coverage": "confirmed",
+        "notes": "Delivery page describes 24-48h delivery in France and notes some products (sofa bed, storage bed base, scandi beds) are not delivered outside metropolitan France; Corsica not mentioned."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.tediber.com/search?q={query}&type=product",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.tediber.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.tediber.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.tediber.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.tediber.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Delivery page also lists Spain, Italy, Belgium, Luxembourg, the Netherlands, Germany, Switzerland and Monaco, and says it does not deliver to the United Kingdom. robots.txt disallows AI user agents per the probe.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.tediber.com/pages/livraison",
+        "supports": "delivery areas and product range",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
