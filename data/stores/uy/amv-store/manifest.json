@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "uy-amv-store",
+  "name": "AMV Store",
+  "website": "https://amvstore.com.uy/",
+  "description": "Uruguayan online store selling TV, audio and video, phones and tech accessories, notebooks, air conditioners and small appliances. Offers same-day delivery in Montevideo and free pickup at its Montevideo store.",
+  "description_es": "Tienda online uruguaya de TV, audio y video, celulares y accesorios, notebooks, aire acondicionado y pequeños electrodomésticos. Ofrece entrega en el día en Montevideo y retiro gratis en su local de Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU",
+    "USD"
+  ],
+  "categories": [
+    "tv-audio",
+    "phones",
+    "computing",
+    "climate",
+    "small-appliances"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Same-day delivery in Montevideo on weekdays for orders before 16"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup at the Montevideo store."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://amvstore.com.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://amvstore.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://amvstore.com.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "TV listing lives under /tv-audio-y-video/imagen (Televisores subcategory); the paths /tv and /televisores return 404. Brand pages under /marcas.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://amvstore.com.uy/envios-y-devoluciones",
+        "supports": "Shipping page: Montevideo same-day, interior 24 to 48 business hours, free pickup in Montevideo",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://amvstore.com.uy/tv-audio-y-video/imagen",
+        "supports": "TV listing page with Televisores subcategory",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://amvstore.com.uy/",
+        "supports": "Home page: category navigation (phones, notebooks, TV/audio/video, air conditioning)",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "uy-netpc",
+  "name": "Net PC",
+  "website": "https://netpc.uy/",
+  "description": "Uruguayan online store selling notebooks, gaming PCs and phones, with physical branches in Montevideo.",
+  "description_es": "Tienda online uruguaya de notebooks, PC gamer y celulares, con sucursales en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "computing",
+    "phones"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "unknown",
+        "notes": "Shipping terms were not found on a page opened for this entry."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Branches in Tres Cruces and Punta Carretas Shopping (Montevideo) are listed; the page does not describe online-order pickup."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://netpc.uy/buscar?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://netpc.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Robots.txt disallows /api, /builder, /checkout and /order. Catalog depth is modest: home page highlights notebooks and phones.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://netpc.uy/sucursales",
+        "supports": "Branch list: Tres Cruces and Punta Carretas Shopping in Montevideo",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://netpc.uy/",
+        "supports": "Home page: notebooks, phones, gaming PCs and cart",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

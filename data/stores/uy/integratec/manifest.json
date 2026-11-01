@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "uy-integratec",
+  "name": "Integratec",
+  "website": "https://integratec.uy/",
+  "description": "Uruguayan online store selling notebooks, PCs, components and monitors, plus phones, wearables, audio, TV and video. Ships across Uruguay and offers in-store pickup in Montevideo.",
+  "description_es": "Tienda online uruguaya de notebooks, PCs, componentes y monitores, además de celulares, wearables, audio, TV y video. Envía a todo el país y ofrece retiro en tienda en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU",
+    "USD"
+  ],
+  "categories": [
+    "computing",
+    "phones",
+    "tv-audio"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Home FAQ says it ships to all of Uruguay; shipping cost shown before the purchase is confirmed."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup at the Tres Cruces store in Montevideo; payment on pickup accepted."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://integratec.uy/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://integratec.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://integratec.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Robots.txt disallows /checkout and /api; browse catalog pages only. Product pages live under /productos/. Large items may carry a different shipping cost.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://integratec.uy/",
+        "supports": "Home page FAQ: shipping to all of Uruguay, pickup in Tres Cruces, categories (notebooks, PCs, components, audio/TV/video, phones)",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://integratec.uy/politicas-y-devoluciones",
+        "supports": "Policies page: shipping costs not included in price and shown before checkout ends; store hours",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
