@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "uy-stadium",
+  "name": "Stadium",
+  "website": "https://www.stadium.com.uy/",
+  "description": "Uruguayan footwear, clothing and accessories retailer with branches across the country. Sells sneakers, sandals, boots, clothing and accessories such as bags and backpacks for men, women and children, from brands including Adidas, Nike, Puma and New Balance. Ships to all of Uruguay through UES, DAC, Correo and PedidosYa.",
+  "description_es": "Cadena uruguaya de calzado, ropa y accesorios con sucursales en el país. Vende championes, sandalias, botas, ropa y accesorios como bolsos y mochilas para hombre, mujer y niños, de marcas como Adidas, Nike, Puma y New Balance. Envía a todo Uruguay por UES, DAC, Correo y PedidosYa.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "fashion",
+    "sports"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "Adidas",
+    "Nike",
+    "Puma",
+    "New Balance",
+    "Vans",
+    "Converse",
+    "Crocs",
+    "Havaianas"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide delivery in 1 to 6 business days through UES, DAC, Correo and PedidosYa, per the store's shipping page."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.stadium.com.uy/catalogo?q={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.stadium.com.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.stadium.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "The store's robots.txt disallows its internal search path (/buscar, /search, and query strings with q=), so catalog pages by category and brand are the way to browse. Cart, checkout and account paths are also disallowed. The FAQ page redirects to an external help center.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.stadium.com.uy/",
+        "supports": "Store home page: categories, brand list and branch locations",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.stadium.com.uy/envios-devoluciones",
+        "supports": "Delivery to the whole country in 1 to 6 business days via UES, DAC, Correo and PedidosYa; 30-day exchanges",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.stadium.com.uy/robots.txt",
+        "supports": "Disallowed paths: cart, checkout, account and internal search",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

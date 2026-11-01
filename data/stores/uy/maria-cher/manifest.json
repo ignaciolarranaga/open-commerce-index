@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "uy-maria-cher",
+  "name": "Maria Cher",
+  "website": "https://maria-cher.uy/",
+  "description": "Uruguayan women's fashion brand selling clothing, jeans, swimwear, shoes, handbags, belts and jewelry accessories online. Delivers to the whole country by UES with free shipping over a threshold and free store pickup.",
+  "description_es": "Marca uruguaya de moda femenina que vende online ropa, jeans, trajes de baño, zapatos, carteras, cinturones y bijoux. Entrega en todo el país por UES, con envío gratis sobre un monto y retiro en tienda sin costo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "fashion"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Delivery by UES within up to 5 business days; free shipping over a purchase threshold, per the store's FAQ."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup in store."
+  },
+  "access": {
+    "platform": "tiendanube",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://maria-cher.uy/search?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://maria-cher.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Tiendanube storefront. Store locations are listed on its locales page.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://maria-cher.uy/",
+        "supports": "Store home page: product categories and free-shipping banner",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://maria-cher.uy/faqs/",
+        "supports": "FAQ: UES delivery, delivery times, free shipping and store pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
