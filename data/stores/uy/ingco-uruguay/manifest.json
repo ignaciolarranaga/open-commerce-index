@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "uy-ingco-uruguay",
+  "name": "INGCO Uruguay",
+  "website": "https://www.ingcotools.com.uy/",
+  "description": "Uruguayan online store of the exclusive INGCO agent, selling hand tools, power tools, generators, compressors, pumps and garden equipment, with prices in US dollars.",
+  "description_es": "Tienda online del agente exclusivo de INGCO en Uruguay: herramientas manuales y eléctricas, generadores, compresores, bombas y equipos de jardín, con precios en dólares.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "hardware-tools",
+    "garden"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "INGCO",
+    "WADFOW"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "partial",
+        "notes": "Homepage mentions express shipping to all Uruguay; conditions page says interior shipments go through DAC."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup points in Montevideo (Melilla and Reducto) listed on the conditions page."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.ingcotools.com.uy/buscar?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Some products show Reservar or Consultar instead of a purchase button, and many are marked Agotado.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.ingcotools.com.uy/condiciones/",
+        "supports": "Montevideo pickup points and interior shipping via DAC",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.ingcotools.com.uy/",
+        "supports": "Product categories, cart (Mi compra), USD prices, nationwide shipping mention",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

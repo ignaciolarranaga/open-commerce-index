@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-familcar",
+  "name": "Familcar",
+  "website": "https://www.familcar.com/",
+  "description": "Uruguayan importer and online seller of auto parts for many car makes, including lighting, brakes, filters, suspension and engine parts. Ships nationwide through a transport agency chosen by the customer; Montevideo pickup is available.",
+  "description_es": "Importador y tienda online uruguaya de repuestos para autos de muchas marcas: iluminación, frenos, filtros, suspensión y motor. Envía a todo el país por la agencia de transporte que elija el cliente; hay retiro en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "vehicles-auto-parts"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide; the customer chooses and pays the transport agency, shipping can be paid at destination."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup in Montevideo, Monday to Friday 9:00 to 18:00."
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.familcar.com/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.familcar.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.familcar.com/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.familcar.com/envios-info",
+        "supports": "Nationwide shipping via customer-chosen agency, pickup in Montevideo, dispatch cutoffs",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.familcar.com/",
+        "supports": "Product categories and vehicle brands listed; Mi cuenta and Mis compras links",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
