@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "uy-mibelleza",
+  "name": "MiBelleza",
+  "website": "https://mibelleza.uy/",
+  "description": "Uruguayan online store selling only L'Oréal group brands: skincare, makeup, fragrances, hair care and personal care. Prices in UYU.",
+  "description_es": "Tienda online uruguaya que vende únicamente marcas del grupo L'Oréal: skincare, maquillaje, fragancias, cuidado capilar y personal. Precios en UYU.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "health-beauty"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "Kérastase",
+    "L'Oréal Paris",
+    "L'Oréal Professionnel",
+    "Garnier",
+    "Vichy",
+    "Maybelline",
+    "Lancôme",
+    "Redken"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "unknown",
+        "notes": "Home page mentions shipping to all Uruguay with cost and time calculated in the cart; no dedicated shipping page found"
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://mibelleza.uy/buscar?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://mibelleza.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ai_text",
+        "url": "https://mibelleza.uy/faq-ai.txt",
+        "status": "verified",
+        "notes": "Plain-text faq-ai.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://mibelleza.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Catalog is limited to L'Oréal portfolio brands; other brands are sold by LOi (a separate listed store). robots.txt allows crawlers, with a crawl delay and disallowed checkout and account paths.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://mibelleza.uy/",
+        "supports": "home page: brand scope, categories, UYU prices",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://mibelleza.uy/robots.txt",
+        "supports": "crawl rules",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
