@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "mx-chedraui",
+  "name": "Chedraui",
+  "website": "https://www.chedraui.com.mx/",
+  "description": "Mexican supermarket chain with an online store on VTEX selling groceries, household goods, electronics and appliances. Its homepage shows free-shipping promotions on selected brands but no coverage area.",
+  "description_es": "Cadena mexicana de supermercados con tienda en línea sobre VTEX que vende abarrotes, artículos del hogar, electrónica y electrodomésticos. Su página principal muestra promociones de envío gratis en marcas participantes sin indicar zona de cobertura.",
+  "country": "MX",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "MXN"
+  ],
+  "categories": [
+    "grocery",
+    "general"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "MX",
+        "coverage": "unknown",
+        "notes": "Homepage shows free-shipping promotions on selected brands; no coverage area named on the pages read."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "vtex",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.chedraui.com.mx/{query}?_q={query}&map=ft",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.chedraui.com.mx/api/io/_v/api/intelligent-search/product_search/?query={query}&count=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.chedraui.com.mx/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Spanish-language VTEX store.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.chedraui.com.mx/",
+        "supports": "categories and free-shipping promotions",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

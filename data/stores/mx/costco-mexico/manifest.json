@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "mx-costco-mexico",
+  "name": "Costco México",
+  "website": "https://www.costco.com.mx/",
+  "description": "Online store of the Costco warehouse club in Mexico. Its pages describe buying online and picking up at a Costco branch, which requires a membership card at pickup; home delivery coverage was not found.",
+  "description_es": "Tienda en línea del club de precios Costco en México. Sus páginas describen la compra en línea con recolección en una sucursal Costco, donde se pide la membresía; no se encontró cobertura de entrega a domicilio.",
+  "country": "MX",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "MXN"
+  ],
+  "categories": [
+    "general",
+    "grocery",
+    "appliances"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "MX",
+        "coverage": "unknown",
+        "notes": "Home delivery coverage not stated on the pages read."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Buy online and pick up at a selected Costco branch for participating items; membership and ID required at pickup."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.costco.com.mx/store-finder?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Spanish-language store; pickup page lists participating items.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.costco.com.mx/compra-en-linea-recogelo-en-tienda",
+        "supports": "online purchase with branch pickup, membership at pickup",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.costco.com.mx/",
+        "supports": "department list",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

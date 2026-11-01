@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "mx-elektra",
+  "name": "Elektra",
+  "website": "https://www.elektra.mx/",
+  "description": "Mexican retailer with an online store on VTEX selling appliances, phones, computers, mattresses, furniture, motorcycles and more. Its homepage has a postal-code field and a store finder but does not state a delivery coverage area.",
+  "description_es": "Tienda mexicana con tienda en línea sobre VTEX que vende línea blanca, telefonía, cómputo, colchones, muebles, motos y más. Su página principal tiene un campo de código postal y un buscador de tiendas, pero no indica zona de cobertura de entrega.",
+  "country": "MX",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "MXN"
+  ],
+  "categories": [
+    "general",
+    "large-appliances",
+    "phones",
+    "computing",
+    "bedding"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "MX",
+        "coverage": "unknown",
+        "notes": "Homepage has a postal-code field; no coverage area named on the pages read."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Store finder exists; pickup of online orders is not stated on the pages read."
+  },
+  "access": {
+    "platform": "vtex",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.elektra.mx/{query}?_q={query}&map=ft",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.elektra.mx/api/io/_v/api/intelligent-search/product_search/?query={query}&count=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.elektra.mx/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Spanish-language VTEX store.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.elektra.mx/",
+        "supports": "categories, postal-code field, store finder",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
