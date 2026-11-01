@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "uy-edifica",
+  "name": "Edifica Hogar",
+  "website": "https://edifica.uy/",
+  "description": "Uruguayan online store selling hand and power tools, construction and plumbing supplies, paint, bathroom fixtures, lighting, home appliances and household items. Ships to all of Uruguay; the interior is served by DAC.",
+  "description_es": "Tienda online uruguaya de herramientas, construcción, plomería, pinturas, baño, iluminación, electrodomésticos y hogar. Envía a todo Uruguay; el interior por DAC.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU",
+    "USD"
+  ],
+  "categories": [
+    "hardware-tools",
+    "appliances",
+    "home-furniture"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "All of Uruguay; average 2-3 business days; interior via DAC with zone-based fee shown at checkout; free metropolitan shipping when paying by bank transfer absent a promotion"
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://edifica.uy/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://edifica.uy/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://edifica.uy/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://edifica.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://edifica.uy/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://edifica.uy/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://edifica.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://edifica.uy/policies/shipping-policy",
+        "supports": "Coverage, shipping costs, delivery times, carriers",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://edifica.uy/",
+        "supports": "Category menu: tools, construction, bath, lighting, home, appliances",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
