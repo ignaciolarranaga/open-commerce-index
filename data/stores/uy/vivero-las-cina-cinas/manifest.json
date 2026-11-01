@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "uy-vivero-las-cina-cinas",
+  "name": "Vivero Las Cina Cinas",
+  "website": "https://www.viverolascinacinas.com.uy/",
+  "description": "Montevideo plant nursery selling plants, trees, shrubs, cacti and succulents, lawn seed, vegetable seedlings, pots, soil, fertilizers and garden accessories online. Free delivery in the Montevideo urban area and nearby towns, and delivery to the rest of Uruguay by DAC at the buyer's cost.",
+  "description_es": "Vivero de Montevideo con venta en línea de plantas, árboles, arbustos, cactus y suculentas, semillas de césped, plantines de huerta, macetas, tierra, fertilizantes y accesorios de jardín. Envío sin cargo en el cono urbano de Montevideo y localidades cercanas, y al interior del país por DAC a cargo del comprador.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "garden"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Free delivery in the Montevideo urban area, Las Piedras, La Paz, Pando and Ciudad de la Costa up to El Pinar; interior via DAC agency at the buyer's cost, per the store's FAQ"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Local at Roman de Acha 3298, Montevideo; Tuesday to Saturday per the FAQ"
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.viverolascinacinas.com.uy/?s={query}&post_type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.viverolascinacinas.com.uy/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.viverolascinacinas.com.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "WooCommerce store. Cloudflare may sit in front of the site. Product search is verified by the probe.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.viverolascinacinas.com.uy/preguntas-frecuentes/",
+        "supports": "FAQ: free delivery zones, interior shipping by DAC at buyer cost, pickup at the Montevideo local",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.viverolascinacinas.com.uy/",
+        "supports": "Home page: product range, nationwide shipping feature, cart and checkout",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

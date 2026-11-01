@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "uy-pet-uy",
+  "name": "Pet.uy",
+  "website": "https://www.pet.uy/",
+  "description": "Online pet shop selling dog and cat food, snacks and cat litter from brands such as Pro Plan, Eukanuba, Pedigree, Hill's and Whiskas, retail and wholesale. Its site states deliveries within the day in Montevideo and within 72 hours to the rest of the country.",
+  "description_es": "Pet shop en línea con alimento, snacks y arena para perros y gatos de marcas como Pro Plan, Eukanuba, Pedigree, Hill's y Whiskas, minorista y mayorista. Su sitio indica entregas en el día en Montevideo y en menos de 72 horas al resto del país.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "pets"
+  ],
+  "taxonomy_version": 2,
+  "brands": [
+    "Pro Plan",
+    "Eukanuba",
+    "Pedigree",
+    "Hill's",
+    "Whiskas"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Same-day delivery in Montevideo and within 72 hours nationwide via Expreso Uruguayo per the store's home page FAQ"
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.pet.uy/search?q={query}&type=product",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.pet.uy/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://www.pet.uy/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://www.pet.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.pet.uy/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.pet.uy/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.pet.uy/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify store. Product search is not verified by the probe; browse by category. Shipping information is on the home page; no separate shipping page exists.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.pet.uy/",
+        "supports": "Home page: free shipping section (same-day Montevideo, within 72 hours nationwide), FAQ (ships to all Uruguay via Expreso Uruguayo), brands, cart at /cart",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

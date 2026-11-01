@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "uy-bacan",
+  "name": "Bacán",
+  "website": "https://www.bacan.uy/",
+  "description": "Uruguayan online liquor store selling wines, spirits, beers and gourmet products such as olive oil and coffee, for adults only. Ships nationwide, with free delivery in Montevideo above a minimum order and pickup at lockers in Montevideo.",
+  "description_es": "Tienda en línea uruguaya de vinos, destilados, cervezas y productos gourmet como aceite de oliva y café, para mayores de edad. Envía a todo el país, con envío gratis en Montevideo sobre un monto mínimo y retiro en lockers en Montevideo.",
+  "country": "UY",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "UYU"
+  ],
+  "categories": [
+    "grocery"
+  ],
+  "taxonomy_version": 2,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "UY",
+        "coverage": "confirmed",
+        "notes": "Nationwide; free in Montevideo and listed Canelones zones above a minimum order; interior via UES, 24 to 48 hours, per the store's shipping page"
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup at Redelocker lockers in Montevideo, per the store's shipping page"
+  },
+  "access": {
+    "platform": "fenicio",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.bacan.uy/catalogo?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.bacan.uy/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.bacan.uy/sitemap",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Fenicio platform; product search is verified by the probe. Sales are restricted to adults.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.bacan.uy/metodos-y-zonas-de-envio",
+        "supports": "Shipping methods and zones: nationwide, free Montevideo delivery, UES interior, lockers",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.bacan.uy/",
+        "supports": "Home page: product range",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
