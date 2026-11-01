@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "us-burrow",
+  "name": "Burrow",
+  "website": "https://burrow.com/",
+  "description": "Online store on Shopify selling modular sofas, sectionals, tables, desks, beds and rugs, with showrooms. Its delivery page describes shipping in boxes from its own warehouse and notes that delivery windows vary by region; it does not name destination countries.",
+  "country": "US",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "home-furniture"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "US",
+        "coverage": "partial",
+        "notes": "Delivery page says delivery windows vary by region and rugs ship from a New Jersey warehouse; destination countries are not named."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Showrooms are listed; pickup of online orders is not stated."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://burrow.com/?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://burrow.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://burrow.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://burrow.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://burrow.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify store.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://burrow.com/delivery",
+        "supports": "delivery and shipping description",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://burrow.com/",
+        "supports": "product range and showrooms link",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

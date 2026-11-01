@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "us-fat-brain-toys",
+  "name": "Fat Brain Toys",
+  "website": "https://www.fatbraintoys.com/",
+  "description": "Online toy store with its own checkout. Its shipping page states standard shipping within the 48 contiguous states, shipping to Alaska, Hawaii, Puerto Rico and APO/FPO addresses via the US Postal Service, and international shipping through USPS Parcel Post.",
+  "country": "US",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "US",
+        "coverage": "confirmed",
+        "notes": "Shipping page covers the 48 contiguous states plus Alaska, Hawaii, US territories and APO/FPO (USPS)."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "No pickup option was found on the shipping page."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.fatbraintoys.com/search.cfm?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.fatbraintoys.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Site search verified by the probe. robots.txt disallows OAI-SearchBot and Claude-SearchBot; other assistants are allowed.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.fatbraintoys.com/info/shipping.cfm",
+        "supports": "shipping scope: contiguous US, Alaska, Hawaii, territories, APO/FPO, international via USPS Parcel Post",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

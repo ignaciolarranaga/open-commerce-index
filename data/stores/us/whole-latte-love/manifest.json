@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "us-whole-latte-love",
+  "name": "Whole Latte Love",
+  "website": "https://www.wholelattelove.com/",
+  "description": "Online store on Shopify selling espresso machines, coffee makers, grinders, coffee and tea, and machine parts and accessories. Its shipping policy states free standard shipping on qualifying retail orders to the contiguous United States (excluding Hawaii, Alaska and Puerto Rico) and offers shipping to Canada; the page does not state whether it delivers to the excluded areas.",
+  "country": "US",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "coffee",
+    "small-appliances"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "US",
+        "coverage": "partial",
+        "notes": "Shipping policy describes free standard shipping to the contiguous United States and excludes Hawaii, Alaska and Puerto Rico from that offer; delivery to those areas is not stated."
+      },
+      {
+        "country": "CA",
+        "coverage": "confirmed",
+        "notes": "Shipping policy mentions free shipping to Canada above a stated order total; a separate Canada store is linked."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "No pickup option was found on the pages read."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.wholelattelove.com/search?q={query}&type=product",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.wholelattelove.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.wholelattelove.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.wholelattelove.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.wholelattelove.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify store with a USA and a Canada storefront. robots.txt disallows search URLs and AI crawlers, so search paths were not tested. Publishes llms.txt, a UCP file and a Shopify storefront MCP endpoint.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.wholelattelove.com/policies/shipping-policy",
+        "supports": "shipping scope: contiguous US free standard shipping, Canada",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.wholelattelove.com/",
+        "supports": "catalog navigation: espresso machines, coffee makers, grinders, coffee and tea, parts, Shopify platform",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

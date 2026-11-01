@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "us-abt-electronics",
+  "name": "Abt Electronics",
+  "website": "https://www.abt.com/",
+  "description": "Online store of a Glenview, Illinois retailer selling major appliances, small kitchen appliances, TVs and electronics, air conditioning and heating products. Its help page is titled local and nationwide shipping and delivery and lists in-store and curbside pickup.",
+  "country": "US",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "large-appliances",
+    "small-appliances",
+    "tv-audio",
+    "climate"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "US",
+        "coverage": "confirmed",
+        "notes": "Help page titled Local and Nationwide Shipping & Delivery; details of state coverage were not stated on the text read."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Help center links Curbside & In Store Pickup; showroom at 1200 N. Milwaukee, Glenview, IL."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.abt.com/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.abt.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Site search verified by the probe. Has a showroom and offers installation services.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.abt.com/help/shipping-and-delivery",
+        "supports": "nationwide shipping and delivery, pickup in store, Glenview IL address",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.abt.com/",
+        "supports": "category navigation: appliances, TVs and electronics, heating and cooling",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

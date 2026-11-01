@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "us-tool-nut",
+  "name": "Tool Nut",
+  "website": "https://www.toolnut.com/",
+  "description": "Online store on Shopify selling power tools, hand tools, batteries, tool storage and outdoor tools. Its shipping page says orders ship from a New York state warehouse by FedEx Ground or USPS, and that it cannot ship to PO boxes; it does not name destination countries.",
+  "country": "US",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "hardware-tools"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "US",
+        "coverage": "partial",
+        "notes": "Shipping page describes FedEx Ground or USPS shipping from a New York state warehouse with a FedEx transit time map; destination countries are not named."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "No pickup option was found on the pages read."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.toolnut.com/collections/shop?q={query}",
+      "status": "unverified",
+      "notes": "The search page loads, but results did not appear in the HTML; they probably render with JavaScript."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.toolnut.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.toolnut.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.toolnut.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.toolnut.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify store.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.toolnut.com/pages/shipping-policies-and-fees-tool-nut",
+        "supports": "carriers, warehouse in New York state, no PO boxes",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.toolnut.com/",
+        "supports": "product categories",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
