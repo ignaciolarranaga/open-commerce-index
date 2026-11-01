@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "es-ineffable-coffee",
+  "name": "Ineffable Coffee",
+  "website": "https://ineffablecoffee.com/",
+  "description": "Spanish specialty coffee roaster with an online store on Shopify. Sells coffee beans, cold brew, brewing gear, books and merchandising. Its shipping page states delivery to the Peninsula, the Balearic Islands and Portugal and no shipping to the Canary Islands, Ceuta, Melilla or Gibraltar.",
+  "description_es": "Tostador español de café de especialidad con tienda online en Shopify. Vende café en grano, cold brew, accesorios de preparación, libros y merchandising. Su página de envíos indica entrega en Península, Baleares y Portugal y que no envía a Canarias, Ceuta, Melilla ni Gibraltar.",
+  "country": "ES",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "coffee"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "ES",
+        "coverage": "partial",
+        "notes": "Shipping page states delivery to the Peninsula and the Balearic Islands; no shipping to the Canary Islands, Ceuta or Melilla."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Pickup is not stated on the pages read."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://ineffablecoffee.com/search?q={query}&type=product",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "products_feed",
+        "url": "https://ineffablecoffee.com/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://ineffablecoffee.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://ineffablecoffee.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://ineffablecoffee.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://ineffablecoffee.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "robots.txt disallows assistant user agents, so automated access is restricted; follow the site link for searches. Shipping terms differ slightly between pages.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://ineffablecoffee.com/",
+        "supports": "product range",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://ineffablecoffee.com/en/pages/informacion-de-envios",
+        "supports": "delivery to Peninsula and Balearic Islands, exclusion of Canary Islands, Ceuta and Melilla (read through a search snippet; page fetch was rate-limited)",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

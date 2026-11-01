@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "es-perfumerias-primor",
+  "name": "Perfumerías Primor",
+  "website": "https://www.primor.eu/",
+  "description": "Spanish perfume and cosmetics retailer with an online store on Magento and physical shops. Sells perfumes, makeup, skincare, hair care, body care and parapharmacy. Its shipping page states home delivery to the Peninsula and the Balearic Islands and in-store pickup.",
+  "description_es": "Perfumería y cosmética española con tienda online en Magento y tiendas físicas. Vende perfumes, maquillaje, cosmética, cabello, cuidado corporal y parafarmacia. Su página de envíos indica entrega a domicilio en Península y Baleares y recogida en tienda.",
+  "country": "ES",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "health-beauty"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Chanel",
+    "Dior",
+    "Lancôme",
+    "Clarins",
+    "Kérastase",
+    "Nivea"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "ES",
+        "coverage": "partial",
+        "notes": "Shipping page states home delivery to the Peninsula and the Balearic Islands; Canary Islands, Ceuta and Melilla appear only as selectable regions without terms."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Shipping page lists pickup in shop for all destinations."
+  },
+  "access": {
+    "platform": "magento",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.primor.eu/catalogsearch/result/?q={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.primor.eu/blog/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "robots.txt disallows assistant user agents, so automated access is restricted; follow the site link for searches.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.primor.eu/es_es/",
+        "supports": "product range, brands and physical shops",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.primor.eu/es_es/envios-y-devoluciones",
+        "supports": "home delivery to Peninsula and Balearic Islands and shop pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

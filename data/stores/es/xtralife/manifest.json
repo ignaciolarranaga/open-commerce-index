@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "es-xtralife",
+  "name": "xtralife",
+  "website": "https://www.xtralife.com/",
+  "description": "Spanish online store for video games, consoles, accessories, collectible figures and merchandising, including retro and import items. Its delivery page lists carriers for mainland Spain, the Balearic Islands, the Canary Islands, Ceuta, Melilla, Portugal and several European countries.",
+  "description_es": "Tienda online española de videojuegos, consolas, accesorios, figuras de colección y merchandising, con juegos retro e importación. Su página de entregas indica transportistas para la España peninsular, Baleares, Canarias, Ceuta, Melilla, Portugal y varios países europeos.",
+  "country": "ES",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "gaming",
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Turtle Beach",
+    "SteelSeries",
+    "HORI",
+    "Funko POP",
+    "Good Smile Company"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "ES",
+        "coverage": "confirmed",
+        "notes": "Delivery page lists mainland Spain, Balearic Islands, Canary Islands, Ceuta and Melilla; no deliveries to post office boxes."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "The delivery page does not mention pickup points or in-store pickup."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.xtralife.com/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.xtralife.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Search page exists at /buscar; the probe did not confirm results in HTML. The delivery page lists SEUR, Correos Express and Correos by destination.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.xtralife.com/",
+        "supports": "product range and brands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.xtralife.com/opciones-de-entrega",
+        "supports": "delivery destinations and carriers, no pickup mentioned",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

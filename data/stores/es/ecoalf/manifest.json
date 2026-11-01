@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "es-ecoalf",
+  "name": "Ecoalf",
+  "website": "https://ecoalf.com/",
+  "description": "Spanish sustainable fashion brand with its own online store on Shopify, selling clothing, footwear and accessories. Its shipping policy lists Spain (Peninsula and Balearic Islands), Canary Islands, Ceuta and Melilla, Europe and other countries as destinations.",
+  "description_es": "Marca española de moda sostenible con tienda online propia en Shopify, que vende ropa, calzado y accesorios. Su política de envíos incluye España (Península y Baleares), Canarias, Ceuta y Melilla, Europa y otros países.",
+  "country": "ES",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "currencies": [
+    "EUR",
+    "USD"
+  ],
+  "categories": [
+    "fashion"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "ES",
+        "coverage": "confirmed",
+        "notes": "Shipping policy lists Spain (Peninsula and Balearic Islands) and separately the Canary Islands, Ceuta and Melilla."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Pickup is not stated on the pages read."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://ecoalf.com/search?q={query}&type=product",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://ecoalf.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://ecoalf.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://ecoalf.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://ecoalf.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "robots.txt disallows assistant user agents, so automated access is restricted. The site is organised in regional storefronts; terms were read on the en-us storefront.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://ecoalf.com/en-us/pages/envio-y-devoluciones",
+        "supports": "shipping destinations including Spain, Canary Islands, Ceuta and Melilla (read through a search snippet; page fetch was rate-limited)",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://ecoalf.com/en-us/policies/shipping-policy",
+        "supports": "shipping zones",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

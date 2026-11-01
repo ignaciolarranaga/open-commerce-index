@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "es-pccomponentes",
+  "name": "PcComponentes",
+  "website": "https://www.pccomponentes.com/",
+  "description": "Spanish online retailer of computing, components, gaming, phones, TVs and small appliances. Its help pages describe delivery to the Peninsula, Balearic Islands, Canary Islands, Ceuta and Melilla, pickup points, and in-store pickup in three cities.",
+  "description_es": "Tienda online española de informática, componentes, gaming, telefonía, televisores y pequeños electrodomésticos. Sus páginas de ayuda describen entregas en Península, Baleares, Canarias, Ceuta y Melilla, puntos de recogida y recogida en tienda en tres ciudades.",
+  "country": "ES",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "computing",
+    "gaming",
+    "phones",
+    "tv-audio",
+    "small-appliances"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "ES",
+        "coverage": "confirmed",
+        "notes": "Help page lists delivery times for the Peninsula, Balearic Islands, Canary Islands, Ceuta and Melilla."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Help pages list pickup points across the Peninsula and Balearic Islands and in-store pickup in Murcia, Madrid and Barcelona."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "unknown",
+    "bot_protection": "challenge",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": null,
+      "status": "unverified",
+      "notes": "Homepage returned 403; automated access looks restricted (challenge)."
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Bot protection shows a challenge page to automated requests, so automated access is restricted.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://help.pccomponentes.com/hc/es-es/articles/19504278450461-Plazos-de-entrega",
+        "supports": "delivery coverage by region and in-store pickup cities",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://help.pccomponentes.com/hc/es-es/articles/19505013338013-Puntos-de-Recogida",
+        "supports": "pickup points across Peninsula and Balearic Islands",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
