@@ -91,3 +91,18 @@ test('regions must belong to the ships_to country and be known', () => {
   assert.ok(messages(result).some((m) => m.includes('AR-B is not in UY')));
   assert.ok(messages(result).some((m) => m.includes('UY-ZZ is not in data/countries.json')));
 });
+
+test('cities from data/countries.json are accepted on ships_to and as a home city', () => {
+  const manifest = validManifest({ city: 'montevideo' });
+  manifest.fulfillment.ships_to = [{ country: 'UY', coverage: 'confirmed', cities: ['montevideo', 'canelones'] }];
+  const result = validateAll({ storesDir: tempStores({ 'uy/example-store': manifest }) });
+  assert.deepEqual(messages(result), []);
+});
+
+test('cities must belong to the country they are listed under', () => {
+  const manifest = validManifest({ city: 'buenos-aires' });
+  manifest.fulfillment.ships_to = [{ country: 'UY', coverage: 'partial', cities: ['montevideo', 'springfield'] }];
+  const result = validateAll({ storesDir: tempStores({ 'uy/example-store': manifest }) });
+  assert.ok(messages(result).some((m) => m.includes('city buenos-aires is not a city of UY')));
+  assert.ok(messages(result).some((m) => m.includes('ships_to[0].cities: springfield is not a city of UY')));
+});
