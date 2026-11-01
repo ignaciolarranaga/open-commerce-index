@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "de-reichelt-elektronik",
+  "name": "reichelt elektronik",
+  "website": "https://www.reichelt.de/",
+  "description": "German electronics retailer selling components, Raspberry Pi and Arduino boards, power supplies, measurement and soldering equipment, network and PC technology. Its shipping page gives rates for Germany, and it has an on-site pickup shop in Sande.",
+  "description_es": "Minorista alemán de electrónica con componentes, placas Raspberry Pi y Arduino, fuentes de alimentación, instrumentos de medición y soldadura, redes y tecnología para PC. Su página de envíos da tarifas para Alemania y tiene un local de retiro en Sande.",
+  "country": "DE",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "computing",
+    "hardware-tools",
+    "tv-audio"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Raspberry Pi",
+    "AVM",
+    "Brother",
+    "Digitus",
+    "Siemens",
+    "M5Stack"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "DE",
+        "coverage": "confirmed",
+        "notes": "The shipping page gives carrier rates for Germany tiered by weight up to 50 kg. No island limits stated."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Pickup in the shop in Sande (Elektronikring 1). Pre-orders need two hours and are held two working days."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.reichelt.de/de/de/shop/suche?search={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.reichelt.de/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices are shown excluding shipping, which is added for the whole cart. Product pages in German with other language options.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.reichelt.de/",
+        "supports": "product range and brands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.reichelt.de/de/de/shop/service/-12_28",
+        "supports": "Germany shipping rates",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.reichelt.de/de/de/shop/service/-12_30",
+        "supports": "pickup at the Sande shop",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

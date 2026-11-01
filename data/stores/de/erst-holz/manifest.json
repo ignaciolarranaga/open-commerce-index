@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "de-erst-holz",
+  "name": "Erst-Holz",
+  "website": "https://www.erst-holz.de/",
+  "description": "German online shop for solid-wood furniture, mainly children's, bunk and adult beds, plus bedroom, dining room, hallway and garden furniture, wooden toys and decorations. Its shipping page covers Germany and selected EU countries, with a surcharge schedule for islands.",
+  "description_es": "Tienda online alemana de muebles de madera maciza, sobre todo camas infantiles, literas y para adultos, además de muebles de dormitorio, comedor, recibidor y jardín, juguetes de madera y decoración. Su página de envíos cubre Alemania y países de la UE, con tarifas especiales para islas.",
+  "country": "DE",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "home-furniture",
+    "bedding",
+    "toys"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "DE",
+        "coverage": "confirmed",
+        "notes": "Flat 3 EUR per household order on the German mainland, bulky items by freight to the curb. Island delivery is priced by weight from 15 EUR."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "The shipping page describes self pickup (Selbstabholung) with no shipping costs; the shop emails when the goods are ready."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.erst-holz.de/search?search={query}",
+      "status": "verified"
+    },
+    "endpoints": [],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shipping page states no delivery to Switzerland or other non-EU countries. Product pages in German.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.erst-holz.de/",
+        "supports": "product range",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.erst-holz.de/Informationen/Versandinformationen-EU-CH/",
+        "supports": "Germany shipping rates, island surcharges, pickup, EU scope",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

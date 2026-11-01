@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "de-holzfarm",
+  "name": "Holzfarm",
+  "website": "https://holzfarm.de/",
+  "description": "German online shop for wooden toys, children's books, creative supplies and gift ideas. Its shipping page lists Germany, Austria, Italy, Belgium, France, Spain and the Netherlands.",
+  "description_es": "Tienda online alemana de juguetes de madera, libros infantiles, artículos creativos e ideas de regalo. Su página de envíos incluye Alemania, Austria, Italia, Bélgica, Francia, España y Países Bajos.",
+  "country": "DE",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "toys",
+    "general"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Goki",
+    "Grimm's",
+    "Plantoys",
+    "Ostheimer",
+    "Erzi"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "DE",
+        "coverage": "confirmed",
+        "notes": "Free shipping within Germany from 50 EUR order value, otherwise 3.99 EUR. No regional limits stated."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Pickup is not mentioned on the shipping page."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://holzfarm.de/?s={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://holzfarm.de/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Product pages in German. Other countries on request by email.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://holzfarm.de",
+        "supports": "product range and brands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://holzfarm.de/Versand-und-Zahlungsbedingungen",
+        "supports": "delivery countries and German shipping terms",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
