@@ -11,6 +11,7 @@ import path from 'node:path';
 import { execSync } from 'node:child_process';
 import { ROOT, loadConfig, readJson } from './lib/config.js';
 import { loadCountries } from './lib/data.js';
+import { isNationwide, storeCities } from './lib/shards.js';
 import { validateAll, createValidators } from './lib/validate.js';
 import { renderMarkdown, frontMatter, inline, escapeHtml as esc } from './lib/markdown.js';
 import { layout, storePage, storeCard, storeMarkdown, badge, categoryLabel, valueBadge } from './lib/render.js';
@@ -74,6 +75,9 @@ for (const store of stores) {
   storesByCountry.get(cc).push(store);
 }
 
+const shards = [];
+const storeEntry = (store) => ({ ...store.manifest, _links: { json: abs(`stores/${store.countryCode}/${store.slug}.json`), markdown: abs(`stores/${store.countryCode}/${store.slug}.md`), page: abs(`es/directory/${store.countryCode}/stores/${store.slug}/`) } });
+
 const countryEntries = [];
 for (const country of countries) {
   const cc = country.country.toLowerCase();
@@ -92,11 +96,39 @@ for (const country of countries) {
     generated_at: generatedAt,
     source_revision: revision,
     base_url: config.baseUrl,
-    stores: list.map((store) => ({ ...store.manifest, _links: { json: abs(`stores/${cc}/${store.slug}.json`), markdown: abs(`stores/${cc}/${store.slug}.md`), page: abs(`es/directory/${cc}/stores/${store.slug}/`) } })),
+    stores: list.map(storeEntry),
   }));
+  writeShards(country, list);
   for (const store of list) {
     write(`stores/${cc}/${store.slug}.json`, json(store.manifest));
     write(`stores/${cc}/${store.slug}.md`, storeMarkdown(store, ctx));
+  }
+}
+
+/** Writes <cc>/nationwide.json and <cc>/<city>.json for stores that name cities, and records each in shards. */
+function writeShards(country, list) {
+  const cc = country.country.toLowerCase();
+  const shard = (kind, id, name, members) => {
+    const relative = `${cc}/${id}.json`;
+    write(relative, json({
+      country: country.country,
+      kind,
+      id,
+      name,
+      schema_version: config.schema_version,
+      taxonomy_version: categories.taxonomy_version,
+      generated_at: generatedAt,
+      source_revision: revision,
+      base_url: config.baseUrl,
+      stores: members.map(storeEntry),
+    }));
+    shards.push({ country: country.country, kind, id, url: abs(relative), store_count: members.length });
+  };
+  const nationwide = list.filter((store) => isNationwide(store.manifest));
+  if (nationwide.length) shard('nationwide', 'nationwide', { en: 'Nationwide', es: 'Nacional' }, nationwide);
+  for (const city of country.cities || []) {
+    const members = list.filter((store) => storeCities(store.manifest).has(city.id));
+    if (members.length) shard('city', city.id, city.names, members);
   }
 }
 
@@ -112,7 +144,7 @@ const rootIndex = {
   categories_url: abs('categories.json'),
   store_schema_url: abs('schemas/store.schema.json'),
   countries: countryEntries,
-  shards: [],
+  shards,
 };
 const validators = createValidators();
 if (!validators.index(rootIndex)) {
