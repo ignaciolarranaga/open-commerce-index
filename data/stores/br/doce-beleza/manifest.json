@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "br-doce-beleza",
+  "name": "Doce Beleza",
+  "website": "https://www.docebeleza.com.br/",
+  "description": "Brazilian online beauty store on Shopify. Sells hair care (including straightening treatments), skincare and depilation products from many brands. Its site pages mention free shipping conditioned on order value and region, with shipping quoted in the cart; a nationwide delivery statement was not confirmed.",
+  "description_es": "Tienda online brasileña de belleza en Shopify. Vende cuidado capilar (incluidos tratamientos alisadores), cuidado de la piel y productos de depilación de muchas marcas. Sus páginas mencionan envío gratis según el valor del pedido y la región, con el envío calculado en el carrito; no se confirmó una declaración de entrega nacional.",
+  "country": "BR",
+  "languages": [
+    "pt"
+  ],
+  "currencies": [
+    "BRL"
+  ],
+  "categories": [
+    "health-beauty"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "BR",
+        "coverage": "unknown",
+        "notes": "Site pages mention free shipping above a value for Sao Paulo and shipping calculated in the cart; no nationwide statement was confirmed."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.docebeleza.com.br/search?q={query}&type=product",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.docebeleza.com.br/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.docebeleza.com.br/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.docebeleza.com.br/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.docebeleza.com.br/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices in BRL. Shopify storefront; shipping quoted in the cart.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.docebeleza.com.br/collections/todos-os-produtos",
+        "supports": "product range, platform, free-shipping conditions",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

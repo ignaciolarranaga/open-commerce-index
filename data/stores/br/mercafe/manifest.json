@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "br-mercafe",
+  "name": "Mercafé",
+  "website": "https://www.mercafe.com.br/",
+  "description": "Official online store of the 3 Corações group for coffee. Sells coffee capsules, coffee machines, ground and whole-bean coffees, cappuccinos, accessories and offers a subscription. Its delivery policy says deliveries cover all of Brazil and that delivery abroad and to PO boxes is not offered.",
+  "description_es": "Tienda online oficial del grupo 3 Corações para café. Vende cápsulas de café, máquinas de café, cafés molidos y en grano, cappuccinos y accesorios, y ofrece suscripción. Su política de entrega indica que las entregas cubren todo Brasil y que no se realizan entregas al exterior ni a casillas postales.",
+  "country": "BR",
+  "languages": [
+    "pt"
+  ],
+  "currencies": [
+    "BRL"
+  ],
+  "categories": [
+    "coffee",
+    "small-appliances"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "3 Corações",
+    "TRES"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "BR",
+        "coverage": "confirmed",
+        "notes": "Delivery policy says deliveries occur across all of Brazil; no international delivery and no PO box delivery. Risk areas defined by Correios or the carrier may have different arrangements."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Delivery policy does not mention pickup at a Mercafe location; Correios may ask the recipient to collect at an agency in some regions."
+  },
+  "access": {
+    "platform": "vtex",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.mercafe.com.br/busca?ft={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.mercafe.com.br/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.mercafe.com.br/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices in BRL. robots.txt disallows automated agents and search URLs, so assistants should not fetch the site automatically; follow the link instead. Delivery policy at /institucional/politica-de-entrega.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.mercafe.com.br/",
+        "supports": "product range, brands, official store of 3 Corações, policy links",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.mercafe.com.br/institucional/politica-de-entrega",
+        "supports": "deliveries across all of Brazil, no PO boxes or international delivery",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

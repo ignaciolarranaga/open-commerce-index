@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "br-velocita",
+  "name": "Velocità",
+  "website": "https://www.velocita.com.br/",
+  "description": "Brazilian running specialist with three physical stores in Sao Paulo (Jardins, Moema, Pinheiros) and an online store. Sells running shoes, apparel, accessories, watches and GPS devices and nutrition products from brands such as Asics, Brooks, Hoka, Nike and Garmin. Its about page says the online store delivers to customers across the country.",
+  "description_es": "Especialista brasileño en running con tres tiendas físicas en São Paulo (Jardins, Moema, Pinheiros) y una tienda online. Vende zapatillas de running, indumentaria, accesorios, relojes y GPS, y productos de nutrición de marcas como Asics, Brooks, Hoka, Nike y Garmin. Su página institucional indica que la tienda online entrega a clientes de todo el país.",
+  "country": "BR",
+  "languages": [
+    "pt"
+  ],
+  "currencies": [
+    "BRL"
+  ],
+  "categories": [
+    "sports",
+    "fashion"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Asics",
+    "Brooks",
+    "Hoka One One",
+    "Nike",
+    "Garmin",
+    "Mizuno",
+    "New Balance"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "BR",
+        "coverage": "confirmed",
+        "notes": "About page says the online store delivers to customers across the country."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "About page lists three physical stores in Sao Paulo but does not mention pickup."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.velocita.com.br/s?q={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.velocita.com.br/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Prices in BRL. robots.txt disallows automated agents and search URLs, so assistants should not fetch the site automatically; follow the link instead.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.velocita.com.br/quem-somos",
+        "supports": "product range, brands, three Sao Paulo stores, nationwide delivery statement",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
