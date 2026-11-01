@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "es-colchon-expres",
+  "name": "Colchón Exprés",
+  "website": "https://www.colchonexpres.com/",
+  "description": "Spanish mattress retailer (Pribucol S.A.) with an online store and nine physical shops in Madrid and Valladolid. Sells mattresses, bed bases, canapés, pillows, headboards and bedding accessories. Its own pages state distribution across the Peninsula and the Balearic Islands.",
+  "description_es": "Cadena española de colchones (Pribucol S.A.) con tienda online y nueve tiendas físicas en Madrid y Valladolid. Vende colchones, somieres, canapés, almohadas, cabeceros y complementos de cama. Sus páginas indican distribución en toda la Península y Baleares.",
+  "country": "ES",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "bedding",
+    "home-furniture"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Ingravity",
+    "Emma",
+    "Flex",
+    "Sonpura",
+    "Dunlopillo",
+    "Pardo"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "ES",
+        "coverage": "partial",
+        "notes": "Own pages state distribution across the Peninsula and the Balearic Islands; Canary Islands, Ceuta and Melilla are not mentioned."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Nine physical shops are listed (Madrid area and Valladolid) for trying products; in-store pickup of online orders is not stated."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.colchonexpres.com/?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://www.colchonexpres.com/media/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Mattress retailer with physical shops in Madrid and Valladolid. Free-shipping threshold is shown in the site banner and may differ between pages; the cart shows the delivery estimate for a postal code.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.colchonexpres.com/",
+        "supports": "product range, brands and free-shipping banner",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.colchonexpres.com/colchones-sonpura-entrega/",
+        "supports": "delivery across the Peninsula and Balearic Islands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.colchonexpres.com/pribucol-sa/",
+        "supports": "company and distribution across the Peninsula and Balearic Islands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.colchonexpres.com/tiendas/",
+        "supports": "physical shops in Madrid and Valladolid",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "es-pedalmoto",
+  "name": "Pedalmoto",
+  "website": "https://pedalmoto.com/",
+  "description": "Bicycle shop from Granada with an online store on PrestaShop. Sells bicycles, e-bikes, components, clothing, helmets, accessories and nutrition. Its delivery page states free shipping thresholds for the Peninsula, Balearic Islands and Portugal and says shipping outside the Peninsula is quoted on request.",
+  "description_es": "Tienda de bicicletas de Granada con tienda online en PrestaShop. Vende bicicletas, bicicletas eléctricas, componentes, ropa, cascos, accesorios y nutrición. Su página de entrega indica envío gratis desde cierto importe en Península, Baleares y Portugal y que fuera de la península el envío se cotiza bajo consulta.",
+  "country": "ES",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "sports"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Shimano",
+    "SRAM",
+    "Orbea",
+    "Giant",
+    "Cube",
+    "Bosch",
+    "Maxxis"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "ES",
+        "coverage": "partial",
+        "notes": "Delivery page lists the Peninsula and the Balearic Islands; shipping outside the Peninsula is not calculated automatically and is quoted on request."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "A shop address in Granada is shown; in-store pickup is not stated."
+  },
+  "access": {
+    "platform": "prestashop",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://pedalmoto.com/buscar?controller=search&s={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "sitemap",
+        "url": "https://pedalmoto.com/1_index_sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "robots.txt disallows assistant user agents, so automated access is restricted; follow the site link for searches.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://pedalmoto.com/es/",
+        "supports": "product range and brands",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://pedalmoto.com/es/content/1-entrega",
+        "supports": "delivery scope and free-shipping terms",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

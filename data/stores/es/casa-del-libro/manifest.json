@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "es-casa-del-libro",
+  "name": "Casa del Libro",
+  "website": "https://www.casadellibro.com/",
+  "description": "Spanish bookseller with an online store and more than 70 physical bookshops. Sells books, eBooks, audiobooks, stationery and eReaders. Its shipping page covers the Peninsula, Balearic Islands, Canary Islands, Ceuta, Melilla and international destinations, with free pickup in bookshops.",
+  "description_es": "Librería española con tienda online y más de 70 librerías físicas. Vende libros, eBooks, audiolibros, papelería y lectores electrónicos. Su página de envíos cubre Península, Baleares, Canarias, Ceuta, Melilla y destinos internacionales, con recogida gratuita en librería.",
+  "country": "ES",
+  "languages": [
+    "es"
+  ],
+  "currencies": [
+    "EUR"
+  ],
+  "categories": [
+    "office"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "ES",
+        "coverage": "confirmed",
+        "notes": "Shipping page lists the Peninsula and Balearic Islands, and separate terms for the Canary Islands, Ceuta and Melilla; third-party sellers deliver only to the Peninsula and Balearic Islands."
+      }
+    ],
+    "pickup": "yes",
+    "pickup_notes": "Free pickup in bookshop is offered at checkout; a separate pickup-point option covers the Peninsula and Balearic Islands only."
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "mixed",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "disallowed",
+      "ai_user_agents": "disallowed"
+    },
+    "search": {
+      "url_template": "https://www.casadellibro.com/buscar?q={query}",
+      "status": "unverified",
+      "notes": "robots.txt disallows search URLs for generic crawlers, so the probe did not test this path."
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.casadellibro.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.casadellibro.com/sitemap-index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "robots.txt disallows assistant user agents, so automated access is restricted; follow the site link for searches.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.casadellibro.com/",
+        "supports": "product range and pickup in bookshop",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.casadellibro.com/gastos-de-envio-y-recogida-en-libreria",
+        "supports": "delivery coverage and bookshop pickup",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
