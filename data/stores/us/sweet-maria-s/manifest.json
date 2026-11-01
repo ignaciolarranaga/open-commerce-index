@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "us-sweet-maria-s",
+  "name": "Sweet Maria's",
+  "website": "https://www.sweetmarias.com/",
+  "description": "Online store on Shopify selling unroasted green coffee, roasted coffee, home coffee roasters and roasting accessories. Its shipping policy describes UPS domestic shipping services and international shipping with restrictions on green coffee and electrical appliances for some destinations.",
+  "country": "US",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "USD"
+  ],
+  "categories": [
+    "coffee",
+    "small-appliances"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "US",
+        "coverage": "confirmed",
+        "notes": "Shipping policy describes UPS domestic services (Ground, 2nd Day Air, Next Day Air); UPS cannot deliver to PO boxes."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Site footer has a Pick Ups help link; its content was not read."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.sweetmarias.com/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.sweetmarias.com/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://www.sweetmarias.com/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://www.sweetmarias.com/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://www.sweetmarias.com/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://www.sweetmarias.com/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.sweetmarias.com/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify store; site search verified by the probe. Separate wholesale storefront and a sister Coffee Shrub site exist.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.sweetmarias.com/policies/shipping-policy",
+        "supports": "UPS domestic services, international restrictions, no PO boxes",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.sweetmarias.com/",
+        "supports": "catalog navigation: green coffee, roasted coffee, roasters",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
