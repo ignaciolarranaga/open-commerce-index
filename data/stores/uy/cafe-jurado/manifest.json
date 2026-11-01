@@ -6,6 +6,7 @@
   "description": "Coffee roaster and seller in Uruguay with an online store on WooCommerce. Sells whole-bean, ground and capsule coffee compatible with Nespresso and Lavazza Blue, plus coffee makers and accessories. States shipping to any department for a fixed fee in 24 to 48 hours, and free pickup in Montevideo.",
   "description_es": "Tostadora y vendedora de café en Uruguay con tienda online en WooCommerce. Vende café en grano, molido y en cápsulas compatibles con Nespresso y Lavazza Blue, además de cafeteras y accesorios. Indica envío a cualquier departamento por un costo fijo en 24 a 48 horas, y retiro gratis en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

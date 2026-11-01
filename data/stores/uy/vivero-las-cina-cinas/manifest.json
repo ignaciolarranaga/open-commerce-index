@@ -6,6 +6,7 @@
   "description": "Montevideo plant nursery selling plants, trees, shrubs, cacti and succulents, lawn seed, vegetable seedlings, pots, soil, fertilizers and garden accessories online. Free delivery in the Montevideo urban area and nearby towns, and delivery to the rest of Uruguay by DAC at the buyer's cost.",
   "description_es": "Vivero de Montevideo con venta en línea de plantas, árboles, arbustos, cactus y suculentas, semillas de césped, plantines de huerta, macetas, tierra, fertilizantes y accesorios de jardín. Envío sin cargo en el cono urbano de Montevideo y localidades cercanas, y al interior del país por DAC a cargo del comprador.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Uruguayan lingerie brand selling bralettes, sets, bodysuits, panties and accessories online. Ships to the whole country and offers free pickup at its Montevideo atelier.",
   "description_es": "Marca uruguaya de lencería que vende online bralettes, conjuntos, bodys, bombachas y accesorios. Envía a todo el país y ofrece retiro sin costo en su atelier de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

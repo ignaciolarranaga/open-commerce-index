@@ -6,6 +6,7 @@
   "description": "Multi-brand online retailer based in Montevideo. Sells phones, notebooks, TVs, speakers, consoles, home appliances, furniture, beauty, toys, sports goods and grocery, including its own brands NAPPO and KOLKE. Ships within Uruguay; Chile is served by a separate site.",
   "description_es": "Tienda online multimarca con sede en Montevideo. Vende celulares, notebooks, televisores, parlantes, consolas, electrodomésticos, muebles, belleza, juguetes, deportes y almacén, incluyendo sus marcas propias NAPPO y KOLKE. Envía dentro de Uruguay; Chile se atiende desde otro sitio.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

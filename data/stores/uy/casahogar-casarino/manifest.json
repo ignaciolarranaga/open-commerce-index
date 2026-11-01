@@ -6,6 +6,7 @@
   "description": "Appliance and furniture retailer based in Montevideo with an online store on the Wix platform. Sells kitchen and home appliances, furniture, bedroom items, TV and audio and phones. States free interior shipping through DAC and in-store pickup at its Montevideo location.",
   "description_es": "Comercio de electrodomésticos y muebles con sede en Montevideo y tienda online sobre la plataforma Wix. Vende electrodomésticos de cocina y hogar, muebles, artículos para dormitorio, TV y audio y celulares. Indica envío al interior por DAC sin costo y retiro en el local de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

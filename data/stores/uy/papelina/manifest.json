@@ -6,6 +6,7 @@
   "description": "Creative stationery store in Uruguay with an online store. Sells organisers, art and craft supplies, party and gift items, and writing supplies. States shipping across Uruguay, with Montevideo and interior orders sent by agency.",
   "description_es": "Papelería creativa en Uruguay con tienda online. Vende organizadores, artículos de arte y manualidades, fiestas y regalos, y artículos de escritura. Indica envíos a todo Uruguay, en Montevideo y al interior por agencia.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Importer and online retailer in Montevideo covering fitness, camping, bicycles, wellness, electric mobility, home and garden products. States shipping to Montevideo and the interior; costs, times and pickup terms are not stated on the homepage.",
   "description_es": "Importadora y comercio online con sede en Montevideo que cubre fitness, camping, bicicletas, bienestar, movilidad eléctrica, hogar y jardín. Indica envíos a Montevideo y al interior; los costos, plazos y condiciones de retiro no figuran en la página principal.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

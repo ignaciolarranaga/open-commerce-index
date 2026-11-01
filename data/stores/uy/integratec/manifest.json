@@ -6,6 +6,7 @@
   "description": "Uruguayan online store selling notebooks, PCs, components and monitors, plus phones, wearables, audio, TV and video. Ships across Uruguay and offers in-store pickup in Montevideo.",
   "description_es": "Tienda online uruguaya de notebooks, PCs, componentes y monitores, además de celulares, wearables, audio, TV y video. Envía a todo el país y ofrece retiro en tienda en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

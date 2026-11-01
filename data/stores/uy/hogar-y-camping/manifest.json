@@ -6,6 +6,7 @@
   "description": "Uruguayan online store selling camping, fishing, archery, cutlery, home and garden products. It delivers in Montevideo by its own courier and to the rest of Uruguay through DAC, and offers pickup at its Montevideo store.",
   "description_es": "Tienda online uruguaya de camping, pesca, arquería, cuchillería, hogar y jardín. Entrega en Montevideo con courier propio y al interior por DAC; ofrece retiro en su local de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

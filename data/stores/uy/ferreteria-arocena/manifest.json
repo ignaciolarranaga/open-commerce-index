@@ -6,6 +6,7 @@
   "description": "Hardware and paint store in Montevideo with an online store on the Fenicio platform. Sells paints, tools, electrical and plumbing supplies, construction materials, heating and air conditioning, and garden and pool products. States nationwide delivery via La Nave in 24 to 72 business hours and same-day delivery in Montevideo.",
   "description_es": "Ferretería y pinturería de Montevideo con tienda online sobre la plataforma Fenicio. Vende pinturas, herramientas, electricidad, materiales de construcción, calefacción y climatización, y productos de jardín y piscina. Indica entrega a todo el país por La Nave en 24 a 72 horas hábiles y entrega en el día en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

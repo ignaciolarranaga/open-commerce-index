@@ -6,6 +6,7 @@
   "description": "Uruguayan store selling Funko Pop figures, McFarlane statues, licensed pop-culture merchandise and board games, with a physical shop in Montevideo. States shipping to all of Uruguay.",
   "description_es": "Tienda uruguaya de figuras Funko Pop, estatuas McFarlane, merchandising licenciado de cultura pop y juegos de mesa, con local en Montevideo. Informa envíos a todo el Uruguay.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

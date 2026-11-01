@@ -6,6 +6,7 @@
   "description": "Uruguayan importer selling notebooks, PCs, monitors and phones online, with technical service. Offers delivery across Uruguay, same-day delivery in Montevideo and pickup at its Montevideo store.",
   "description_es": "Importadora uruguaya que vende notebooks, PCs, monitores y celulares online, con servicio técnico. Ofrece envío a todo el país, entrega en el día en Montevideo y retiro en su local de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Coffee brand and online store in Uruguay built on the Fenicio platform. Sells coffee in beans, ground, soluble and capsules, coffee makers and brewing accessories. States an interior delivery option in 72 business hours; full interior coverage is not stated on the homepage.",
   "description_es": "Marca y tienda online de café en Uruguay sobre la plataforma Fenicio. Vende café en grano, molido, soluble y cápsulas, cafeteras y accesorios para preparar café. Indica una opción de envío al interior en 72 horas hábiles; la cobertura completa del interior no figura en la página principal.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

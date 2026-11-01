@@ -6,6 +6,7 @@
   "description": "Montevideo bookstore selling new and used books online, including Uruguayan literature, history, law, children's and school and university textbooks. States shipping to all of Uruguay.",
   "description_es": "Librería de Montevideo que vende en línea libros nuevos y usados: literatura uruguaya, historia, derecho, infantiles y textos escolares y universitarios. Informa envíos a todo el Uruguay.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

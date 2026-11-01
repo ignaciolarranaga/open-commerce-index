@@ -6,6 +6,7 @@
   "description": "Wine and spirits retailer in Uruguay with an online store on WooCommerce. Sells wines by country, champagne and sparkling wines, spirits, glassware and gourmet products such as coffee and olive oil. States nationwide shipping by DAC: 48 business hours to Montevideo, Maldonado and Canelones and 72 to the rest of the country, with a fixed fee below a stated threshold.",
   "description_es": "Comercio de vinos y espirituosos en Uruguay con tienda online en WooCommerce. Vende vinos por país, champagne y espumantes, espirituosos, copas y productos gourmet como café y aceite de oliva. Indica envíos a todo el país mediante DAC: 48 horas hábiles a Montevideo, Maldonado y Canelones, y 72 al resto del país, con un costo fijo por debajo de un monto indicado.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

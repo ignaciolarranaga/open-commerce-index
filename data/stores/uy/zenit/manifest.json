@@ -6,6 +6,7 @@
   "description": "Uruguayan store of luggage, backpacks, bags, handbags, wallets, travel accessories, thermoses and mate gear, apparel and sunglasses. Ships to the whole country and offers free pickup at its Montevideo stores.",
   "description_es": "Tienda uruguaya de valijas, mochilas, bolsos, carteras, billeteras, accesorios de viaje, termos y materas, vestimenta y lentes de sol. Envía a todo el país y ofrece retiro sin costo en sus locales de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

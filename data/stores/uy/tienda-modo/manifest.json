@@ -6,6 +6,7 @@
   "description": "Online retailer in Uruguay selling technology, home, sports and other products, including phones, computers, gaming, audio, smart TV, smart home, tablets, electric mobility and cycling. States shipping across the country, with cost and time calculated at checkout by address, and in-person pickup at its Montevideo store.",
   "description_es": "Comercio online de Uruguay que vende tecnología, hogar, deporte y otros productos, incluidos celulares, computadoras, gaming, audio, smart TV, smart home, tablets, movilidad eléctrica y ciclismo. Indica envíos a todo el país, con costo y plazo calculados al finalizar la compra según la dirección, y retiro en persona en su local de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

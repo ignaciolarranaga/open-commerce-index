@@ -6,6 +6,7 @@
   "description": "Uruguayan shop selling board and card games, puzzles, children's books, colouring pads and build-it-yourself games, many with Uruguayan themes, organised by age. Ships nationwide and offers free pickup in Pocitos, Montevideo.",
   "description_es": "Tienda uruguaya de juegos de mesa y cartas, puzzles, libros infantiles, blocks para colorear y juegos para armar, muchos con temática uruguaya, organizados por edad. Envía a todo el país y ofrece retiro gratis en Pocitos, Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

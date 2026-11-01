@@ -6,6 +6,7 @@
   "description": "Uruguayan online store selling home organization and decor items: labelled boxes, organizers, shelves, kitchen, tableware and desk accessories. Ships nationwide; interior orders go by DAC.",
   "description_es": "Tienda online uruguaya de organización y decoración del hogar: cajas rotuladas, organizadores, estantes, cocina, vajilla y escritorio. Envía a todo el país; el interior por DAC.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Wine, champagne and spirits retailer in Montevideo with an online store on the Fenicio platform. Sells wines, sparkling wines, spirits, vermouth and gourmet products such as coffee, water, preserves and drinks. States delivery across the country through La Nave Cargo and a pickup centre; the homepage gives no fee or delivery time.",
   "description_es": "Comercio de vinos, espumantes y espirituosos en Montevideo con tienda online sobre la plataforma Fenicio. Vende vinos, champagne, espirituosos, vermut y productos gourmet como café, aguas, conservas y bebidas. Indica entrega a todo el país a través de La Nave Cargo y un centro de retiro; la página principal no informa costo ni plazo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

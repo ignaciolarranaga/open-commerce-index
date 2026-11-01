@@ -6,6 +6,7 @@
   "description": "Perfumery, liquor and food shop in Montevideo with an online store on WooCommerce. Sells perfumes, drinks, infusions, food, chocolate, cosmetics, gifts and homeware. States same-day dispatch to interior agencies and free shipping above a stated amount; nationwide coverage is not stated.",
   "description_es": "Perfumería, licorería y almacén de Montevideo con tienda online sobre WooCommerce. Vende perfumes, bebidas, infusiones, alimentos, chocolate, cosmética, regalos y bazar. Indica despacho el mismo día a agencias del interior y envío gratis por encima de un monto indicado; la cobertura nacional no figura.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

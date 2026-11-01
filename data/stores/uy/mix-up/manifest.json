@@ -6,6 +6,7 @@
   "description": "Multi-brand fashion retailer in Montevideo with an online store on the Fenicio platform. Sells clothing and accessories for women, men and children from several labels. States shipping across the country, with free shipping above a stated threshold.",
   "description_es": "Comercio multimarca de moda en Montevideo con tienda online sobre la plataforma Fenicio. Vende ropa y accesorios para mujeres, hombres y niños de varias marcas. Indica envíos a todo el país, con envío gratis por encima de un monto indicado.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

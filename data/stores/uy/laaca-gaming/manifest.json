@@ -6,6 +6,7 @@
   "description": "Uruguayan WooCommerce store for PC gaming hardware and peripherals, gaming PCs, PlayStation, Xbox and Nintendo Switch consoles and accessories, and VR headsets. Prices shown in US dollars; ships across Uruguay and offers pickup in Montevideo.",
   "description_es": "Tienda uruguaya en WooCommerce de hardware y periféricos gamer, PCs gamer, consolas PlayStation, Xbox y Nintendo Switch con accesorios, y lentes de realidad virtual. Precios en dólares; envía a todo Uruguay y ofrece retiro en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

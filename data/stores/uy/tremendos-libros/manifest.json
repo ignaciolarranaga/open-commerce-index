@@ -6,6 +6,7 @@
   "description": "Uruguayan online bookstore of curated used books, including classics, rare titles, literature, philosophy and history. Based in San Carlos, Maldonado; ships across Uruguay through Correo Uruguayo and DAC.",
   "description_es": "Librería en línea uruguaya de libros usados seleccionados: clásicos, títulos raros, literatura, filosofía e historia. Con sede en San Carlos, Maldonado; envía a todo Uruguay por Correo Uruguayo y DAC.",
   "country": "UY",
+  "city": "maldonado",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Uruguayan online store of watches, handbags, wallets, sunglasses, jewelry, pens, backpacks and bottles from international brands. Ships to the whole country and offers store and pickup-point collection.",
   "description_es": "Tienda online uruguaya de relojes, carteras, billeteras, lentes, joyería, escritura, mochilas y botellas de marcas internacionales. Envía a todo el país y ofrece retiro en tienda y en puntos de retiro.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

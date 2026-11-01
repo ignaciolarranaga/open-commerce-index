@@ -6,6 +6,7 @@
   "description": "Technology retailer in Uruguay with an online store selling notebooks, gaming consoles, home products and technology. Offers Nintendo consoles and in-store pickup at its Tres Cruces store. States shipping across Uruguay; free shipping applies to Montevideo and the metropolitan area.",
   "description_es": "Comercio de tecnología en Uruguay con tienda online que vende notebooks, consolas, productos para el hogar y tecnología. Ofrece consolas Nintendo y retiro en tienda en su local de Tres Cruces. Indica envíos a todo Uruguay; el envío gratis aplica a Montevideo y el área metropolitana.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

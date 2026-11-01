@@ -6,6 +6,7 @@
   "description": "Uruguayan online store of the exclusive INGCO agent, selling hand tools, power tools, generators, compressors, pumps and garden equipment, with prices in US dollars.",
   "description_es": "Tienda online del agente exclusivo de INGCO en Uruguay: herramientas manuales y eléctricas, generadores, compresores, bombas y equipos de jardín, con precios en dólares.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Hardware and paint retailer in Montevideo with an online catalogue on the Fenicio platform. States shipping across Uruguay, with free shipping on orders above UYU 2,000 and same-day dispatch.",
   "description_es": "Ferretería y pinturería de Montevideo con catálogo online sobre la plataforma Fenicio. Indica envíos a todo el país, gratuitos en compras superiores a UYU 2.000, y despacho el mismo día.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

@@ -6,6 +6,7 @@
   "description": "Uruguayan online store selling TV, audio and video, phones and tech accessories, notebooks, air conditioners and small appliances. Offers same-day delivery in Montevideo and free pickup at its Montevideo store.",
   "description_es": "Tienda online uruguaya de TV, audio y video, celulares y accesorios, notebooks, aire acondicionado y pequeños electrodomésticos. Ofrece entrega en el día en Montevideo y retiro gratis en su local de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

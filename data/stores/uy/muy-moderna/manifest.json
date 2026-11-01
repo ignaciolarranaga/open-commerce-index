@@ -6,6 +6,7 @@
   "description": "Uruguayan online store selling imported kitchen, organization, cleaning, car accessory, personal care, garden, tools, toys and pet items. Ships to all of Uruguay with a pickup point in Montevideo.",
   "description_es": "Tienda online uruguaya de artículos importados de organización, cocina, limpieza, accesorios de auto, cuidado personal, jardín, herramientas, juguetes y mascotas. Envía a todo Uruguay y tiene punto de retiro en Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

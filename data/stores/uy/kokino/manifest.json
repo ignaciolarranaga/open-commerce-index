@@ -6,6 +6,7 @@
   "description": "Toy retailer with a physical store in Montevideo and an online store. Sells toys by age range, books, baby products, decoration, stationery and outdoor products. States same-day delivery in Montevideo and shipping to the interior via DePunta and DAC in 24 to 72 hours.",
   "description_es": "Juguetería con tienda física en Montevideo y tienda online. Vende juguetes por edad, libros, productos para bebés, decoración, papelería y artículos de aire libre. Indica entrega en el día en Montevideo y envíos al interior por DePunta y DAC en 24 a 72 horas.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

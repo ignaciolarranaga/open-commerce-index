@@ -6,6 +6,7 @@
   "description": "Sports retailer in Montevideo with an online store on WooCommerce. Sells fitness, swimming, cycling, football, camping and orthopedic products, and electric mobility. States delivery across Uruguay to the home; shipping costs and times are not stated on the homepage.",
   "description_es": "Comercio deportivo de Montevideo con tienda online en WooCommerce. Vende productos de fitness, natación, ciclismo, fútbol, camping, ortopedia y movilidad eléctrica. Indica entrega a domicilio en todo el país; los costos y plazos de envío no figuran en la página principal.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

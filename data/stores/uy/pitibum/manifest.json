@@ -6,6 +6,7 @@
   "description": "Educational toy retailer in Montevideo with an online store on WooCommerce. Sells toys by age range, family games and learning products. States shipping across the country by DAC and Mirtrans; interior costs and times are quoted before payment.",
   "description_es": "Juguetería didáctica de Montevideo con tienda online en WooCommerce. Vende juguetes por edad, juegos familiares y productos educativos. Indica envíos a todo el país por DAC y Mirtrans; los costos y plazos al interior se consultan antes de pagar.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],

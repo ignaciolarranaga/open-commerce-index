@@ -6,6 +6,7 @@
   "description": "Montevideo shop selling board games, card games, puzzles, outdoor games and stationery such as agendas and notebooks, and publishing a few games of its own. Ships to the whole country and offers free pickup at its Montevideo store.",
   "description_es": "Tienda de Montevideo que vende juegos de mesa, juegos de cartas, puzzles, juegos de aire libre y papelería como agendas y cuadernos, y edita algunos juegos propios. Envía a todo el país y ofrece retiro gratis en su local de Montevideo.",
   "country": "UY",
+  "city": "montevideo",
   "languages": [
     "es"
   ],
