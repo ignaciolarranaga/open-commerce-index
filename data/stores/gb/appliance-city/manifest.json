@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "gb-appliance-city",
+  "name": "Appliance City",
+  "website": "https://www.appliancecity.co.uk/",
+  "description": "Nottingham appliance retailer with an online store on WooCommerce. Sells cooking, laundry, refrigeration, dishwashers, extraction, small appliances, sinks and taps, and TV and audio from named brands. States free standard delivery to most UK mainland postcodes.",
+  "country": "GB",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "GBP"
+  ],
+  "categories": [
+    "large-appliances",
+    "small-appliances",
+    "tv-audio"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "Siemens",
+    "Neff",
+    "Miele",
+    "Samsung",
+    "Smeg",
+    "Liebherr",
+    "Rangemaster"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "GB",
+        "coverage": "partial",
+        "notes": "Delivery page states free standard delivery to the majority of mainland UK postcodes, with some areas served by an external carrier; postcode checked at checkout."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Has a showroom in Nottingham; collection of web orders is not stated."
+  },
+  "access": {
+    "platform": "woocommerce",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.appliancecity.co.uk/?s={query}&post_type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://www.appliancecity.co.uk/wp-json/wc/store/v1/products?search={query}&per_page=10",
+        "status": "verified"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.appliancecity.co.uk/sitemap_index.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.appliancecity.co.uk/delivery/",
+        "supports": "UK postcode delivery coverage",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.appliancecity.co.uk/",
+        "supports": "categories, brands, Nottingham showroom",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

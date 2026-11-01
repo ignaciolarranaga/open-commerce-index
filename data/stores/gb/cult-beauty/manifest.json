@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "gb-cult-beauty",
+  "name": "Cult Beauty",
+  "website": "https://www.cultbeauty.co.uk/",
+  "description": "UK online beauty retailer selling skincare, makeup, haircare, body care and fragrance from many named brands. Its UK site delivers within the UK and Channel Islands; orders to other countries are directed to a separate international site.",
+  "country": "GB",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "GBP"
+  ],
+  "categories": [
+    "health-beauty"
+  ],
+  "taxonomy_version": 1,
+  "brands": [
+    "The Ordinary",
+    "CeraVe",
+    "Charlotte Tilbury",
+    "Dermalogica",
+    "Elemis",
+    "Medik8",
+    "Aesop"
+  ],
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "GB",
+        "coverage": "confirmed",
+        "notes": "Delivery information page lists UK standard and next-day services and a Channel Islands service; orders outside the UK are directed to cultbeauty.com."
+      }
+    ],
+    "pickup": "unknown"
+  },
+  "access": {
+    "platform": "unknown",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://www.cultbeauty.co.uk/search/?q={query}",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "ai_text",
+        "url": "https://www.cultbeauty.co.uk/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "sitemap",
+        "url": "https://www.cultbeauty.co.uk/sitemapindex-product.xml.gz",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://www.cultbeauty.co.uk/c/info/delivery-information/",
+        "supports": "UK and Channel Islands delivery, international site referral",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://www.cultbeauty.co.uk/",
+        "supports": "categories and brands",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}

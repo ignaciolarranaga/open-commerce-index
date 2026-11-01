@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "gb-grind",
+  "name": "Grind",
+  "website": "https://grind.co.uk/",
+  "description": "London coffee company with an online shop on Shopify. Sells coffee pods, bean and ground coffee, instant and iced coffee, matcha, advent calendars and coffee accessories. Its delivery page lists UK delivery services and separate US and EU delivery.",
+  "country": "GB",
+  "languages": [
+    "en"
+  ],
+  "currencies": [
+    "GBP"
+  ],
+  "categories": [
+    "coffee",
+    "grocery"
+  ],
+  "taxonomy_version": 1,
+  "fulfillment": {
+    "ships_to": [
+      {
+        "country": "GB",
+        "coverage": "confirmed",
+        "notes": "Delivery page lists UK economy and next-day tracked services; regional limits within the UK not stated."
+      }
+    ],
+    "pickup": "unknown",
+    "pickup_notes": "Operates cafes in London and Manchester; collection of web orders is not stated."
+  },
+  "access": {
+    "platform": "shopify",
+    "rendering": "server",
+    "bot_protection": "none",
+    "robots": {
+      "generic": "allowed",
+      "ai_user_agents": "allowed"
+    },
+    "search": {
+      "url_template": "https://grind.co.uk/search?q={query}&type=product",
+      "status": "verified"
+    },
+    "endpoints": [
+      {
+        "type": "json_search",
+        "url": "https://grind.co.uk/search/suggest.json?q={query}&resources[type]=product&resources[limit]=10",
+        "status": "verified"
+      },
+      {
+        "type": "products_feed",
+        "url": "https://grind.co.uk/products.json?limit=250",
+        "status": "verified"
+      },
+      {
+        "type": "ai_text",
+        "url": "https://grind.co.uk/llms.txt",
+        "status": "verified",
+        "notes": "Plain-text llms.txt published by the store for AI assistants."
+      },
+      {
+        "type": "ucp",
+        "url": "https://grind.co.uk/.well-known/ucp",
+        "status": "verified"
+      },
+      {
+        "type": "mcp",
+        "url": "https://grind.co.uk/api/mcp",
+        "status": "verified",
+        "notes": "Shopify storefront MCP; tools: search_shop_policies_and_faqs"
+      },
+      {
+        "type": "sitemap",
+        "url": "https://grind.co.uk/sitemap.xml",
+        "status": "unverified",
+        "notes": "Declared in robots.txt."
+      }
+    ],
+    "last_checked": "2026-11-01"
+  },
+  "shopping_notes": "Shopify store with product search and a products feed. The site lists a country selector and states that some items are unavailable in some countries.",
+  "provenance": {
+    "origin": "editorial",
+    "sources": [
+      {
+        "url": "https://grind.co.uk/",
+        "supports": "categories, UK/GBP storefront, cafe locations",
+        "accessed_on": "2026-11-01"
+      },
+      {
+        "url": "https://grind.co.uk/pages/delivery-refunds",
+        "supports": "UK delivery services and international delivery",
+        "accessed_on": "2026-11-01"
+      }
+    ],
+    "added_on": "2026-11-01"
+  },
+  "verification": {
+    "domain_ownership": "unverified",
+    "technical_access": "unverified",
+    "last_review": null
+  }
+}
