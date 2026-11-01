@@ -2,36 +2,1004 @@
   "countries": [
     {
       "country": "UY",
-      "names": { "en": "Uruguay", "es": "Uruguay" },
-      "languages": ["es"],
-      "currencies": ["UYU", "USD"],
+      "names": {
+        "en": "Uruguay",
+        "es": "Uruguay"
+      },
+      "languages": [
+        "es"
+      ],
+      "currencies": [
+        "UYU",
+        "USD"
+      ],
       "status": "launching",
       "cities": [
-        { "id": "montevideo", "names": { "en": "Montevideo", "es": "Montevideo" }, "region": "UY-MO" },
-        { "id": "canelones", "names": { "en": "Canelones", "es": "Canelones" }, "region": "UY-CA" },
-        { "id": "maldonado", "names": { "en": "Maldonado", "es": "Maldonado" }, "region": "UY-MA" }
+        {
+          "id": "montevideo",
+          "names": {
+            "en": "Montevideo",
+            "es": "Montevideo"
+          },
+          "region": "UY-MO"
+        },
+        {
+          "id": "canelones",
+          "names": {
+            "en": "Canelones",
+            "es": "Canelones"
+          },
+          "region": "UY-CA"
+        },
+        {
+          "id": "maldonado",
+          "names": {
+            "en": "Maldonado",
+            "es": "Maldonado"
+          },
+          "region": "UY-MA"
+        }
       ],
       "notes": "Prices are commonly shown in Uruguayan pesos (UYU, written $ or $U) and, for electronics and appliances, in US dollars (written U$S or USD).",
       "regions": [
-        { "code": "UY-AR", "name": "Artigas" },
-        { "code": "UY-CA", "name": "Canelones" },
-        { "code": "UY-CL", "name": "Cerro Largo" },
-        { "code": "UY-CO", "name": "Colonia" },
-        { "code": "UY-DU", "name": "Durazno" },
-        { "code": "UY-FS", "name": "Flores" },
-        { "code": "UY-FD", "name": "Florida" },
-        { "code": "UY-LA", "name": "Lavalleja" },
-        { "code": "UY-MA", "name": "Maldonado" },
-        { "code": "UY-MO", "name": "Montevideo" },
-        { "code": "UY-PA", "name": "Paysandú" },
-        { "code": "UY-RN", "name": "Río Negro" },
-        { "code": "UY-RV", "name": "Rivera" },
-        { "code": "UY-RO", "name": "Rocha" },
-        { "code": "UY-SA", "name": "Salto" },
-        { "code": "UY-SJ", "name": "San José" },
-        { "code": "UY-SO", "name": "Soriano" },
-        { "code": "UY-TA", "name": "Tacuarembó" },
-        { "code": "UY-TT", "name": "Treinta y Tres" }
+        {
+          "code": "UY-AR",
+          "name": "Artigas"
+        },
+        {
+          "code": "UY-CA",
+          "name": "Canelones"
+        },
+        {
+          "code": "UY-CL",
+          "name": "Cerro Largo"
+        },
+        {
+          "code": "UY-CO",
+          "name": "Colonia"
+        },
+        {
+          "code": "UY-DU",
+          "name": "Durazno"
+        },
+        {
+          "code": "UY-FS",
+          "name": "Flores"
+        },
+        {
+          "code": "UY-FD",
+          "name": "Florida"
+        },
+        {
+          "code": "UY-LA",
+          "name": "Lavalleja"
+        },
+        {
+          "code": "UY-MA",
+          "name": "Maldonado"
+        },
+        {
+          "code": "UY-MO",
+          "name": "Montevideo"
+        },
+        {
+          "code": "UY-PA",
+          "name": "Paysandú"
+        },
+        {
+          "code": "UY-RN",
+          "name": "Río Negro"
+        },
+        {
+          "code": "UY-RV",
+          "name": "Rivera"
+        },
+        {
+          "code": "UY-RO",
+          "name": "Rocha"
+        },
+        {
+          "code": "UY-SA",
+          "name": "Salto"
+        },
+        {
+          "code": "UY-SJ",
+          "name": "San José"
+        },
+        {
+          "code": "UY-SO",
+          "name": "Soriano"
+        },
+        {
+          "code": "UY-TA",
+          "name": "Tacuarembó"
+        },
+        {
+          "code": "UY-TT",
+          "name": "Treinta y Tres"
+        }
+      ]
+    },
+    {
+      "country": "US",
+      "names": {
+        "en": "United States",
+        "es": "Estados Unidos"
+      },
+      "languages": [
+        "en",
+        "es"
+      ],
+      "currencies": [
+        "USD"
+      ],
+      "status": "launching",
+      "notes": "Prices are shown in US dollars. Sales tax is added at checkout in most states.",
+      "regions": [
+        {
+          "code": "US-NY",
+          "name": "New York"
+        },
+        {
+          "code": "US-CA",
+          "name": "California"
+        },
+        {
+          "code": "US-IL",
+          "name": "Illinois"
+        },
+        {
+          "code": "US-TX",
+          "name": "Texas"
+        },
+        {
+          "code": "US-FL",
+          "name": "Florida"
+        },
+        {
+          "code": "US-WA",
+          "name": "Washington"
+        },
+        {
+          "code": "US-MA",
+          "name": "Massachusetts"
+        }
+      ],
+      "cities": [
+        {
+          "id": "new-york",
+          "names": {
+            "en": "New York",
+            "es": "Nueva York"
+          },
+          "region": "US-NY"
+        },
+        {
+          "id": "los-angeles",
+          "names": {
+            "en": "Los Angeles",
+            "es": "Los Ángeles"
+          },
+          "region": "US-CA"
+        },
+        {
+          "id": "san-francisco",
+          "names": {
+            "en": "San Francisco",
+            "es": "San Francisco"
+          },
+          "region": "US-CA"
+        },
+        {
+          "id": "chicago",
+          "names": {
+            "en": "Chicago",
+            "es": "Chicago"
+          },
+          "region": "US-IL"
+        },
+        {
+          "id": "houston",
+          "names": {
+            "en": "Houston",
+            "es": "Houston"
+          },
+          "region": "US-TX"
+        },
+        {
+          "id": "miami",
+          "names": {
+            "en": "Miami",
+            "es": "Miami"
+          },
+          "region": "US-FL"
+        },
+        {
+          "id": "seattle",
+          "names": {
+            "en": "Seattle",
+            "es": "Seattle"
+          },
+          "region": "US-WA"
+        },
+        {
+          "id": "boston",
+          "names": {
+            "en": "Boston",
+            "es": "Boston"
+          },
+          "region": "US-MA"
+        }
+      ]
+    },
+    {
+      "country": "GB",
+      "names": {
+        "en": "United Kingdom",
+        "es": "Reino Unido"
+      },
+      "languages": [
+        "en"
+      ],
+      "currencies": [
+        "GBP"
+      ],
+      "status": "launching",
+      "notes": "Prices are shown in pounds sterling (GBP, written £), and VAT is included in most displayed prices.",
+      "regions": [
+        {
+          "code": "GB-LND",
+          "name": "London, City of"
+        },
+        {
+          "code": "GB-MAN",
+          "name": "Manchester"
+        },
+        {
+          "code": "GB-WMD",
+          "name": "West Midlands"
+        },
+        {
+          "code": "GB-EDH",
+          "name": "City of Edinburgh"
+        },
+        {
+          "code": "GB-GLG",
+          "name": "Glasgow City"
+        },
+        {
+          "code": "GB-LIV",
+          "name": "Liverpool"
+        },
+        {
+          "code": "GB-BST",
+          "name": "Bristol, City of"
+        },
+        {
+          "code": "GB-LDS",
+          "name": "Leeds"
+        }
+      ],
+      "cities": [
+        {
+          "id": "london",
+          "names": {
+            "en": "London",
+            "es": "Londres"
+          },
+          "region": "GB-LND"
+        },
+        {
+          "id": "manchester",
+          "names": {
+            "en": "Manchester",
+            "es": "Mánchester"
+          },
+          "region": "GB-MAN"
+        },
+        {
+          "id": "birmingham",
+          "names": {
+            "en": "Birmingham",
+            "es": "Birmingham"
+          },
+          "region": "GB-WMD"
+        },
+        {
+          "id": "edinburgh",
+          "names": {
+            "en": "Edinburgh",
+            "es": "Edimburgo"
+          },
+          "region": "GB-EDH"
+        },
+        {
+          "id": "glasgow",
+          "names": {
+            "en": "Glasgow",
+            "es": "Glasgow"
+          },
+          "region": "GB-GLG"
+        },
+        {
+          "id": "liverpool",
+          "names": {
+            "en": "Liverpool",
+            "es": "Liverpool"
+          },
+          "region": "GB-LIV"
+        },
+        {
+          "id": "bristol",
+          "names": {
+            "en": "Bristol",
+            "es": "Bristol"
+          },
+          "region": "GB-BST"
+        },
+        {
+          "id": "leeds",
+          "names": {
+            "en": "Leeds",
+            "es": "Leeds"
+          },
+          "region": "GB-LDS"
+        }
+      ]
+    },
+    {
+      "country": "DE",
+      "names": {
+        "en": "Germany",
+        "es": "Alemania"
+      },
+      "languages": [
+        "de"
+      ],
+      "currencies": [
+        "EUR"
+      ],
+      "status": "launching",
+      "notes": "Prices are shown in euros (EUR, written €), and VAT is included in displayed prices.",
+      "regions": [
+        {
+          "code": "DE-BE",
+          "name": "Berlin"
+        },
+        {
+          "code": "DE-HH",
+          "name": "Hamburg"
+        },
+        {
+          "code": "DE-BY",
+          "name": "Bavaria"
+        },
+        {
+          "code": "DE-NW",
+          "name": "North Rhine-Westphalia"
+        },
+        {
+          "code": "DE-HE",
+          "name": "Hesse"
+        },
+        {
+          "code": "DE-BW",
+          "name": "Baden-Württemberg"
+        },
+        {
+          "code": "DE-SN",
+          "name": "Saxony"
+        }
+      ],
+      "cities": [
+        {
+          "id": "berlin",
+          "names": {
+            "en": "Berlin",
+            "es": "Berlín"
+          },
+          "region": "DE-BE"
+        },
+        {
+          "id": "hamburg",
+          "names": {
+            "en": "Hamburg",
+            "es": "Hamburgo"
+          },
+          "region": "DE-HH"
+        },
+        {
+          "id": "munich",
+          "names": {
+            "en": "Munich",
+            "es": "Múnich"
+          },
+          "region": "DE-BY"
+        },
+        {
+          "id": "cologne",
+          "names": {
+            "en": "Cologne",
+            "es": "Colonia"
+          },
+          "region": "DE-NW"
+        },
+        {
+          "id": "dusseldorf",
+          "names": {
+            "en": "Düsseldorf",
+            "es": "Düsseldorf"
+          },
+          "region": "DE-NW"
+        },
+        {
+          "id": "frankfurt",
+          "names": {
+            "en": "Frankfurt",
+            "es": "Fráncfort"
+          },
+          "region": "DE-HE"
+        },
+        {
+          "id": "stuttgart",
+          "names": {
+            "en": "Stuttgart",
+            "es": "Stuttgart"
+          },
+          "region": "DE-BW"
+        },
+        {
+          "id": "leipzig",
+          "names": {
+            "en": "Leipzig",
+            "es": "Leipzig"
+          },
+          "region": "DE-SN"
+        }
+      ]
+    },
+    {
+      "country": "FR",
+      "names": {
+        "en": "France",
+        "es": "Francia"
+      },
+      "languages": [
+        "fr"
+      ],
+      "currencies": [
+        "EUR"
+      ],
+      "status": "launching",
+      "notes": "Prices are shown in euros (EUR, written €), and VAT is included in displayed prices.",
+      "regions": [
+        {
+          "code": "FR-IDF",
+          "name": "Île-de-France"
+        },
+        {
+          "code": "FR-ARA",
+          "name": "Auvergne-Rhône-Alpes"
+        },
+        {
+          "code": "FR-PAC",
+          "name": "Provence-Alpes-Côte d'Azur"
+        },
+        {
+          "code": "FR-OCC",
+          "name": "Occitanie"
+        },
+        {
+          "code": "FR-PDL",
+          "name": "Pays de la Loire"
+        },
+        {
+          "code": "FR-HDF",
+          "name": "Hauts-de-France"
+        },
+        {
+          "code": "FR-NAQ",
+          "name": "Nouvelle-Aquitaine"
+        }
+      ],
+      "cities": [
+        {
+          "id": "paris",
+          "names": {
+            "en": "Paris",
+            "es": "París"
+          },
+          "region": "FR-IDF"
+        },
+        {
+          "id": "lyon",
+          "names": {
+            "en": "Lyon",
+            "es": "Lyon"
+          },
+          "region": "FR-ARA"
+        },
+        {
+          "id": "marseille",
+          "names": {
+            "en": "Marseille",
+            "es": "Marsella"
+          },
+          "region": "FR-PAC"
+        },
+        {
+          "id": "nice",
+          "names": {
+            "en": "Nice",
+            "es": "Niza"
+          },
+          "region": "FR-PAC"
+        },
+        {
+          "id": "toulouse",
+          "names": {
+            "en": "Toulouse",
+            "es": "Toulouse"
+          },
+          "region": "FR-OCC"
+        },
+        {
+          "id": "nantes",
+          "names": {
+            "en": "Nantes",
+            "es": "Nantes"
+          },
+          "region": "FR-PDL"
+        },
+        {
+          "id": "lille",
+          "names": {
+            "en": "Lille",
+            "es": "Lila"
+          },
+          "region": "FR-HDF"
+        },
+        {
+          "id": "bordeaux",
+          "names": {
+            "en": "Bordeaux",
+            "es": "Burdeos"
+          },
+          "region": "FR-NAQ"
+        }
+      ]
+    },
+    {
+      "country": "ES",
+      "names": {
+        "en": "Spain",
+        "es": "España"
+      },
+      "languages": [
+        "es"
+      ],
+      "currencies": [
+        "EUR"
+      ],
+      "status": "launching",
+      "notes": "Prices are shown in euros (EUR, written €), and VAT (IVA) is included in displayed prices. Canary Islands and Ceuta and Melilla are often excluded from shipping.",
+      "regions": [
+        {
+          "code": "ES-MD",
+          "name": "Community of Madrid"
+        },
+        {
+          "code": "ES-CT",
+          "name": "Catalonia"
+        },
+        {
+          "code": "ES-VC",
+          "name": "Valencian Community"
+        },
+        {
+          "code": "ES-AN",
+          "name": "Andalusia"
+        },
+        {
+          "code": "ES-PV",
+          "name": "Basque Country"
+        },
+        {
+          "code": "ES-AR",
+          "name": "Aragon"
+        }
+      ],
+      "cities": [
+        {
+          "id": "madrid",
+          "names": {
+            "en": "Madrid",
+            "es": "Madrid"
+          },
+          "region": "ES-MD"
+        },
+        {
+          "id": "barcelona",
+          "names": {
+            "en": "Barcelona",
+            "es": "Barcelona"
+          },
+          "region": "ES-CT"
+        },
+        {
+          "id": "valencia",
+          "names": {
+            "en": "Valencia",
+            "es": "Valencia"
+          },
+          "region": "ES-VC"
+        },
+        {
+          "id": "seville",
+          "names": {
+            "en": "Seville",
+            "es": "Sevilla"
+          },
+          "region": "ES-AN"
+        },
+        {
+          "id": "malaga",
+          "names": {
+            "en": "Málaga",
+            "es": "Málaga"
+          },
+          "region": "ES-AN"
+        },
+        {
+          "id": "bilbao",
+          "names": {
+            "en": "Bilbao",
+            "es": "Bilbao"
+          },
+          "region": "ES-PV"
+        },
+        {
+          "id": "zaragoza",
+          "names": {
+            "en": "Zaragoza",
+            "es": "Zaragoza"
+          },
+          "region": "ES-AR"
+        }
+      ]
+    },
+    {
+      "country": "MX",
+      "names": {
+        "en": "Mexico",
+        "es": "México"
+      },
+      "languages": [
+        "es"
+      ],
+      "currencies": [
+        "MXN"
+      ],
+      "status": "launching",
+      "notes": "Prices are shown in Mexican pesos (MXN, written $) and, for some electronics, in US dollars. IVA is included in displayed prices.",
+      "regions": [
+        {
+          "code": "MX-CMX",
+          "name": "Ciudad de México"
+        },
+        {
+          "code": "MX-JAL",
+          "name": "Jalisco"
+        },
+        {
+          "code": "MX-NLE",
+          "name": "Nuevo León"
+        },
+        {
+          "code": "MX-PUE",
+          "name": "Puebla"
+        },
+        {
+          "code": "MX-BCN",
+          "name": "Baja California"
+        },
+        {
+          "code": "MX-QUE",
+          "name": "Querétaro"
+        },
+        {
+          "code": "MX-GUA",
+          "name": "Guanajuato"
+        },
+        {
+          "code": "MX-YUC",
+          "name": "Yucatán"
+        }
+      ],
+      "cities": [
+        {
+          "id": "mexico-city",
+          "names": {
+            "en": "Mexico City",
+            "es": "Ciudad de México"
+          },
+          "region": "MX-CMX"
+        },
+        {
+          "id": "guadalajara",
+          "names": {
+            "en": "Guadalajara",
+            "es": "Guadalajara"
+          },
+          "region": "MX-JAL"
+        },
+        {
+          "id": "monterrey",
+          "names": {
+            "en": "Monterrey",
+            "es": "Monterrey"
+          },
+          "region": "MX-NLE"
+        },
+        {
+          "id": "puebla",
+          "names": {
+            "en": "Puebla",
+            "es": "Puebla"
+          },
+          "region": "MX-PUE"
+        },
+        {
+          "id": "tijuana",
+          "names": {
+            "en": "Tijuana",
+            "es": "Tijuana"
+          },
+          "region": "MX-BCN"
+        },
+        {
+          "id": "queretaro",
+          "names": {
+            "en": "Querétaro",
+            "es": "Querétaro"
+          },
+          "region": "MX-QUE"
+        },
+        {
+          "id": "leon",
+          "names": {
+            "en": "León",
+            "es": "León"
+          },
+          "region": "MX-GUA"
+        },
+        {
+          "id": "merida",
+          "names": {
+            "en": "Mérida",
+            "es": "Mérida"
+          },
+          "region": "MX-YUC"
+        }
+      ]
+    },
+    {
+      "country": "BR",
+      "names": {
+        "en": "Brazil",
+        "es": "Brasil"
+      },
+      "languages": [
+        "pt"
+      ],
+      "currencies": [
+        "BRL"
+      ],
+      "status": "launching",
+      "notes": "Prices are shown in Brazilian reais (BRL, written R$). Freight is often quoted by CEP (postal code) at checkout.",
+      "regions": [
+        {
+          "code": "BR-SP",
+          "name": "São Paulo"
+        },
+        {
+          "code": "BR-RJ",
+          "name": "Rio de Janeiro"
+        },
+        {
+          "code": "BR-MG",
+          "name": "Minas Gerais"
+        },
+        {
+          "code": "BR-DF",
+          "name": "Distrito Federal"
+        },
+        {
+          "code": "BR-PR",
+          "name": "Paraná"
+        },
+        {
+          "code": "BR-RS",
+          "name": "Rio Grande do Sul"
+        },
+        {
+          "code": "BR-BA",
+          "name": "Bahia"
+        },
+        {
+          "code": "BR-PE",
+          "name": "Pernambuco"
+        }
+      ],
+      "cities": [
+        {
+          "id": "sao-paulo",
+          "names": {
+            "en": "São Paulo",
+            "es": "São Paulo"
+          },
+          "region": "BR-SP"
+        },
+        {
+          "id": "rio-de-janeiro",
+          "names": {
+            "en": "Rio de Janeiro",
+            "es": "Río de Janeiro"
+          },
+          "region": "BR-RJ"
+        },
+        {
+          "id": "belo-horizonte",
+          "names": {
+            "en": "Belo Horizonte",
+            "es": "Belo Horizonte"
+          },
+          "region": "BR-MG"
+        },
+        {
+          "id": "brasilia",
+          "names": {
+            "en": "Brasília",
+            "es": "Brasilia"
+          },
+          "region": "BR-DF"
+        },
+        {
+          "id": "curitiba",
+          "names": {
+            "en": "Curitiba",
+            "es": "Curitiba"
+          },
+          "region": "BR-PR"
+        },
+        {
+          "id": "porto-alegre",
+          "names": {
+            "en": "Porto Alegre",
+            "es": "Porto Alegre"
+          },
+          "region": "BR-RS"
+        },
+        {
+          "id": "salvador",
+          "names": {
+            "en": "Salvador",
+            "es": "Salvador"
+          },
+          "region": "BR-BA"
+        },
+        {
+          "id": "recife",
+          "names": {
+            "en": "Recife",
+            "es": "Recife"
+          },
+          "region": "BR-PE"
+        }
+      ]
+    },
+    {
+      "country": "CA",
+      "names": {
+        "en": "Canada",
+        "es": "Canadá"
+      },
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "currencies": [
+        "CAD"
+      ],
+      "status": "launching",
+      "notes": "Prices are shown in Canadian dollars (CAD, written $). GST, HST or PST is added at checkout depending on the province.",
+      "regions": [
+        {
+          "code": "CA-ON",
+          "name": "Ontario"
+        },
+        {
+          "code": "CA-QC",
+          "name": "Quebec"
+        },
+        {
+          "code": "CA-BC",
+          "name": "British Columbia"
+        },
+        {
+          "code": "CA-AB",
+          "name": "Alberta"
+        },
+        {
+          "code": "CA-MB",
+          "name": "Manitoba"
+        }
+      ],
+      "cities": [
+        {
+          "id": "toronto",
+          "names": {
+            "en": "Toronto",
+            "es": "Toronto"
+          },
+          "region": "CA-ON"
+        },
+        {
+          "id": "ottawa",
+          "names": {
+            "en": "Ottawa",
+            "es": "Ottawa"
+          },
+          "region": "CA-ON"
+        },
+        {
+          "id": "montreal",
+          "names": {
+            "en": "Montreal",
+            "es": "Montreal"
+          },
+          "region": "CA-QC"
+        },
+        {
+          "id": "quebec-city",
+          "names": {
+            "en": "Quebec City",
+            "es": "Ciudad de Quebec"
+          },
+          "region": "CA-QC"
+        },
+        {
+          "id": "vancouver",
+          "names": {
+            "en": "Vancouver",
+            "es": "Vancouver"
+          },
+          "region": "CA-BC"
+        },
+        {
+          "id": "calgary",
+          "names": {
+            "en": "Calgary",
+            "es": "Calgary"
+          },
+          "region": "CA-AB"
+        },
+        {
+          "id": "edmonton",
+          "names": {
+            "en": "Edmonton",
+            "es": "Edmonton"
+          },
+          "region": "CA-AB"
+        },
+        {
+          "id": "winnipeg",
+          "names": {
+            "en": "Winnipeg",
+            "es": "Winnipeg"
+          },
+          "region": "CA-MB"
+        }
       ]
     }
   ]
